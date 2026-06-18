@@ -1,11 +1,11 @@
 ServiceMaps:
-  serviceName: Incident Management - rainmaker
+  serviceName: Livelihood IM
   version: 1.0.0
   mappings:
     - topic: save-im-request-indexer
       configKey: INDEX
       indexes:
-        - name: im-services
+        - name: livelihood-incident-index-v1
           type: general
           id: $.incidentRequest.incident.incidentId
           jsonPath: $
@@ -45,6 +45,12 @@ ServiceMaps:
                 outJsonPath: $.Data.facilityCategory
               - inJsonPath: $.incidentRequest.incident.boundaryCode
                 outJsonPath: $.Data.boundaryCode
+              - inJsonPath: $.incidentRequest.incident.assetId
+                outJsonPath: $.Data.incident.assetId
+              - inJsonPath: $.incidentRequest.incident.createdOnBehalf
+                outJsonPath: $.Data.incident.createdOnBehalf
+              - inJsonPath: $.incidentRequest.incident.entryChannel
+                outJsonPath: $.Data.incident.entryChannel
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
               - inJsonPath: $.incidentRequest.incident.auditDetails
@@ -64,7 +70,7 @@ ServiceMaps:
               - inJsonPath: $.incidentRequest.incident.migrationId
                 outJsonPath: $.Data.migrationId
 
-        - name: computed-sla-im-services-write
+        - name: computed-sla-livelihood-incident-index-v1
           type: general
           id: $.incidentRequest.incident.incidentId
           jsonPath: $
@@ -104,6 +110,12 @@ ServiceMaps:
                 outJsonPath: $.Data.facilityCategory
               - inJsonPath: $.incidentRequest.incident.boundaryCode
                 outJsonPath: $.Data.boundaryCode
+              - inJsonPath: $.incidentRequest.incident.assetId
+                outJsonPath: $.Data.incident.assetId
+              - inJsonPath: $.incidentRequest.incident.createdOnBehalf
+                outJsonPath: $.Data.incident.createdOnBehalf
+              - inJsonPath: $.incidentRequest.incident.entryChannel
+                outJsonPath: $.Data.incident.entryChannel
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
               - inJsonPath: $.incidentRequest.incident.auditDetails
@@ -175,7 +187,7 @@ ServiceMaps:
     - topic: update-im-request-indexer
       configKey: INDEX
       indexes:
-        - name: im-services
+        - name: livelihood-incident-index-v1
           type: general
           id: $.incidentRequest.incident.incidentId
           jsonPath: $
@@ -215,6 +227,12 @@ ServiceMaps:
                 outJsonPath: $.Data.facilityCategory
               - inJsonPath: $.incidentRequest.incident.boundaryCode
                 outJsonPath: $.Data.boundaryCode
+              - inJsonPath: $.incidentRequest.incident.assetId
+                outJsonPath: $.Data.incident.assetId
+              - inJsonPath: $.incidentRequest.incident.createdOnBehalf
+                outJsonPath: $.Data.incident.createdOnBehalf
+              - inJsonPath: $.incidentRequest.incident.entryChannel
+                outJsonPath: $.Data.incident.entryChannel
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
               - inJsonPath: $.incidentRequest.incident.auditDetails
@@ -234,7 +252,7 @@ ServiceMaps:
               - inJsonPath: $.incidentRequest.incident.migrationId
                 outJsonPath: $.Data.migrationId
 
-        - name: computed-sla-im-services-write
+        - name: computed-sla-livelihood-incident-index-v1
           type: general
           id: $.incidentRequest.incident.incidentId
           jsonPath: $
@@ -274,6 +292,12 @@ ServiceMaps:
                 outJsonPath: $.Data.facilityCategory
               - inJsonPath: $.incidentRequest.incident.boundaryCode
                 outJsonPath: $.Data.boundaryCode
+              - inJsonPath: $.incidentRequest.incident.assetId
+                outJsonPath: $.Data.incident.assetId
+              - inJsonPath: $.incidentRequest.incident.createdOnBehalf
+                outJsonPath: $.Data.incident.createdOnBehalf
+              - inJsonPath: $.incidentRequest.incident.entryChannel
+                outJsonPath: $.Data.incident.entryChannel
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
               - inJsonPath: $.incidentRequest.incident.auditDetails
@@ -345,7 +369,7 @@ ServiceMaps:
     - topic: im-services-inboxIndex
       configKey: LEGACYINDEX
       indexes:
-        - name: im-services
+        - name: livelihood-incident-index-v1
           type: general
           isBulk: true
           id: $.incident.incidentId
@@ -378,6 +402,12 @@ ServiceMaps:
                 outJsonPath: $.Data.facilityId
               - inJsonPath: $.incident.boundaryCode
                 outJsonPath: $.Data.boundaryCode
+              - inJsonPath: $.incident.assetId
+                outJsonPath: $.Data.incident.assetId
+              - inJsonPath: $.incident.createdOnBehalf
+                outJsonPath: $.Data.incident.createdOnBehalf
+              - inJsonPath: $.incident.entryChannel
+                outJsonPath: $.Data.incident.entryChannel
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
               - inJsonPath: $.incident.auditDetails
@@ -422,7 +452,7 @@ ServiceMaps:
     - topic: im-service-reindex
       configKey: REINDEX
       indexes:
-        - name: imreindex-v2
+        - name: livelihood-imreindex-v1
           type: general
           id: $.Data.incident.incidentId
           isBulk: true
@@ -432,7 +462,7 @@ ServiceMaps:
     - topic: save-im-audit-request-indexer
       configKey: INDEX
       indexes:
-        - name: audit-computed-sla-im-services-write
+        - name: livelihood-incident-audit-v1
           type: general
           id: $.indexView.uuid
           jsonPath: $
@@ -472,6 +502,12 @@ ServiceMaps:
                 outJsonPath: $.Data.facilityCategory
               - inJsonPath: $.incidentRequest.incident.boundaryCode
                 outJsonPath: $.Data.boundaryCode
+              - inJsonPath: $.incidentRequest.incident.assetId
+                outJsonPath: $.Data.incident.assetId
+              - inJsonPath: $.incidentRequest.incident.createdOnBehalf
+                outJsonPath: $.Data.incident.createdOnBehalf
+              - inJsonPath: $.incidentRequest.incident.entryChannel
+                outJsonPath: $.Data.incident.entryChannel
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
               - inJsonPath: $.incidentRequest.incident.auditDetails
