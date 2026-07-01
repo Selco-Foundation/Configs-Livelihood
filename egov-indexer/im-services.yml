@@ -13,7 +13,6 @@ ServiceMaps:
           fieldsToBeMasked:
             [
               "$.incidentRequest.incident.reporter.userName",
-              "$.incidentRequest.incident.reporter.name",
               "$.incidentRequest.incident.reporter.mobileNumber",
               "$.incidentRequest.incident.reporter.emailId",
             ]
@@ -78,7 +77,6 @@ ServiceMaps:
           fieldsToBeMasked:
             [
               "$.incidentRequest.incident.reporter.userName",
-              "$.incidentRequest.incident.reporter.name",
               "$.incidentRequest.incident.reporter.mobileNumber",
               "$.incidentRequest.incident.reporter.emailId",
             ]
@@ -195,7 +193,6 @@ ServiceMaps:
           fieldsToBeMasked:
             [
               "$.incidentRequest.incident.reporter.userName",
-              "$.incidentRequest.incident.reporter.name",
               "$.incidentRequest.incident.reporter.mobileNumber",
               "$.incidentRequest.incident.reporter.emailId",
             ]
@@ -260,7 +257,6 @@ ServiceMaps:
           fieldsToBeMasked:
             [
               "$.incidentRequest.incident.reporter.userName",
-              "$.incidentRequest.incident.reporter.name",
               "$.incidentRequest.incident.reporter.mobileNumber",
               "$.incidentRequest.incident.reporter.emailId",
             ]
@@ -470,7 +466,6 @@ ServiceMaps:
           fieldsToBeMasked:
             [
               "$.incidentRequest.incident.reporter.userName",
-              "$.incidentRequest.incident.reporter.name",
               "$.incidentRequest.incident.reporter.mobileNumber",
               "$.incidentRequest.incident.reporter.emailId",
             ]
