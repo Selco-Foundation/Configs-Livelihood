@@ -352,7 +352,7 @@ serviceMaps:
       transactionCodeJsonPath: $.id
       auditAttributeBasePath: $.*
       queryMaps:
-        - query: INSERT INTO bom (id,tenant_id,facility_id,activity_facility_id,name,assign_user,data,is_active,additional_details,created_time,last_modified_time) VALUES (?,?,?,?,?,?,?,?,?,?,?);
+        - query: INSERT INTO bom (id,tenant_id,facility_id,activity_facility_id,name,assign_user,data,is_active,additional_details,created_time,last_modified_time,solution_id,vendor_org_id,vendor_email,vendor_phone,otp_uuid,report_number) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);
           basePath: $.bom.*
           jsonMaps:
             - jsonPath: $.bom.*.id
@@ -380,6 +380,18 @@ serviceMaps:
             - jsonPath: $.bom.*.auditDetails.createdTime
 
             - jsonPath: $.bom.*.auditDetails.lastModifiedTime
+
+            - jsonPath: $.bom.*.solutionId
+
+            - jsonPath: $.bom.*.vendorOrgId
+
+            - jsonPath: $.bom.*.vendorEmail
+
+            - jsonPath: $.bom.*.vendorPhone
+
+            - jsonPath: $.bom.*.otpUuid
+
+            - jsonPath: $.bom.*.reportNumber
 
         - query: INSERT INTO bom_document(id,bomid,documentType,filestoreId,documentUid,additionalDetails,status,createdBy,lastModifiedBy,createdTime,lastModifiedTime) VALUES (?,?,?,?,?,?,?,?,?,?,?);
           basePath: $.bom.*.documents.*
@@ -421,7 +433,7 @@ serviceMaps:
       transactionCodeJsonPath: $.id
       auditAttributeBasePath: $.*
       queryMaps:
-        - query: UPDATE bom SET  assign_user=?, name=?, data=?, is_active=?, additional_details = ?, last_modified_time = ? WHERE id = ?;
+        - query: UPDATE bom SET assign_user=?, name=?, data=?, is_active=?, additional_details=?, last_modified_time=?, solution_id=?, vendor_org_id=?, vendor_email=?, vendor_phone=?, otp_uuid=?, report_number=? WHERE id = ?;
           basePath: $.bom.*
           jsonMaps:
             - jsonPath: $.bom.*.assignUser
@@ -439,6 +451,18 @@ serviceMaps:
               dbType: JSONB
 
             - jsonPath: $.bom.*.auditDetails.lastModifiedTime
+
+            - jsonPath: $.bom.*.solutionId
+
+            - jsonPath: $.bom.*.vendorOrgId
+
+            - jsonPath: $.bom.*.vendorEmail
+
+            - jsonPath: $.bom.*.vendorPhone
+
+            - jsonPath: $.bom.*.otpUuid
+
+            - jsonPath: $.bom.*.reportNumber
 
             - jsonPath: $.bom.*.id
 
