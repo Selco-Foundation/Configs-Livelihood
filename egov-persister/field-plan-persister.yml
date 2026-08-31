@@ -14,7 +14,7 @@ serviceMaps:
       transactionCodeJsonPath: $.id
       auditAttributeBasePath: $.*
       queryMaps:
-        - query: INSERT INTO field_plans (id,tenant_id,name,project_id,start_date,end_date,geography_scope,selected_activities,health_facility_number,status,additional_details,isDeleted,created_by,last_modified_by,created_time,last_modified_time) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);
+        - query: INSERT INTO field_plans (id,tenant_id,name,project_id,start_date,end_date,geography_scope,selected_activities,health_facility_number,status,additional_details,isDeleted,created_by,last_modified_by,created_time,last_modified_time,sector) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT (id) DO NOTHING;
           basePath: $.FieldPlans.*
           jsonMaps:
             - jsonPath: $.FieldPlans.*.id
@@ -55,6 +55,8 @@ serviceMaps:
 
             - jsonPath: $.FieldPlans.*.auditDetails.lastModifiedTime
 
+            - jsonPath: $.FieldPlans.*.sector
+
     - version: 1.0
       name: Projects
       description: Updates field plan details in field_plan table
@@ -68,7 +70,7 @@ serviceMaps:
       transactionCodeJsonPath: $.id
       auditAttributeBasePath: $.*
       queryMaps:
-        - query: UPDATE field_plans SET name = ?, project_id = ?, health_facility_number = ?, start_date = ?, end_date = ?, geography_scope = ?, selected_activities = ?, status = ?, additional_details = ?, isDeleted = ?, created_by = ?, last_modified_by = ?, last_modified_time = ? WHERE id = ?;
+        - query: UPDATE field_plans SET name = ?, project_id = ?, health_facility_number = ?, start_date = ?, end_date = ?, geography_scope = ?, selected_activities = ?, status = ?, additional_details = ?, isDeleted = ?, last_modified_by = ?, last_modified_time = ? WHERE id = ?;
           basePath: $.FieldPlans.*
           jsonMaps:
             - jsonPath: $.FieldPlans.*.name
@@ -97,8 +99,6 @@ serviceMaps:
 
             - jsonPath: $.FieldPlans.*.isDeleted
 
-            - jsonPath: $.FieldPlans.*.auditDetails.createdBy
-
             - jsonPath: $.FieldPlans.*.auditDetails.lastModifiedBy
 
             - jsonPath: $.FieldPlans.*.auditDetails.lastModifiedTime
@@ -117,7 +117,7 @@ serviceMaps:
       transactionCodeJsonPath: $.id
       auditAttributeBasePath: $.*
       queryMaps:
-        - query: INSERT INTO field_plan_facilities (id, tenantid, field_plan_id, facility_id, additional_details, last_modified_by, created_time, lastmodifiedtime, isdeleted) VALUES (?,?,?,?,?,?,?,?,?) ON CONFLICT (tenantid, field_plan_id, facility_id) DO UPDATE SET isdeleted = ?, last_modified_by = ?, lastmodifiedtime = ?
+        - query: INSERT INTO field_plan_facilities (id, tenantid, field_plan_id, facility_id, solution_id, lock_status, additional_details, last_modified_by, created_time, lastmodifiedtime, isdeleted) VALUES (?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT (tenantid, field_plan_id, facility_id) DO UPDATE SET isdeleted = ?, last_modified_by = ?, lastmodifiedtime = ?, solution_id = ?, lock_status = ?
           basePath: $.*
           jsonMaps:
             - jsonPath: $.*.id
@@ -127,6 +127,10 @@ serviceMaps:
             - jsonPath: $.*.fieldPlanId
 
             - jsonPath: $.*.facilityId
+
+            - jsonPath: $.*.solutionId
+
+            - jsonPath: $.*.lockStatus
 
             - jsonPath: $.*.additionalFields
               type: JSON
@@ -146,6 +150,10 @@ serviceMaps:
 
             - jsonPath: $.*.auditDetails.lastModifiedTime
 
+            - jsonPath: $.*.solutionId
+
+            - jsonPath: $.*.lockStatus
+
     - version: 1.0
       description: Deletes FieldPlan Facility
       fromTopic: delete-fieldplan-facility-topic
@@ -158,7 +166,7 @@ serviceMaps:
       transactionCodeJsonPath: $.id
       auditAttributeBasePath: $.*
       queryMaps:
-        - query: UPDATE field_plan_facilities SET last_modified_by=?, lastmodifiedtime=?, isdeleted=?, additional_details=? WHERE id=?;
+        - query: UPDATE field_plan_facilities SET last_modified_by=?, lastmodifiedtime=?, isdeleted=?, additional_details=?, lock_status=? WHERE id=?;
           basePath: $.*
           jsonMaps:
             - jsonPath: $.*.auditDetails.lastModifiedBy
@@ -167,4 +175,45 @@ serviceMaps:
             - jsonPath: $.*.additionalFields
               type: JSON
               dbType: JSONB
+            - jsonPath: $.*.lockStatus
             - jsonPath: $.*.id
+
+    - version: 1.0
+      name: FieldPlanTemplate
+      description: Persists the filled IC Report template for one (field plan, Solution)
+      fromTopic: save-field-plan-template
+      isTransaction: true
+      isAuditEnabled: true
+      module: FieldPlan
+      objecIdJsonPath: $.id
+      tenantIdJsonPath: $.tenantId
+      userUuidJsonPath: $.[0].auditDetails.createdBy
+      transactionCodeJsonPath: $.id
+      auditAttributeBasePath: $.*
+      queryMaps:
+        - query: INSERT INTO field_plan_template (id, tenant_id, field_plan_id, solution_id, template_data, tender_number, purchase_order_number, created_by, created_time, last_modified_by, last_modified_time) VALUES (?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT (tenant_id, field_plan_id, solution_id) DO UPDATE SET template_data = EXCLUDED.template_data, tender_number = EXCLUDED.tender_number, purchase_order_number = EXCLUDED.purchase_order_number, last_modified_by = EXCLUDED.last_modified_by, last_modified_time = EXCLUDED.last_modified_time;
+          basePath: $.FieldPlanTemplate.*
+          jsonMaps:
+            - jsonPath: $.FieldPlanTemplate.*.id
+
+            - jsonPath: $.FieldPlanTemplate.*.tenantId
+
+            - jsonPath: $.FieldPlanTemplate.*.fieldPlanId
+
+            - jsonPath: $.FieldPlanTemplate.*.solutionId
+
+            - jsonPath: $.FieldPlanTemplate.*.templateData
+              type: JSON
+              dbType: JSONB
+
+            - jsonPath: $.FieldPlanTemplate.*.tenderNumber
+
+            - jsonPath: $.FieldPlanTemplate.*.purchaseOrderNumber
+
+            - jsonPath: $.FieldPlanTemplate.*.auditDetails.createdBy
+
+            - jsonPath: $.FieldPlanTemplate.*.auditDetails.createdTime
+
+            - jsonPath: $.FieldPlanTemplate.*.auditDetails.lastModifiedBy
+
+            - jsonPath: $.FieldPlanTemplate.*.auditDetails.lastModifiedTime

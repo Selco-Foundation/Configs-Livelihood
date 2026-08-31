@@ -136,7 +136,7 @@ serviceMaps:
       transactionCodeJsonPath: $.id
       auditAttributeBasePath: $.*
       queryMaps:
-        - query: INSERT INTO facility_activities (id,tenant_id,field_plan_id,activity_id,facility_id, status, conditions_met, assigned_user, scheduled_at, activated_at, completed_at, additional_details, created_time, last_modified_time) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT (tenant_id, facility_id, activity_id, field_plan_id) DO UPDATE SET isdeleted = ?, last_modified_time = ?;
+        - query: INSERT INTO facility_activities (id,tenant_id,field_plan_id,activity_id,facility_id, status, conditions_met, assigned_user, scheduled_at, activated_at, completed_at, additional_details, created_time, last_modified_time, component_type, component_sequence, solution_id) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT (tenant_id, facility_id, activity_id, field_plan_id, COALESCE(component_type, ''), COALESCE(component_sequence, 0)) DO UPDATE SET isdeleted = ?, last_modified_time = ?, solution_id = EXCLUDED.solution_id;
           basePath: $.ActivitiesFacilities.*
           jsonMaps:
             - jsonPath: $.ActivitiesFacilities.*.id
@@ -171,7 +171,13 @@ serviceMaps:
 
             - jsonPath: $.ActivitiesFacilities.*.auditDetails.lastModifiedTime
 
-            - jsonPath: $.ActivityAssignment.*.isDeleted
+            - jsonPath: $.ActivitiesFacilities.*.componentType
+
+            - jsonPath: $.ActivitiesFacilities.*.componentSequence
+
+            - jsonPath: $.ActivitiesFacilities.*.solutionId
+
+            - jsonPath: $.ActivitiesFacilities.*.isDeleted
 
             - jsonPath: $.ActivitiesFacilities.*.auditDetails.lastModifiedTime
 
@@ -258,7 +264,7 @@ serviceMaps:
             - jsonPath: $.ActivityFacilityUsers.*.tenantId
             - jsonPath: $.ActivityFacilityUsers.*.activityFacilityId
             - jsonPath: $.ActivityFacilityUsers.*.userId
-            - jsonPath: $.ActivityFacilityUsers.*.additionalFields
+            - jsonPath: $.ActivityFacilityUsers.*.additionalDetails
               type: JSON
               dbType: JSONB
             - jsonPath: $.ActivityFacilityUsers.*.auditDetails.createdBy
@@ -352,7 +358,7 @@ serviceMaps:
       transactionCodeJsonPath: $.id
       auditAttributeBasePath: $.*
       queryMaps:
-        - query: INSERT INTO bom (id,tenant_id,facility_id,activity_facility_id,name,assign_user,data,is_active,additional_details,created_time,last_modified_time) VALUES (?,?,?,?,?,?,?,?,?,?,?);
+        - query: INSERT INTO bom (id,tenant_id,facility_id,activity_facility_id,name,assign_user,data,is_active,additional_details,created_time,last_modified_time,solution_id,vendor_org_id,vendor_email,vendor_phone,otp_uuid,report_number) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT (id) DO UPDATE SET assign_user = EXCLUDED.assign_user, name = EXCLUDED.name, data = EXCLUDED.data, is_active = EXCLUDED.is_active, additional_details = EXCLUDED.additional_details, last_modified_time = EXCLUDED.last_modified_time, solution_id = EXCLUDED.solution_id, vendor_org_id = EXCLUDED.vendor_org_id, vendor_email = EXCLUDED.vendor_email, vendor_phone = EXCLUDED.vendor_phone, otp_uuid = EXCLUDED.otp_uuid, report_number = EXCLUDED.report_number;
           basePath: $.bom.*
           jsonMaps:
             - jsonPath: $.bom.*.id
@@ -380,6 +386,18 @@ serviceMaps:
             - jsonPath: $.bom.*.auditDetails.createdTime
 
             - jsonPath: $.bom.*.auditDetails.lastModifiedTime
+
+            - jsonPath: $.bom.*.solutionId
+
+            - jsonPath: $.bom.*.vendorOrgId
+
+            - jsonPath: $.bom.*.vendorEmail
+
+            - jsonPath: $.bom.*.vendorPhone
+
+            - jsonPath: $.bom.*.otpUuid
+
+            - jsonPath: $.bom.*.reportNumber
 
         - query: INSERT INTO bom_document(id,bomid,documentType,filestoreId,documentUid,additionalDetails,status,createdBy,lastModifiedBy,createdTime,lastModifiedTime) VALUES (?,?,?,?,?,?,?,?,?,?,?);
           basePath: $.bom.*.documents.*
@@ -421,7 +439,7 @@ serviceMaps:
       transactionCodeJsonPath: $.id
       auditAttributeBasePath: $.*
       queryMaps:
-        - query: UPDATE bom SET  assign_user=?, name=?, data=?, is_active=?, additional_details = ?, last_modified_time = ? WHERE id = ?;
+        - query: UPDATE bom SET assign_user=?, name=?, data=?, is_active=?, additional_details=?, last_modified_time=?, solution_id=?, vendor_org_id=?, vendor_email=?, vendor_phone=?, otp_uuid=?, report_number=? WHERE id = ?;
           basePath: $.bom.*
           jsonMaps:
             - jsonPath: $.bom.*.assignUser
@@ -439,6 +457,18 @@ serviceMaps:
               dbType: JSONB
 
             - jsonPath: $.bom.*.auditDetails.lastModifiedTime
+
+            - jsonPath: $.bom.*.solutionId
+
+            - jsonPath: $.bom.*.vendorOrgId
+
+            - jsonPath: $.bom.*.vendorEmail
+
+            - jsonPath: $.bom.*.vendorPhone
+
+            - jsonPath: $.bom.*.otpUuid
+
+            - jsonPath: $.bom.*.reportNumber
 
             - jsonPath: $.bom.*.id
 
@@ -528,3 +558,124 @@ serviceMaps:
             - jsonPath: $.Activities.*.auditDetails.createdTime
 
             - jsonPath: $.Activities.*.auditDetails.lastModifiedTime
+
+    - version: 1.0
+      name: Activity
+      description: Vendor assignment -- asset rows, BOMs, visibility links and the plan handover, atomically
+      fromTopic: save-vendor-assignment
+      isTransaction: true
+      isAuditEnabled: true
+      module: Activity
+      objecIdJsonPath: $.id
+      tenantIdJsonPath: $.tenantId
+      userUuidJsonPath: $.[0].auditDetails.createdBy
+      transactionCodeJsonPath: $.id
+      auditAttributeBasePath: $.*
+      queryMaps:
+        - query: INSERT INTO facility_activities (id,tenant_id,field_plan_id,activity_id,facility_id,status,assigned_user,scheduled_at,activated_at,component_type,component_sequence,solution_id,created_time,last_modified_time) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT (tenant_id, facility_id, activity_id, field_plan_id, COALESCE(component_type, ''), COALESCE(component_sequence, 0)) DO UPDATE SET status = EXCLUDED.status, assigned_user = EXCLUDED.assigned_user, scheduled_at = EXCLUDED.scheduled_at, activated_at = EXCLUDED.activated_at, solution_id = EXCLUDED.solution_id, last_modified_time = EXCLUDED.last_modified_time;
+          basePath: $.ActivitiesFacilities.*
+          jsonMaps:
+            - jsonPath: $.ActivitiesFacilities.*.id
+
+            - jsonPath: $.ActivitiesFacilities.*.tenantId
+
+            - jsonPath: $.ActivitiesFacilities.*.fieldPlanId
+
+            - jsonPath: $.ActivitiesFacilities.*.activityId
+
+            - jsonPath: $.ActivitiesFacilities.*.facilityId
+
+            - jsonPath: $.ActivitiesFacilities.*.status
+
+            - jsonPath: $.ActivitiesFacilities.*.assignedUser
+
+            - jsonPath: $.ActivitiesFacilities.*.scheduledAt
+
+            - jsonPath: $.ActivitiesFacilities.*.activatedAt
+
+            - jsonPath: $.ActivitiesFacilities.*.componentType
+
+            - jsonPath: $.ActivitiesFacilities.*.componentSequence
+
+            - jsonPath: $.ActivitiesFacilities.*.solutionId
+
+            - jsonPath: $.ActivitiesFacilities.*.auditDetails.createdTime
+
+            - jsonPath: $.ActivitiesFacilities.*.auditDetails.lastModifiedTime
+
+        - query: INSERT INTO bom (id,tenant_id,name,facility_id,activity_facility_id,solution_id,assign_user,vendor_org_id,vendor_email,vendor_phone,report_number,data,additional_details,is_active,created_time,last_modified_time) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT (id) DO UPDATE SET assign_user = EXCLUDED.assign_user, vendor_org_id = EXCLUDED.vendor_org_id, vendor_email = EXCLUDED.vendor_email, vendor_phone = EXCLUDED.vendor_phone, report_number = EXCLUDED.report_number, data = EXCLUDED.data, additional_details = EXCLUDED.additional_details, last_modified_time = EXCLUDED.last_modified_time;
+          basePath: $.bom.*
+          jsonMaps:
+            - jsonPath: $.bom.*.id
+
+            - jsonPath: $.bom.*.tenantId
+
+            - jsonPath: $.bom.*.name
+
+            - jsonPath: $.bom.*.facilityId
+
+            - jsonPath: $.bom.*.activityFacilityId
+
+            - jsonPath: $.bom.*.solutionId
+
+            - jsonPath: $.bom.*.assignUser
+
+            - jsonPath: $.bom.*.vendorOrgId
+
+            - jsonPath: $.bom.*.vendorEmail
+
+            - jsonPath: $.bom.*.vendorPhone
+
+            - jsonPath: $.bom.*.reportNumber
+
+            - jsonPath: $.bom.*.data
+              type: JSON
+              dbType: JSONB
+
+            - jsonPath: $.bom.*.additionalDetails
+              type: JSON
+              dbType: JSONB
+
+            - jsonPath: $.bom.*.isActive
+
+            - jsonPath: $.bom.*.auditDetails.createdTime
+
+            - jsonPath: $.bom.*.auditDetails.lastModifiedTime
+
+        - query: INSERT INTO activity_facility_users (id, tenantid, activityfacilityid, userid, additionaldetails, createdby, lastmodifiedby, createdtime, lastmodifiedtime, isdeleted) VALUES (?,?,?,?,?,?,?,?,?,?) ON CONFLICT (id) DO UPDATE SET isdeleted = EXCLUDED.isdeleted, additionaldetails = EXCLUDED.additionaldetails, lastmodifiedby = EXCLUDED.lastmodifiedby, lastmodifiedtime = EXCLUDED.lastmodifiedtime;
+          basePath: $.ActivityFacilityUsers.*
+          jsonMaps:
+            - jsonPath: $.ActivityFacilityUsers.*.id
+
+            - jsonPath: $.ActivityFacilityUsers.*.tenantId
+
+            - jsonPath: $.ActivityFacilityUsers.*.activityFacilityId
+
+            - jsonPath: $.ActivityFacilityUsers.*.userId
+
+            - jsonPath: $.ActivityFacilityUsers.*.additionalDetails
+              type: JSON
+              dbType: JSONB
+
+            - jsonPath: $.ActivityFacilityUsers.*.auditDetails.createdBy
+
+            - jsonPath: $.ActivityFacilityUsers.*.auditDetails.lastModifiedBy
+
+            - jsonPath: $.ActivityFacilityUsers.*.auditDetails.createdTime
+
+            - jsonPath: $.ActivityFacilityUsers.*.auditDetails.lastModifiedTime
+
+            - jsonPath: $.ActivityFacilityUsers.*.isDeleted
+
+        - query: UPDATE field_plans SET status = ?, last_modified_by = ?, last_modified_time = ? WHERE id = ? AND tenant_id = ? AND status = 'DRAFT';
+          basePath: $.FieldPlan.*
+          jsonMaps:
+            - jsonPath: $.FieldPlan.*.status
+
+            - jsonPath: $.FieldPlan.*.auditDetails.lastModifiedBy
+
+            - jsonPath: $.FieldPlan.*.auditDetails.lastModifiedTime
+
+            - jsonPath: $.FieldPlan.*.id
+
+            - jsonPath: $.FieldPlan.*.tenantId
