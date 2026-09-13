@@ -358,7 +358,7 @@ serviceMaps:
       transactionCodeJsonPath: $.id
       auditAttributeBasePath: $.*
       queryMaps:
-        - query: INSERT INTO bom (id,tenant_id,facility_id,activity_facility_id,name,assign_user,data,is_active,additional_details,created_time,last_modified_time,solution_id,vendor_org_id,vendor_email,vendor_phone,otp_uuid,report_number) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT (id) DO UPDATE SET assign_user = EXCLUDED.assign_user, name = EXCLUDED.name, data = EXCLUDED.data, is_active = EXCLUDED.is_active, additional_details = EXCLUDED.additional_details, last_modified_time = EXCLUDED.last_modified_time, solution_id = EXCLUDED.solution_id, vendor_org_id = EXCLUDED.vendor_org_id, vendor_email = EXCLUDED.vendor_email, vendor_phone = EXCLUDED.vendor_phone, otp_uuid = EXCLUDED.otp_uuid, report_number = EXCLUDED.report_number;
+        - query: INSERT INTO bom (id,tenant_id,facility_id,activity_facility_id,name,assign_user,data,is_active,additional_details,created_time,last_modified_time,solution_id,vendor_org_id,vendor_email,vendor_phone,otp_uuid,report_number) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT (id) DO UPDATE SET assign_user = EXCLUDED.assign_user, name = EXCLUDED.name, data = COALESCE(bom.data,'{}'::jsonb) || COALESCE(EXCLUDED.data,'{}'::jsonb), is_active = EXCLUDED.is_active, additional_details = EXCLUDED.additional_details, last_modified_time = EXCLUDED.last_modified_time, solution_id = COALESCE(EXCLUDED.solution_id, bom.solution_id), vendor_org_id = COALESCE(EXCLUDED.vendor_org_id, bom.vendor_org_id), vendor_email = COALESCE(EXCLUDED.vendor_email, bom.vendor_email), vendor_phone = COALESCE(EXCLUDED.vendor_phone, bom.vendor_phone), otp_uuid = COALESCE(EXCLUDED.otp_uuid, bom.otp_uuid), report_number = COALESCE(EXCLUDED.report_number, bom.report_number);
           basePath: $.bom.*
           jsonMaps:
             - jsonPath: $.bom.*.id
@@ -439,7 +439,7 @@ serviceMaps:
       transactionCodeJsonPath: $.id
       auditAttributeBasePath: $.*
       queryMaps:
-        - query: UPDATE bom SET assign_user=?, name=?, data=?, is_active=?, additional_details=?, last_modified_time=?, solution_id=?, vendor_org_id=?, vendor_email=?, vendor_phone=?, otp_uuid=?, report_number=? WHERE id = ?;
+        - query: UPDATE bom SET assign_user=?, name=?, data = COALESCE(data,'{}'::jsonb) || COALESCE(?::jsonb,'{}'::jsonb), is_active=?, additional_details=?, last_modified_time=?, solution_id = COALESCE(?, solution_id), vendor_org_id = COALESCE(?, vendor_org_id), vendor_email = COALESCE(?, vendor_email), vendor_phone = COALESCE(?, vendor_phone), otp_uuid = COALESCE(?, otp_uuid), report_number = COALESCE(?, report_number) WHERE id = ?;
           basePath: $.bom.*
           jsonMaps:
             - jsonPath: $.bom.*.assignUser
@@ -603,7 +603,7 @@ serviceMaps:
 
             - jsonPath: $.ActivitiesFacilities.*.auditDetails.lastModifiedTime
 
-        - query: INSERT INTO bom (id,tenant_id,name,facility_id,activity_facility_id,solution_id,assign_user,vendor_org_id,vendor_email,vendor_phone,report_number,data,additional_details,is_active,created_time,last_modified_time) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT (id) DO UPDATE SET assign_user = EXCLUDED.assign_user, vendor_org_id = EXCLUDED.vendor_org_id, vendor_email = EXCLUDED.vendor_email, vendor_phone = EXCLUDED.vendor_phone, report_number = EXCLUDED.report_number, data = EXCLUDED.data, additional_details = EXCLUDED.additional_details, last_modified_time = EXCLUDED.last_modified_time;
+        - query: INSERT INTO bom (id,tenant_id,name,facility_id,activity_facility_id,solution_id,assign_user,vendor_org_id,vendor_email,vendor_phone,report_number,data,additional_details,is_active,created_time,last_modified_time) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT (id) DO UPDATE SET assign_user = EXCLUDED.assign_user, vendor_org_id = EXCLUDED.vendor_org_id, vendor_email = EXCLUDED.vendor_email, vendor_phone = EXCLUDED.vendor_phone, report_number = EXCLUDED.report_number, data = COALESCE(EXCLUDED.data,'{}'::jsonb) || COALESCE(bom.data,'{}'::jsonb), additional_details = EXCLUDED.additional_details, last_modified_time = EXCLUDED.last_modified_time;
           basePath: $.bom.*
           jsonMaps:
             - jsonPath: $.bom.*.id
