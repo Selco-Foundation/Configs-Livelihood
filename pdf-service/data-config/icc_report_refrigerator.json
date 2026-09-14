@@ -1,0 +1,1906 @@
+{
+  "key": "icc_report_refrigerator",
+  "DataConfigs": {
+    "serviceName": "rainmaker-tl",
+    "version": "1.0.0",
+    "baseKeyPath": "$.bom",
+    "entityIdPath": "$.applicationNumber",
+    "isCommonTableBorderRequired": true,
+    "mappings": [
+      {
+        "topic": "bom-pdf-generation",
+        "staticConfigPath": "https://raw.githubusercontent.com/egovernments/egov-services/vishal-feature-filestore/core/egov-indexer/src/main/resources/rainmaker-pgr-indexer.yml",
+        "mappings": [
+          {
+            "direct": [
+              {
+                "variable": "report_tender_no",
+                "value": {
+                  "path": "$.report_tender_no"
+                }
+              },
+              {
+                "variable": "report_po_wo_number",
+                "value": {
+                  "path": "$.report_po_wo_number"
+                }
+              },
+              {
+                "variable": "report_no",
+                "value": {
+                  "path": "$.report_no"
+                }
+              },
+              {
+                "variable": "report_date",
+                "value": {
+                  "path": "$.report_date"
+                }
+              },
+              {
+                "variable": "report_invoice_number",
+                "value": {
+                  "path": "$.report_invoice_number"
+                }
+              },
+              {
+                "variable": "site_name",
+                "value": {
+                  "path": "$.site_name"
+                }
+              },
+              {
+                "variable": "site_block_taluk",
+                "value": {
+                  "path": "$.site_block_taluk"
+                }
+              },
+              {
+                "variable": "site_district",
+                "value": {
+                  "path": "$.site_district"
+                }
+              },
+              {
+                "variable": "site_state",
+                "value": {
+                  "path": "$.site_state"
+                }
+              },
+              {
+                "variable": "site_pincode",
+                "value": {
+                  "path": "$.site_pincode"
+                }
+              },
+              {
+                "variable": "site_latitude",
+                "value": {
+                  "path": "$.site_latitude"
+                }
+              },
+              {
+                "variable": "site_longitude",
+                "value": {
+                  "path": "$.site_longitude"
+                }
+              },
+              {
+                "variable": "solution_sector",
+                "value": {
+                  "path": "$.solution_sector"
+                }
+              },
+              {
+                "variable": "solution_sunshine_hours",
+                "value": {
+                  "path": "$.solution_sunshine_hours"
+                }
+              },
+              {
+                "variable": "bom_solar_panel_product",
+                "value": {
+                  "path": "$.bom_solar_panel_product"
+                }
+              },
+              {
+                "variable": "bom_solar_panel_make",
+                "value": {
+                  "path": "$.bom_solar_panel_make"
+                }
+              },
+              {
+                "variable": "bom_solar_panel_capacity",
+                "value": {
+                  "path": "$.bom_solar_panel_capacity"
+                }
+              },
+              {
+                "variable": "bom_solar_panel_quantity",
+                "value": {
+                  "path": "$.bom_solar_panel_quantity"
+                }
+              },
+              {
+                "variable": "bom_battery_product",
+                "value": {
+                  "path": "$.bom_battery_product"
+                }
+              },
+              {
+                "variable": "bom_battery_make",
+                "value": {
+                  "path": "$.bom_battery_make"
+                }
+              },
+              {
+                "variable": "bom_battery_capacity",
+                "value": {
+                  "path": "$.bom_battery_capacity"
+                }
+              },
+              {
+                "variable": "bom_battery_quantity",
+                "value": {
+                  "path": "$.bom_battery_quantity"
+                }
+              },
+              {
+                "variable": "bom_inverter_pcu_product",
+                "value": {
+                  "path": "$.bom_inverter_pcu_product"
+                }
+              },
+              {
+                "variable": "bom_inverter_pcu_make",
+                "value": {
+                  "path": "$.bom_inverter_pcu_make"
+                }
+              },
+              {
+                "variable": "bom_inverter_pcu_capacity",
+                "value": {
+                  "path": "$.bom_inverter_pcu_capacity"
+                }
+              },
+              {
+                "variable": "bom_inverter_pcu_quantity",
+                "value": {
+                  "path": "$.bom_inverter_pcu_quantity"
+                }
+              },
+              {
+                "variable": "bom_mounting_structure_product",
+                "value": {
+                  "path": "$.bom_mounting_structure_product"
+                }
+              },
+              {
+                "variable": "bom_mounting_structure_make",
+                "value": {
+                  "path": "$.bom_mounting_structure_make"
+                }
+              },
+              {
+                "variable": "bom_mounting_structure_capacity",
+                "value": {
+                  "path": "$.bom_mounting_structure_capacity"
+                }
+              },
+              {
+                "variable": "bom_mounting_structure_quantity",
+                "value": {
+                  "path": "$.bom_mounting_structure_quantity"
+                }
+              },
+              {
+                "variable": "bom_rack_enclosure_1_product",
+                "value": {
+                  "path": "$.bom_rack_enclosure_1_product"
+                }
+              },
+              {
+                "variable": "bom_rack_enclosure_1_make",
+                "value": {
+                  "path": "$.bom_rack_enclosure_1_make"
+                }
+              },
+              {
+                "variable": "bom_rack_enclosure_1_capacity",
+                "value": {
+                  "path": "$.bom_rack_enclosure_1_capacity"
+                }
+              },
+              {
+                "variable": "bom_rack_enclosure_1_quantity",
+                "value": {
+                  "path": "$.bom_rack_enclosure_1_quantity"
+                }
+              },
+              {
+                "variable": "bom_rack_enclosure_2_product",
+                "value": {
+                  "path": "$.bom_rack_enclosure_2_product"
+                }
+              },
+              {
+                "variable": "bom_rack_enclosure_2_make",
+                "value": {
+                  "path": "$.bom_rack_enclosure_2_make"
+                }
+              },
+              {
+                "variable": "bom_rack_enclosure_2_capacity",
+                "value": {
+                  "path": "$.bom_rack_enclosure_2_capacity"
+                }
+              },
+              {
+                "variable": "bom_rack_enclosure_2_quantity",
+                "value": {
+                  "path": "$.bom_rack_enclosure_2_quantity"
+                }
+              },
+              {
+                "variable": "bom_junction_protection_box_1_product",
+                "value": {
+                  "path": "$.bom_junction_protection_box_1_product"
+                }
+              },
+              {
+                "variable": "bom_junction_protection_box_1_make",
+                "value": {
+                  "path": "$.bom_junction_protection_box_1_make"
+                }
+              },
+              {
+                "variable": "bom_junction_protection_box_1_capacity",
+                "value": {
+                  "path": "$.bom_junction_protection_box_1_capacity"
+                }
+              },
+              {
+                "variable": "bom_junction_protection_box_1_quantity",
+                "value": {
+                  "path": "$.bom_junction_protection_box_1_quantity"
+                }
+              },
+              {
+                "variable": "bom_junction_protection_box_2_product",
+                "value": {
+                  "path": "$.bom_junction_protection_box_2_product"
+                }
+              },
+              {
+                "variable": "bom_junction_protection_box_2_make",
+                "value": {
+                  "path": "$.bom_junction_protection_box_2_make"
+                }
+              },
+              {
+                "variable": "bom_junction_protection_box_2_capacity",
+                "value": {
+                  "path": "$.bom_junction_protection_box_2_capacity"
+                }
+              },
+              {
+                "variable": "bom_junction_protection_box_2_quantity",
+                "value": {
+                  "path": "$.bom_junction_protection_box_2_quantity"
+                }
+              },
+              {
+                "variable": "bom_junction_protection_box_3_product",
+                "value": {
+                  "path": "$.bom_junction_protection_box_3_product"
+                }
+              },
+              {
+                "variable": "bom_junction_protection_box_3_make",
+                "value": {
+                  "path": "$.bom_junction_protection_box_3_make"
+                }
+              },
+              {
+                "variable": "bom_junction_protection_box_3_capacity",
+                "value": {
+                  "path": "$.bom_junction_protection_box_3_capacity"
+                }
+              },
+              {
+                "variable": "bom_junction_protection_box_3_quantity",
+                "value": {
+                  "path": "$.bom_junction_protection_box_3_quantity"
+                }
+              },
+              {
+                "variable": "bom_cable_1_product",
+                "value": {
+                  "path": "$.bom_cable_1_product"
+                }
+              },
+              {
+                "variable": "bom_cable_1_make",
+                "value": {
+                  "path": "$.bom_cable_1_make"
+                }
+              },
+              {
+                "variable": "bom_cable_1_capacity",
+                "value": {
+                  "path": "$.bom_cable_1_capacity"
+                }
+              },
+              {
+                "variable": "bom_cable_1_quantity",
+                "value": {
+                  "path": "$.bom_cable_1_quantity"
+                }
+              },
+              {
+                "variable": "bom_cable_2_product",
+                "value": {
+                  "path": "$.bom_cable_2_product"
+                }
+              },
+              {
+                "variable": "bom_cable_2_make",
+                "value": {
+                  "path": "$.bom_cable_2_make"
+                }
+              },
+              {
+                "variable": "bom_cable_2_capacity",
+                "value": {
+                  "path": "$.bom_cable_2_capacity"
+                }
+              },
+              {
+                "variable": "bom_cable_2_quantity",
+                "value": {
+                  "path": "$.bom_cable_2_quantity"
+                }
+              },
+              {
+                "variable": "bom_cable_3_product",
+                "value": {
+                  "path": "$.bom_cable_3_product"
+                }
+              },
+              {
+                "variable": "bom_cable_3_make",
+                "value": {
+                  "path": "$.bom_cable_3_make"
+                }
+              },
+              {
+                "variable": "bom_cable_3_capacity",
+                "value": {
+                  "path": "$.bom_cable_3_capacity"
+                }
+              },
+              {
+                "variable": "bom_cable_3_quantity",
+                "value": {
+                  "path": "$.bom_cable_3_quantity"
+                }
+              },
+              {
+                "variable": "bom_cable_4_product",
+                "value": {
+                  "path": "$.bom_cable_4_product"
+                }
+              },
+              {
+                "variable": "bom_cable_4_make",
+                "value": {
+                  "path": "$.bom_cable_4_make"
+                }
+              },
+              {
+                "variable": "bom_cable_4_capacity",
+                "value": {
+                  "path": "$.bom_cable_4_capacity"
+                }
+              },
+              {
+                "variable": "bom_cable_4_quantity",
+                "value": {
+                  "path": "$.bom_cable_4_quantity"
+                }
+              },
+              {
+                "variable": "bom_cable_5_product",
+                "value": {
+                  "path": "$.bom_cable_5_product"
+                }
+              },
+              {
+                "variable": "bom_cable_5_make",
+                "value": {
+                  "path": "$.bom_cable_5_make"
+                }
+              },
+              {
+                "variable": "bom_cable_5_capacity",
+                "value": {
+                  "path": "$.bom_cable_5_capacity"
+                }
+              },
+              {
+                "variable": "bom_cable_5_quantity",
+                "value": {
+                  "path": "$.bom_cable_5_quantity"
+                }
+              },
+              {
+                "variable": "bom_cable_6_product",
+                "value": {
+                  "path": "$.bom_cable_6_product"
+                }
+              },
+              {
+                "variable": "bom_cable_6_make",
+                "value": {
+                  "path": "$.bom_cable_6_make"
+                }
+              },
+              {
+                "variable": "bom_cable_6_capacity",
+                "value": {
+                  "path": "$.bom_cable_6_capacity"
+                }
+              },
+              {
+                "variable": "bom_cable_6_quantity",
+                "value": {
+                  "path": "$.bom_cable_6_quantity"
+                }
+              },
+              {
+                "variable": "bom_cable_7_product",
+                "value": {
+                  "path": "$.bom_cable_7_product"
+                }
+              },
+              {
+                "variable": "bom_cable_7_make",
+                "value": {
+                  "path": "$.bom_cable_7_make"
+                }
+              },
+              {
+                "variable": "bom_cable_7_capacity",
+                "value": {
+                  "path": "$.bom_cable_7_capacity"
+                }
+              },
+              {
+                "variable": "bom_cable_7_quantity",
+                "value": {
+                  "path": "$.bom_cable_7_quantity"
+                }
+              },
+              {
+                "variable": "bom_cable_8_product",
+                "value": {
+                  "path": "$.bom_cable_8_product"
+                }
+              },
+              {
+                "variable": "bom_cable_8_make",
+                "value": {
+                  "path": "$.bom_cable_8_make"
+                }
+              },
+              {
+                "variable": "bom_cable_8_capacity",
+                "value": {
+                  "path": "$.bom_cable_8_capacity"
+                }
+              },
+              {
+                "variable": "bom_cable_8_quantity",
+                "value": {
+                  "path": "$.bom_cable_8_quantity"
+                }
+              },
+              {
+                "variable": "bom_cable_9_product",
+                "value": {
+                  "path": "$.bom_cable_9_product"
+                }
+              },
+              {
+                "variable": "bom_cable_9_make",
+                "value": {
+                  "path": "$.bom_cable_9_make"
+                }
+              },
+              {
+                "variable": "bom_cable_9_capacity",
+                "value": {
+                  "path": "$.bom_cable_9_capacity"
+                }
+              },
+              {
+                "variable": "bom_cable_9_quantity",
+                "value": {
+                  "path": "$.bom_cable_9_quantity"
+                }
+              },
+              {
+                "variable": "bom_cable_10_product",
+                "value": {
+                  "path": "$.bom_cable_10_product"
+                }
+              },
+              {
+                "variable": "bom_cable_10_make",
+                "value": {
+                  "path": "$.bom_cable_10_make"
+                }
+              },
+              {
+                "variable": "bom_cable_10_capacity",
+                "value": {
+                  "path": "$.bom_cable_10_capacity"
+                }
+              },
+              {
+                "variable": "bom_cable_10_quantity",
+                "value": {
+                  "path": "$.bom_cable_10_quantity"
+                }
+              },
+              {
+                "variable": "bom_cable_11_product",
+                "value": {
+                  "path": "$.bom_cable_11_product"
+                }
+              },
+              {
+                "variable": "bom_cable_11_make",
+                "value": {
+                  "path": "$.bom_cable_11_make"
+                }
+              },
+              {
+                "variable": "bom_cable_11_capacity",
+                "value": {
+                  "path": "$.bom_cable_11_capacity"
+                }
+              },
+              {
+                "variable": "bom_cable_11_quantity",
+                "value": {
+                  "path": "$.bom_cable_11_quantity"
+                }
+              },
+              {
+                "variable": "bom_switch_socket_mcb_1_product",
+                "value": {
+                  "path": "$.bom_switch_socket_mcb_1_product"
+                }
+              },
+              {
+                "variable": "bom_switch_socket_mcb_1_make",
+                "value": {
+                  "path": "$.bom_switch_socket_mcb_1_make"
+                }
+              },
+              {
+                "variable": "bom_switch_socket_mcb_1_capacity",
+                "value": {
+                  "path": "$.bom_switch_socket_mcb_1_capacity"
+                }
+              },
+              {
+                "variable": "bom_switch_socket_mcb_1_quantity",
+                "value": {
+                  "path": "$.bom_switch_socket_mcb_1_quantity"
+                }
+              },
+              {
+                "variable": "bom_switch_socket_mcb_2_product",
+                "value": {
+                  "path": "$.bom_switch_socket_mcb_2_product"
+                }
+              },
+              {
+                "variable": "bom_switch_socket_mcb_2_make",
+                "value": {
+                  "path": "$.bom_switch_socket_mcb_2_make"
+                }
+              },
+              {
+                "variable": "bom_switch_socket_mcb_2_capacity",
+                "value": {
+                  "path": "$.bom_switch_socket_mcb_2_capacity"
+                }
+              },
+              {
+                "variable": "bom_switch_socket_mcb_2_quantity",
+                "value": {
+                  "path": "$.bom_switch_socket_mcb_2_quantity"
+                }
+              },
+              {
+                "variable": "bom_switch_socket_mcb_3_product",
+                "value": {
+                  "path": "$.bom_switch_socket_mcb_3_product"
+                }
+              },
+              {
+                "variable": "bom_switch_socket_mcb_3_make",
+                "value": {
+                  "path": "$.bom_switch_socket_mcb_3_make"
+                }
+              },
+              {
+                "variable": "bom_switch_socket_mcb_3_capacity",
+                "value": {
+                  "path": "$.bom_switch_socket_mcb_3_capacity"
+                }
+              },
+              {
+                "variable": "bom_switch_socket_mcb_3_quantity",
+                "value": {
+                  "path": "$.bom_switch_socket_mcb_3_quantity"
+                }
+              },
+              {
+                "variable": "bom_lighting_fan_product",
+                "value": {
+                  "path": "$.bom_lighting_fan_product"
+                }
+              },
+              {
+                "variable": "bom_lighting_fan_make",
+                "value": {
+                  "path": "$.bom_lighting_fan_make"
+                }
+              },
+              {
+                "variable": "bom_lighting_fan_capacity",
+                "value": {
+                  "path": "$.bom_lighting_fan_capacity"
+                }
+              },
+              {
+                "variable": "bom_lighting_fan_quantity",
+                "value": {
+                  "path": "$.bom_lighting_fan_quantity"
+                }
+              },
+              {
+                "variable": "bom_earthing_1_product",
+                "value": {
+                  "path": "$.bom_earthing_1_product"
+                }
+              },
+              {
+                "variable": "bom_earthing_1_make",
+                "value": {
+                  "path": "$.bom_earthing_1_make"
+                }
+              },
+              {
+                "variable": "bom_earthing_1_capacity",
+                "value": {
+                  "path": "$.bom_earthing_1_capacity"
+                }
+              },
+              {
+                "variable": "bom_earthing_1_quantity",
+                "value": {
+                  "path": "$.bom_earthing_1_quantity"
+                }
+              },
+              {
+                "variable": "bom_earthing_2_product",
+                "value": {
+                  "path": "$.bom_earthing_2_product"
+                }
+              },
+              {
+                "variable": "bom_earthing_2_make",
+                "value": {
+                  "path": "$.bom_earthing_2_make"
+                }
+              },
+              {
+                "variable": "bom_earthing_2_capacity",
+                "value": {
+                  "path": "$.bom_earthing_2_capacity"
+                }
+              },
+              {
+                "variable": "bom_earthing_2_quantity",
+                "value": {
+                  "path": "$.bom_earthing_2_quantity"
+                }
+              },
+              {
+                "variable": "bom_safety_docs_1_product",
+                "value": {
+                  "path": "$.bom_safety_docs_1_product"
+                }
+              },
+              {
+                "variable": "bom_safety_docs_1_make",
+                "value": {
+                  "path": "$.bom_safety_docs_1_make"
+                }
+              },
+              {
+                "variable": "bom_safety_docs_1_capacity",
+                "value": {
+                  "path": "$.bom_safety_docs_1_capacity"
+                }
+              },
+              {
+                "variable": "bom_safety_docs_1_quantity",
+                "value": {
+                  "path": "$.bom_safety_docs_1_quantity"
+                }
+              },
+              {
+                "variable": "bom_safety_docs_2_product",
+                "value": {
+                  "path": "$.bom_safety_docs_2_product"
+                }
+              },
+              {
+                "variable": "bom_safety_docs_2_make",
+                "value": {
+                  "path": "$.bom_safety_docs_2_make"
+                }
+              },
+              {
+                "variable": "bom_safety_docs_2_capacity",
+                "value": {
+                  "path": "$.bom_safety_docs_2_capacity"
+                }
+              },
+              {
+                "variable": "bom_safety_docs_2_quantity",
+                "value": {
+                  "path": "$.bom_safety_docs_2_quantity"
+                }
+              },
+              {
+                "variable": "bom_safety_docs_3_product",
+                "value": {
+                  "path": "$.bom_safety_docs_3_product"
+                }
+              },
+              {
+                "variable": "bom_safety_docs_3_make",
+                "value": {
+                  "path": "$.bom_safety_docs_3_make"
+                }
+              },
+              {
+                "variable": "bom_safety_docs_3_capacity",
+                "value": {
+                  "path": "$.bom_safety_docs_3_capacity"
+                }
+              },
+              {
+                "variable": "bom_safety_docs_3_quantity",
+                "value": {
+                  "path": "$.bom_safety_docs_3_quantity"
+                }
+              },
+              {
+                "variable": "bom_safety_docs_4_product",
+                "value": {
+                  "path": "$.bom_safety_docs_4_product"
+                }
+              },
+              {
+                "variable": "bom_safety_docs_4_make",
+                "value": {
+                  "path": "$.bom_safety_docs_4_make"
+                }
+              },
+              {
+                "variable": "bom_safety_docs_4_capacity",
+                "value": {
+                  "path": "$.bom_safety_docs_4_capacity"
+                }
+              },
+              {
+                "variable": "bom_safety_docs_4_quantity",
+                "value": {
+                  "path": "$.bom_safety_docs_4_quantity"
+                }
+              },
+              {
+                "variable": "bom_consumables_product",
+                "value": {
+                  "path": "$.bom_consumables_product"
+                }
+              },
+              {
+                "variable": "bom_consumables_make",
+                "value": {
+                  "path": "$.bom_consumables_make"
+                }
+              },
+              {
+                "variable": "bom_consumables_capacity",
+                "value": {
+                  "path": "$.bom_consumables_capacity"
+                }
+              },
+              {
+                "variable": "bom_consumables_quantity",
+                "value": {
+                  "path": "$.bom_consumables_quantity"
+                }
+              },
+              {
+                "variable": "machine_product",
+                "value": {
+                  "path": "$.machine_product"
+                }
+              },
+              {
+                "variable": "machine_make",
+                "value": {
+                  "path": "$.machine_make"
+                }
+              },
+              {
+                "variable": "machine_capacity",
+                "value": {
+                  "path": "$.machine_capacity"
+                }
+              },
+              {
+                "variable": "machine_quantity",
+                "value": {
+                  "path": "$.machine_quantity"
+                }
+              },
+              {
+                "variable": "system_date_of_recording",
+                "value": {
+                  "path": "$.system_date_of_recording"
+                }
+              },
+              {
+                "variable": "system_time_of_recording",
+                "value": {
+                  "path": "$.system_time_of_recording"
+                }
+              },
+              {
+                "variable": "system_weather_condition",
+                "value": {
+                  "path": "$.system_weather_condition"
+                }
+              },
+              {
+                "variable": "system_array_size_kwp",
+                "value": {
+                  "path": "$.system_array_size_kwp"
+                }
+              },
+              {
+                "variable": "system_array_no_modules",
+                "value": {
+                  "path": "$.system_array_no_modules"
+                }
+              },
+              {
+                "variable": "system_array_no_strings",
+                "value": {
+                  "path": "$.system_array_no_strings"
+                }
+              },
+              {
+                "variable": "system_array_modules_per_string",
+                "value": {
+                  "path": "$.system_array_modules_per_string"
+                }
+              },
+              {
+                "variable": "system_array_each_module_capacity_wp",
+                "value": {
+                  "path": "$.system_array_each_module_capacity_wp"
+                }
+              },
+              {
+                "variable": "system_ajb_voc_string_1_measured",
+                "value": {
+                  "path": "$.system_ajb_voc_string_1_measured"
+                }
+              },
+              {
+                "variable": "system_ajb_voc_string_1_uom",
+                "value": {
+                  "path": "$.system_ajb_voc_string_1_uom"
+                }
+              },
+              {
+                "variable": "system_ajb_voc_string_2_measured",
+                "value": {
+                  "path": "$.system_ajb_voc_string_2_measured"
+                }
+              },
+              {
+                "variable": "system_ajb_voc_string_2_uom",
+                "value": {
+                  "path": "$.system_ajb_voc_string_2_uom"
+                }
+              },
+              {
+                "variable": "system_ajb_voc_string_3_measured",
+                "value": {
+                  "path": "$.system_ajb_voc_string_3_measured"
+                }
+              },
+              {
+                "variable": "system_ajb_voc_string_3_uom",
+                "value": {
+                  "path": "$.system_ajb_voc_string_3_uom"
+                }
+              },
+              {
+                "variable": "system_ajb_voc_string_4_measured",
+                "value": {
+                  "path": "$.system_ajb_voc_string_4_measured"
+                }
+              },
+              {
+                "variable": "system_ajb_voc_string_4_uom",
+                "value": {
+                  "path": "$.system_ajb_voc_string_4_uom"
+                }
+              },
+              {
+                "variable": "system_ajb_voc_string_5_measured",
+                "value": {
+                  "path": "$.system_ajb_voc_string_5_measured"
+                }
+              },
+              {
+                "variable": "system_ajb_voc_string_5_uom",
+                "value": {
+                  "path": "$.system_ajb_voc_string_5_uom"
+                }
+              },
+              {
+                "variable": "system_ajb_voc_array_measured",
+                "value": {
+                  "path": "$.system_ajb_voc_array_measured"
+                }
+              },
+              {
+                "variable": "system_ajb_voc_array_uom",
+                "value": {
+                  "path": "$.system_ajb_voc_array_uom"
+                }
+              },
+              {
+                "variable": "system_ajb_vmp_string_1_measured",
+                "value": {
+                  "path": "$.system_ajb_vmp_string_1_measured"
+                }
+              },
+              {
+                "variable": "system_ajb_vmp_string_1_uom",
+                "value": {
+                  "path": "$.system_ajb_vmp_string_1_uom"
+                }
+              },
+              {
+                "variable": "system_ajb_vmp_string_2_measured",
+                "value": {
+                  "path": "$.system_ajb_vmp_string_2_measured"
+                }
+              },
+              {
+                "variable": "system_ajb_vmp_string_2_uom",
+                "value": {
+                  "path": "$.system_ajb_vmp_string_2_uom"
+                }
+              },
+              {
+                "variable": "system_ajb_vmp_string_3_measured",
+                "value": {
+                  "path": "$.system_ajb_vmp_string_3_measured"
+                }
+              },
+              {
+                "variable": "system_ajb_vmp_string_3_uom",
+                "value": {
+                  "path": "$.system_ajb_vmp_string_3_uom"
+                }
+              },
+              {
+                "variable": "system_ajb_vmp_string_4_measured",
+                "value": {
+                  "path": "$.system_ajb_vmp_string_4_measured"
+                }
+              },
+              {
+                "variable": "system_ajb_vmp_string_4_uom",
+                "value": {
+                  "path": "$.system_ajb_vmp_string_4_uom"
+                }
+              },
+              {
+                "variable": "system_ajb_vmp_string_5_measured",
+                "value": {
+                  "path": "$.system_ajb_vmp_string_5_measured"
+                }
+              },
+              {
+                "variable": "system_ajb_vmp_string_5_uom",
+                "value": {
+                  "path": "$.system_ajb_vmp_string_5_uom"
+                }
+              },
+              {
+                "variable": "system_ajb_vmp_array_measured",
+                "value": {
+                  "path": "$.system_ajb_vmp_array_measured"
+                }
+              },
+              {
+                "variable": "system_ajb_vmp_array_uom",
+                "value": {
+                  "path": "$.system_ajb_vmp_array_uom"
+                }
+              },
+              {
+                "variable": "system_ajb_imp_string_1_measured",
+                "value": {
+                  "path": "$.system_ajb_imp_string_1_measured"
+                }
+              },
+              {
+                "variable": "system_ajb_imp_string_1_uom",
+                "value": {
+                  "path": "$.system_ajb_imp_string_1_uom"
+                }
+              },
+              {
+                "variable": "system_ajb_imp_string_2_measured",
+                "value": {
+                  "path": "$.system_ajb_imp_string_2_measured"
+                }
+              },
+              {
+                "variable": "system_ajb_imp_string_2_uom",
+                "value": {
+                  "path": "$.system_ajb_imp_string_2_uom"
+                }
+              },
+              {
+                "variable": "system_ajb_imp_string_3_measured",
+                "value": {
+                  "path": "$.system_ajb_imp_string_3_measured"
+                }
+              },
+              {
+                "variable": "system_ajb_imp_string_3_uom",
+                "value": {
+                  "path": "$.system_ajb_imp_string_3_uom"
+                }
+              },
+              {
+                "variable": "system_ajb_imp_string_4_measured",
+                "value": {
+                  "path": "$.system_ajb_imp_string_4_measured"
+                }
+              },
+              {
+                "variable": "system_ajb_imp_string_4_uom",
+                "value": {
+                  "path": "$.system_ajb_imp_string_4_uom"
+                }
+              },
+              {
+                "variable": "system_ajb_imp_string_5_measured",
+                "value": {
+                  "path": "$.system_ajb_imp_string_5_measured"
+                }
+              },
+              {
+                "variable": "system_ajb_imp_string_5_uom",
+                "value": {
+                  "path": "$.system_ajb_imp_string_5_uom"
+                }
+              },
+              {
+                "variable": "system_ajb_imp_array_measured",
+                "value": {
+                  "path": "$.system_ajb_imp_array_measured"
+                }
+              },
+              {
+                "variable": "system_ajb_imp_array_uom",
+                "value": {
+                  "path": "$.system_ajb_imp_array_uom"
+                }
+              },
+              {
+                "variable": "system_ajb_pmp_string_1_measured",
+                "value": {
+                  "path": "$.system_ajb_pmp_string_1_measured"
+                }
+              },
+              {
+                "variable": "system_ajb_pmp_string_1_uom",
+                "value": {
+                  "path": "$.system_ajb_pmp_string_1_uom"
+                }
+              },
+              {
+                "variable": "system_ajb_pmp_string_2_measured",
+                "value": {
+                  "path": "$.system_ajb_pmp_string_2_measured"
+                }
+              },
+              {
+                "variable": "system_ajb_pmp_string_2_uom",
+                "value": {
+                  "path": "$.system_ajb_pmp_string_2_uom"
+                }
+              },
+              {
+                "variable": "system_ajb_pmp_string_3_measured",
+                "value": {
+                  "path": "$.system_ajb_pmp_string_3_measured"
+                }
+              },
+              {
+                "variable": "system_ajb_pmp_string_3_uom",
+                "value": {
+                  "path": "$.system_ajb_pmp_string_3_uom"
+                }
+              },
+              {
+                "variable": "system_ajb_pmp_string_4_measured",
+                "value": {
+                  "path": "$.system_ajb_pmp_string_4_measured"
+                }
+              },
+              {
+                "variable": "system_ajb_pmp_string_4_uom",
+                "value": {
+                  "path": "$.system_ajb_pmp_string_4_uom"
+                }
+              },
+              {
+                "variable": "system_ajb_pmp_string_5_measured",
+                "value": {
+                  "path": "$.system_ajb_pmp_string_5_measured"
+                }
+              },
+              {
+                "variable": "system_ajb_pmp_string_5_uom",
+                "value": {
+                  "path": "$.system_ajb_pmp_string_5_uom"
+                }
+              },
+              {
+                "variable": "system_ajb_pmp_array_measured",
+                "value": {
+                  "path": "$.system_ajb_pmp_array_measured"
+                }
+              },
+              {
+                "variable": "system_ajb_pmp_array_uom",
+                "value": {
+                  "path": "$.system_ajb_pmp_array_uom"
+                }
+              },
+              {
+                "variable": "system_battery_bank_voltage_measured",
+                "value": {
+                  "path": "$.system_battery_bank_voltage_measured"
+                }
+              },
+              {
+                "variable": "system_battery_bank_voltage_uom",
+                "value": {
+                  "path": "$.system_battery_bank_voltage_uom"
+                }
+              },
+              {
+                "variable": "system_battery_bank_current_measured",
+                "value": {
+                  "path": "$.system_battery_bank_current_measured"
+                }
+              },
+              {
+                "variable": "system_battery_bank_current_uom",
+                "value": {
+                  "path": "$.system_battery_bank_current_uom"
+                }
+              },
+              {
+                "variable": "system_pcu_grid_off_output_voltage_measured",
+                "value": {
+                  "path": "$.system_pcu_grid_off_output_voltage_measured"
+                }
+              },
+              {
+                "variable": "system_pcu_grid_off_output_voltage_uom",
+                "value": {
+                  "path": "$.system_pcu_grid_off_output_voltage_uom"
+                }
+              },
+              {
+                "variable": "system_pcu_grid_on_output_voltage_measured",
+                "value": {
+                  "path": "$.system_pcu_grid_on_output_voltage_measured"
+                }
+              },
+              {
+                "variable": "system_pcu_grid_on_output_voltage_uom",
+                "value": {
+                  "path": "$.system_pcu_grid_on_output_voltage_uom"
+                }
+              },
+              {
+                "variable": "system_pcu_grid_off_output_frequency_measured",
+                "value": {
+                  "path": "$.system_pcu_grid_off_output_frequency_measured"
+                }
+              },
+              {
+                "variable": "system_pcu_grid_off_output_frequency_uom",
+                "value": {
+                  "path": "$.system_pcu_grid_off_output_frequency_uom"
+                }
+              },
+              {
+                "variable": "system_pcu_grid_on_output_frequency_measured",
+                "value": {
+                  "path": "$.system_pcu_grid_on_output_frequency_measured"
+                }
+              },
+              {
+                "variable": "system_pcu_grid_on_output_frequency_uom",
+                "value": {
+                  "path": "$.system_pcu_grid_on_output_frequency_uom"
+                }
+              },
+              {
+                "variable": "system_pcu_grid_off_output_current_full_load_measured",
+                "value": {
+                  "path": "$.system_pcu_grid_off_output_current_full_load_measured"
+                }
+              },
+              {
+                "variable": "system_pcu_grid_off_output_current_full_load_uom",
+                "value": {
+                  "path": "$.system_pcu_grid_off_output_current_full_load_uom"
+                }
+              },
+              {
+                "variable": "system_pcu_grid_on_output_current_full_load_measured",
+                "value": {
+                  "path": "$.system_pcu_grid_on_output_current_full_load_measured"
+                }
+              },
+              {
+                "variable": "system_pcu_grid_on_output_current_full_load_uom",
+                "value": {
+                  "path": "$.system_pcu_grid_on_output_current_full_load_uom"
+                }
+              },
+              {
+                "variable": "system_inverter_priority",
+                "value": {
+                  "path": "$.system_inverter_priority"
+                }
+              },
+              {
+                "variable": "system_grid_export_feature",
+                "value": {
+                  "path": "$.system_grid_export_feature"
+                }
+              },
+              {
+                "variable": "system_battery_settings_ah",
+                "value": {
+                  "path": "$.system_battery_settings_ah"
+                }
+              },
+              {
+                "variable": "system_battery_type",
+                "value": {
+                  "path": "$.system_battery_type"
+                }
+              },
+              {
+                "variable": "system_load_running_on",
+                "value": {
+                  "path": "$.system_load_running_on"
+                }
+              },
+              {
+                "variable": "system_changeover_orientation",
+                "value": {
+                  "path": "$.system_changeover_orientation"
+                }
+              },
+              {
+                "variable": "system_changeover_functional_solar_grid",
+                "value": {
+                  "path": "$.system_changeover_functional_solar_grid"
+                }
+              },
+              {
+                "variable": "system_socket_phase_neutral_measured",
+                "value": {
+                  "path": "$.system_socket_phase_neutral_measured"
+                }
+              },
+              {
+                "variable": "system_socket_phase_neutral_uom",
+                "value": {
+                  "path": "$.system_socket_phase_neutral_uom"
+                }
+              },
+              {
+                "variable": "system_socket_phase_earth_measured",
+                "value": {
+                  "path": "$.system_socket_phase_earth_measured"
+                }
+              },
+              {
+                "variable": "system_socket_phase_earth_uom",
+                "value": {
+                  "path": "$.system_socket_phase_earth_uom"
+                }
+              },
+              {
+                "variable": "system_socket_earth_neutral_measured",
+                "value": {
+                  "path": "$.system_socket_earth_neutral_measured"
+                }
+              },
+              {
+                "variable": "system_socket_earth_neutral_uom",
+                "value": {
+                  "path": "$.system_socket_earth_neutral_uom"
+                }
+              },
+              {
+                "variable": "system_earth_pit_dc_earthing_measured",
+                "value": {
+                  "path": "$.system_earth_pit_dc_earthing_measured"
+                }
+              },
+              {
+                "variable": "system_earth_pit_dc_earthing_uom",
+                "value": {
+                  "path": "$.system_earth_pit_dc_earthing_uom"
+                }
+              },
+              {
+                "variable": "system_earth_pit_ac_earthing_measured",
+                "value": {
+                  "path": "$.system_earth_pit_ac_earthing_measured"
+                }
+              },
+              {
+                "variable": "system_earth_pit_ac_earthing_uom",
+                "value": {
+                  "path": "$.system_earth_pit_ac_earthing_uom"
+                }
+              },
+              {
+                "variable": "system_earth_pit_lightning_arrester_1_measured",
+                "value": {
+                  "path": "$.system_earth_pit_lightning_arrester_1_measured"
+                }
+              },
+              {
+                "variable": "system_earth_pit_lightning_arrester_1_uom",
+                "value": {
+                  "path": "$.system_earth_pit_lightning_arrester_1_uom"
+                }
+              },
+              {
+                "variable": "system_earth_pit_lightning_arrester_2_measured",
+                "value": {
+                  "path": "$.system_earth_pit_lightning_arrester_2_measured"
+                }
+              },
+              {
+                "variable": "system_earth_pit_lightning_arrester_2_uom",
+                "value": {
+                  "path": "$.system_earth_pit_lightning_arrester_2_uom"
+                }
+              }
+            ]
+          },
+          {
+            "direct": [
+              {
+                "variable": "installation_image_1_title",
+                "value": {
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-1')].documentName"
+                }
+              },
+              {
+                "variable": "installation_image_2_title",
+                "value": {
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-2')].documentName"
+                }
+              },
+              {
+                "variable": "installation_image_3_title",
+                "value": {
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-3')].documentName"
+                }
+              },
+              {
+                "variable": "installation_image_4_title",
+                "value": {
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-4')].documentName"
+                }
+              },
+              {
+                "variable": "installation_image_5_title",
+                "value": {
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-5')].documentName"
+                }
+              },
+              {
+                "variable": "installation_image_6_title",
+                "value": {
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-6')].documentName"
+                }
+              },
+              {
+                "variable": "installation_image_7_title",
+                "value": {
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-7')].documentName"
+                }
+              },
+              {
+                "variable": "installation_image_8_title",
+                "value": {
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-8')].documentName"
+                }
+              },
+              {
+                "variable": "installation_image_9_title",
+                "value": {
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-9')].documentName"
+                }
+              },
+              {
+                "variable": "installation_image_10_title",
+                "value": {
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-10')].documentName"
+                }
+              },
+              {
+                "variable": "installation_image_11_title",
+                "value": {
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-11')].documentName"
+                }
+              },
+              {
+                "variable": "installation_image_12_title",
+                "value": {
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-12')].documentName"
+                }
+              },
+              {
+                "variable": "installation_image_13_title",
+                "value": {
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-13')].documentName"
+                }
+              },
+              {
+                "variable": "installation_image_14_title",
+                "value": {
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-14')].documentName"
+                }
+              },
+              {
+                "variable": "installation_image_15_title",
+                "value": {
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-15')].documentName"
+                }
+              },
+              {
+                "variable": "installation_image_16_title",
+                "value": {
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-16')].documentName"
+                }
+              },
+              {
+                "variable": "installation_image_17_title",
+                "value": {
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-17')].documentName"
+                }
+              }
+            ]
+          },
+          {
+            "externalAPI": [
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-1')].fileStoreIds[0]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_1_1",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-1')].fileStoreIds[1]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_1_2",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-2')].fileStoreIds[0]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_2_1",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-3')].fileStoreIds[0]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_3_1",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-3')].fileStoreIds[1]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_3_2",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-4')].fileStoreIds[0]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_4_1",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-5')].fileStoreIds[0]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_5_1",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-5')].fileStoreIds[1]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_5_2",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-5')].fileStoreIds[2]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_5_3",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-6')].fileStoreIds[0]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_6_1",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-7')].fileStoreIds[0]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_7_1",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-7')].fileStoreIds[1]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_7_2",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-7')].fileStoreIds[2]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_7_3",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-8')].fileStoreIds[0]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_8_1",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-9')].fileStoreIds[0]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_9_1",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-10')].fileStoreIds[0]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_10_1",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-11')].fileStoreIds[0]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_11_1",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-12')].fileStoreIds[0]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_12_1",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-12')].fileStoreIds[1]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_12_2",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-13')].fileStoreIds[0]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_13_1",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-13')].fileStoreIds[1]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_13_2",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-13')].fileStoreIds[2]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_13_3",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-14')].fileStoreIds[0]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_14_1",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-14')].fileStoreIds[1]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_14_2",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-14')].fileStoreIds[2]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_14_3",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-15')].fileStoreIds[0]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_15_1",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-16')].fileStoreIds[0]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_16_1",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core-dev:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-17')].fileStoreIds[0]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "INSTALLATION_IMAGE_17_1",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
