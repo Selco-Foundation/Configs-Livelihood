@@ -655,7 +655,7 @@
         "layout": ""
       },
       {
-        "text": "Note: \"Make\" and any blank \"Quantity\" cells (dependent on string configuration, cable run length, or site layout) are to be filled in by the installing engineer on site.",
+        "text": "Note: 'Make' and any blank 'Quantity' cells (dependent on string configuration, cable run length, or site layout) are to be filled in by the installing engineer on site.",
         "style": "note"
       },
       {
