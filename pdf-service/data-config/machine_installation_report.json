@@ -1,0 +1,262 @@
+{
+  "key": "machine_installation_report",
+  "DataConfigs": {
+    "serviceName": "rainmaker-tl",
+    "version": "1.0.0",
+    "baseKeyPath": "$.bom",
+    "entityIdPath": "$.applicationNumber",
+    "isCommonTableBorderRequired": true,
+    "mappings": [
+      {
+        "topic": "bom-pdf-generation",
+        "staticConfigPath": "https://raw.githubusercontent.com/egovernments/egov-services/vishal-feature-filestore/core/egov-indexer/src/main/resources/rainmaker-pgr-indexer.yml",
+        "mappings": [
+          {
+            "direct": [
+              {
+                "variable": "report_location",
+                "value": {
+                  "path": "$.report_location"
+                }
+              },
+              {
+                "variable": "report_date",
+                "value": {
+                  "path": "$.report_date"
+                }
+              },
+              {
+                "variable": "machine_po_number",
+                "value": {
+                  "path": "$.machine_po_number"
+                }
+              },
+              {
+                "variable": "machine_serial_number",
+                "value": {
+                  "path": "$.machine_serial_number"
+                }
+              },
+              {
+                "variable": "machine_solution_name",
+                "value": {
+                  "path": "$.machine_solution_name"
+                }
+              },
+              {
+                "variable": "machine_manufacturer_invoice_number",
+                "value": {
+                  "path": "$.machine_manufacturer_invoice_number"
+                }
+              },
+              {
+                "variable": "machine_specifications_capacity",
+                "value": {
+                  "path": "$.machine_specifications_capacity"
+                }
+              },
+              {
+                "variable": "machine_warranty_years",
+                "value": {
+                  "path": "$.machine_warranty_years"
+                }
+              },
+              {
+                "variable": "verification_civil_work_status",
+                "value": {
+                  "path": "$.verification_civil_work_status"
+                }
+              },
+              {
+                "variable": "verification_electric_switch_board_status",
+                "value": {
+                  "path": "$.verification_electric_switch_board_status"
+                }
+              },
+              {
+                "variable": "verification_demo_test_status",
+                "value": {
+                  "path": "$.verification_demo_test_status"
+                }
+              },
+              {
+                "variable": "handover_end_user_photo_status",
+                "value": {
+                  "path": "$.handover_end_user_photo_status"
+                }
+              },
+              {
+                "variable": "handover_trained_end_user",
+                "value": {
+                  "path": "$.handover_trained_end_user"
+                }
+              },
+              {
+                "variable": "end_user_name",
+                "value": {
+                  "path": "$.end_user_name"
+                }
+              },
+              {
+                "variable": "end_user_contact_no",
+                "value": {
+                  "path": "$.end_user_contact_no"
+                }
+              },
+              {
+                "variable": "end_user_registered_mobile",
+                "value": {
+                  "path": "$.end_user_registered_mobile"
+                }
+              },
+              {
+                "variable": "end_user_verified_at",
+                "value": {
+                  "path": "$.end_user_verified_at"
+                }
+              },
+              {
+                "variable": "end_user_verification_status",
+                "value": {
+                  "path": "$.end_user_verification_status"
+                }
+              },
+              {
+                "variable": "end_user_verification_id",
+                "value": {
+                  "path": "$.end_user_verification_id"
+                }
+              },
+              {
+                "variable": "technician_name",
+                "value": {
+                  "path": "$.technician_name"
+                }
+              },
+              {
+                "variable": "technician_contact_no",
+                "value": {
+                  "path": "$.technician_contact_no"
+                }
+              },
+              {
+                "variable": "technician_registered_mobile",
+                "value": {
+                  "path": "$.technician_registered_mobile"
+                }
+              },
+              {
+                "variable": "technician_vendor_organisation",
+                "value": {
+                  "path": "$.technician_vendor_organisation"
+                }
+              },
+              {
+                "variable": "technician_submitted_at",
+                "value": {
+                  "path": "$.technician_submitted_at"
+                }
+              }
+            ]
+          },
+          {
+            "direct": [
+              {
+                "variable": "machine_civil_work_title",
+                "value": {
+                  "path": "$.documents[?(@.documentType=='MACHINE_CIVIL_WORK')].documentName"
+                }
+              },
+              {
+                "variable": "machine_electric_board_title",
+                "value": {
+                  "path": "$.documents[?(@.documentType=='MACHINE_ELECTRIC_BOARD')].documentName"
+                }
+              },
+              {
+                "variable": "asset_photo_machine_title",
+                "value": {
+                  "path": "$.documents[?(@.documentType=='ASSET_PHOTO-MACHINE')].documentName"
+                }
+              },
+              {
+                "variable": "machine_demo_video_title",
+                "value": {
+                  "path": "$.documents[?(@.documentType=='MACHINE_DEMO_VIDEO')].documentName"
+                }
+              }
+            ]
+          },
+          {
+            "externalAPI": [
+              {
+                "path": "http://egov-filestore.core:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='MACHINE_CIVIL_WORK')].fileStoreIds[0]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "MACHINE_CIVIL_WORK_1",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='MACHINE_CIVIL_WORK')].fileStoreIds[1]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "MACHINE_CIVIL_WORK_2",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='MACHINE_ELECTRIC_BOARD')].fileStoreIds[0]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "MACHINE_ELECTRIC_BOARD_1",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='ASSET_PHOTO-MACHINE')].fileStoreIds[0]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "ASSET_PHOTO_MACHINE_1",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core:8080/filestore/v1/files/actualurl",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='MACHINE_DEMO_VIDEO')].fileStoreIds[0]",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "machine_demo_video_url",
+                    "value": "$.fileStoreIds[0].url"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

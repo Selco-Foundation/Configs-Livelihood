@@ -1,0 +1,330 @@
+{
+  "key": "machine_installation_report",
+  "config": {
+    "content": [
+      {
+        "text": "INSTALLATION REPORT - MACHINE",
+        "style": "header",
+        "alignment": "center"
+      },
+      {
+        "table": {
+          "widths": ["15%", "35%", "15%", "35%"],
+          "body": [
+            [
+              {
+                "text": "Location",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{report_location}}"
+              },
+              {
+                "text": "Date",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{report_date}}"
+              }
+            ]
+          ]
+        },
+        "layout": "lightHorizontalLines",
+        "margin": [0, 0, 0, 12]
+      },
+      {
+        "table": {
+          "widths": ["40%", "60%"],
+          "body": [
+            [
+              {
+                "text": "PO Number",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{machine_po_number}}"
+              }
+            ],
+            [
+              {
+                "text": "Machine Serial Number",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{machine_serial_number}}"
+              }
+            ],
+            [
+              {
+                "text": "Solution Name",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{machine_solution_name}}"
+              }
+            ],
+            [
+              {
+                "text": "Manufacturer Invoice Number",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{machine_manufacturer_invoice_number}}"
+              }
+            ],
+            [
+              {
+                "text": "Machine Specifications / Capacity",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{machine_specifications_capacity}}"
+              }
+            ],
+            [
+              {
+                "text": "Warranty (Years)",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{machine_warranty_years}}"
+              }
+            ]
+          ]
+        },
+        "layout": "lightHorizontalLines",
+        "margin": [0, 0, 0, 12]
+      },
+      {
+        "text": "Installation Verification",
+        "style": "subHeader"
+      },
+      {
+        "text": [
+          {
+            "text": "Demo test video: ",
+            "style": "fieldLabel"
+          },
+          {
+            "text": "Demo Test with Raw Material",
+            "style": "link",
+            "link": "{{machine_demo_video_url}}"
+          }
+        ],
+        "margin": [0, 8, 0, 0]
+      },
+      {
+        "text": "{{machine_demo_video_url}}",
+        "style": "linkUrl",
+        "link": "{{machine_demo_video_url}}"
+      },
+      {
+        "text": "End User Handover",
+        "style": "subHeader"
+      },
+      {
+        "table": {
+          "widths": ["*", 150],
+          "body": [
+            ["Photo with End User", "{{handover_end_user_photo_status}}"],
+            ["Trained End User", "{{handover_trained_end_user}}"]
+          ]
+        },
+        "layout": ""
+      },
+      {
+        "text": "Attached Photos",
+        "style": "header",
+        "pageBreak": "before"
+      },
+      {
+        "stack": [
+          {
+            "text": "Civil Work (If any)",
+            "style": "tableHeader",
+            "margin": [0, 10, 0, 2]
+          },
+          {
+            "columns": [
+              {
+                "image": "{{MACHINE_CIVIL_WORK_1}}",
+                "width": 155,
+                "fit": [155, 180]
+              },
+              {
+                "image": "{{MACHINE_CIVIL_WORK_2}}",
+                "width": 155,
+                "fit": [155, 180]
+              }
+            ],
+            "columnGap": 5
+          }
+        ],
+        "unbreakable": true
+      },
+      {
+        "stack": [
+          {
+            "text": "Electric / Switch Board",
+            "style": "tableHeader",
+            "margin": [0, 10, 0, 2]
+          },
+          {
+            "columns": [
+              {
+                "image": "{{MACHINE_ELECTRIC_BOARD_1}}",
+                "width": 155,
+                "fit": [155, 180]
+              }
+            ],
+            "columnGap": 5
+          }
+        ],
+        "unbreakable": true
+      },
+      {
+        "stack": [
+          {
+            "text": "Photo with End User",
+            "style": "tableHeader",
+            "margin": [0, 10, 0, 2]
+          },
+          {
+            "columns": [
+              {
+                "image": "{{ASSET_PHOTO_MACHINE_1}}",
+                "width": 155,
+                "fit": [155, 180]
+              }
+            ],
+            "columnGap": 5
+          }
+        ],
+        "unbreakable": true
+      },
+      {
+        "text": "Signatures",
+        "style": "header",
+        "pageBreak": "before"
+      },
+      {
+        "table": {
+          "widths": ["50%", "50%"],
+          "body": [
+            [
+              {
+                "stack": [
+                  {
+                    "text": "End user & signature",
+                    "style": "fieldLabel"
+                  },
+                  {
+                    "text": "End user name: {{end_user_name}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Contact no: {{end_user_contact_no}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "VERIFIED VIA Verification Code (in lieu of signature)",
+                    "style": "small",
+                    "bold": true,
+                    "margin": [0, 6, 0, 0]
+                  },
+                  {
+                    "text": "Registered Mobile: {{end_user_registered_mobile}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Verified At: {{end_user_verified_at}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Verification Status: {{end_user_verification_status}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Verification ID: {{end_user_verification_id}}",
+                    "style": "small"
+                  }
+                ]
+              },
+              {
+                "stack": [
+                  {
+                    "text": "Technician Signature",
+                    "style": "fieldLabel"
+                  },
+                  {
+                    "text": "Name: {{technician_name}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Contact no: {{technician_contact_no}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Submitted by",
+                    "style": "small",
+                    "bold": true,
+                    "margin": [0, 6, 0, 0]
+                  },
+                  {
+                    "text": "Registered Mobile: {{technician_registered_mobile}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Vendor Organisation: {{technician_vendor_organisation}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "At: {{technician_submitted_at}}",
+                    "style": "small"
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        "layout": ""
+      }
+    ],
+    "styles": {
+      "header": {
+        "fontSize": 16,
+        "bold": true,
+        "margin": [0, 14, 0, 6]
+      },
+      "subHeader": {
+        "fontSize": 13,
+        "bold": true,
+        "margin": [0, 10, 0, 4]
+      },
+      "tableHeader": {
+        "fontSize": 11,
+        "bold": true,
+        "margin": [0, 4, 0, 4]
+      },
+      "fieldLabel": {
+        "fontSize": 10,
+        "bold": true,
+        "margin": [0, 3, 0, 3]
+      },
+      "small": {
+        "fontSize": 9,
+        "margin": [0, 1, 0, 1]
+      },
+      "link": {
+        "fontSize": 10,
+        "color": "#1A0DAB",
+        "decoration": "underline"
+      },
+      "linkUrl": {
+        "fontSize": 8,
+        "color": "#1A0DAB",
+        "margin": [0, 2, 0, 12]
+      }
+    }
+  }
+}
