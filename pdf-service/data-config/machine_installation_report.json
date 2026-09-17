@@ -176,7 +176,7 @@
               {
                 "variable": "asset_photo_machine_title",
                 "value": {
-                  "path": "$.documents[?(@.documentType=='ASSET_PHOTO-MACHINE')].documentName"
+                  "path": "$.documents[?(@.documentType=='MACHINE_END_USER_PHOTO')].documentName"
                 }
               },
               {
@@ -230,7 +230,7 @@
               },
               {
                 "path": "http://egov-filestore.core:8080/filestore/v1/files/actualurl",
-                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='ASSET_PHOTO-MACHINE')].fileStoreIds[0]",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='MACHINE_END_USER_PHOTO')].fileStoreIds[0]",
                 "apiRequest": null,
                 "requesttype": "GET",
                 "responseMapping": [
