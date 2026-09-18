@@ -1,0 +1,344 @@
+{
+  "key": "machine_installation_report",
+  "config": {
+    "pageSize": "A4",
+    "pageMargins": [28, 28, 28, 28],
+    "content": [
+      {
+        "text": "INSTALLATION REPORT - MACHINE",
+        "style": "header",
+        "alignment": "center"
+      },
+      {
+        "table": {
+          "widths": ["21%", "29%", "21%", "29%"],
+          "body": [
+            [
+              {
+                "text": "Location",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{report_location}}",
+                "style": "fieldValue"
+              },
+              {
+                "text": "Date",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{report_date}}",
+                "style": "fieldValue"
+              }
+            ],
+            [
+              {
+                "text": "PO Number",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{machine_po_number}}",
+                "style": "fieldValue"
+              },
+              {
+                "text": "Machine Serial Number",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{machine_serial_number}}",
+                "style": "fieldValue"
+              }
+            ],
+            [
+              {
+                "text": "Solution Name",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{machine_solution_name}}",
+                "style": "fieldValue"
+              },
+              {
+                "text": "Manufacturer Invoice No.",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{machine_manufacturer_invoice_number}}",
+                "style": "fieldValue"
+              }
+            ],
+            [
+              {
+                "text": "Specifications / Capacity",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{machine_specifications_capacity}}",
+                "style": "fieldValue"
+              },
+              {
+                "text": "Warranty (Years)",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{machine_warranty_years}}",
+                "style": "fieldValue"
+              }
+            ]
+          ]
+        },
+        "layout": "lightHorizontalLines",
+        "margin": [0, 0, 0, 8]
+      },
+      {
+        "text": "Installation Verification",
+        "style": "subHeader"
+      },
+      {
+        "text": [
+          {
+            "text": "Demo test video: ",
+            "style": "fieldLabel"
+          },
+          {
+            "text": "Demo Test with Raw Material",
+            "style": "link",
+            "link": "{{machine_demo_video_url}}"
+          }
+        ],
+        "margin": [0, 2, 0, 0]
+      },
+      {
+        "text": "{{machine_demo_video_url}}",
+        "style": "linkUrl",
+        "link": "{{machine_demo_video_url}}"
+      },
+      {
+        "text": "End User Handover",
+        "style": "subHeader"
+      },
+      {
+        "table": {
+          "widths": ["*", 150],
+          "body": [
+            [
+              {
+                "text": "Photo with End User",
+                "style": "fieldValue"
+              },
+              {
+                "text": "Attached",
+                "style": "fieldValue"
+              }
+            ],
+            [
+              {
+                "text": "Trained End User",
+                "style": "fieldValue"
+              },
+              {
+                "text": "{{handover_trained_end_user}}",
+                "style": "fieldValue"
+              }
+            ]
+          ]
+        },
+        "layout": "",
+        "margin": [0, 0, 0, 8]
+      },
+      {
+        "text": "Attached Photos",
+        "style": "subHeader"
+      },
+      {
+        "stack": [
+          {
+            "text": "Civil Work (If any)",
+            "style": "photoTitle"
+          },
+          {
+            "columns": [
+              {
+                "image": "{{MACHINE_CIVIL_WORK_1}}",
+                "width": 150,
+                "fit": [150, 120]
+              },
+              {
+                "image": "{{MACHINE_CIVIL_WORK_2}}",
+                "width": 150,
+                "fit": [150, 120]
+              }
+            ],
+            "columnGap": 6
+          }
+        ],
+        "unbreakable": true
+      },
+      {
+        "stack": [
+          {
+            "text": "Electric / Switch Board",
+            "style": "photoTitle"
+          },
+          {
+            "columns": [
+              {
+                "image": "{{MACHINE_ELECTRIC_BOARD_1}}",
+                "width": 150,
+                "fit": [150, 120]
+              }
+            ],
+            "columnGap": 6
+          }
+        ],
+        "unbreakable": true
+      },
+      {
+        "stack": [
+          {
+            "text": "Photo with End User",
+            "style": "photoTitle"
+          },
+          {
+            "columns": [
+              {
+                "image": "{{ASSET_PHOTO_MACHINE_1}}",
+                "width": 150,
+                "fit": [150, 120]
+              }
+            ],
+            "columnGap": 6
+          }
+        ],
+        "unbreakable": true
+      },
+      {
+        "text": "Signatures",
+        "style": "subHeader"
+      },
+      {
+        "table": {
+          "widths": ["50%", "50%"],
+          "body": [
+            [
+              {
+                "stack": [
+                  {
+                    "text": "End user & signature",
+                    "style": "fieldLabel"
+                  },
+                  {
+                    "text": "End user name: {{end_user_name}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Contact no: {{end_user_contact_no}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "VERIFIED VIA Verification Code (in lieu of signature)",
+                    "style": "small",
+                    "bold": true,
+                    "margin": [0, 4, 0, 0]
+                  },
+                  {
+                    "text": "Registered Mobile: {{end_user_registered_mobile}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Verified At: {{end_user_verified_at}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Verification Status: {{end_user_verification_status}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Verification ID: {{end_user_verification_id}}",
+                    "style": "small"
+                  }
+                ]
+              },
+              {
+                "stack": [
+                  {
+                    "text": "Technician Signature",
+                    "style": "fieldLabel"
+                  },
+                  {
+                    "text": "Name: {{technician_name}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Contact no: {{technician_contact_no}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Submitted by",
+                    "style": "small",
+                    "bold": true,
+                    "margin": [0, 4, 0, 0]
+                  },
+                  {
+                    "text": "Registered Mobile: {{technician_registered_mobile}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Vendor Organisation: {{technician_vendor_organisation}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "At: {{technician_submitted_at}}",
+                    "style": "small"
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        "layout": "",
+        "unbreakable": true
+      }
+    ],
+    "styles": {
+      "header": {
+        "fontSize": 14,
+        "bold": true,
+        "margin": [0, 0, 0, 8]
+      },
+      "subHeader": {
+        "fontSize": 11,
+        "bold": true,
+        "margin": [0, 6, 0, 3]
+      },
+      "fieldLabel": {
+        "fontSize": 8,
+        "bold": true,
+        "margin": [0, 1, 0, 1]
+      },
+      "fieldValue": {
+        "fontSize": 8,
+        "margin": [0, 1, 0, 1]
+      },
+      "small": {
+        "fontSize": 8,
+        "margin": [0, 0.5, 0, 0.5]
+      },
+      "link": {
+        "fontSize": 8,
+        "color": "#1A0DAB",
+        "decoration": "underline"
+      },
+      "linkUrl": {
+        "fontSize": 6.5,
+        "color": "#1A0DAB",
+        "margin": [0, 1, 0, 0]
+      },
+      "photoTitle": {
+        "fontSize": 9,
+        "bold": true,
+        "margin": [0, 6, 0, 2]
+      }
+    }
+  }
+}

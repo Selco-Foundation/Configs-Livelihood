@@ -1,0 +1,388 @@
+{
+  "RequestInfo": {
+    "apiId": "Rainmaker",
+    "ver": ".01",
+    "ts": 0,
+    "action": "_create",
+    "did": "1",
+    "key": "",
+    "msgId": "20170310130900|en_IN",
+    "authToken": "REPLACE_WITH_AUTH_TOKEN",
+    "userInfo": {
+      "id": 1,
+      "uuid": "REPLACE_WITH_USER_UUID",
+      "userName": "testuser",
+      "name": "Test User",
+      "mobileNumber": "9999999999",
+      "type": "EMPLOYEE",
+      "tenantId": "livelihood",
+      "roles": [
+        {
+          "name": "Employee",
+          "code": "EMPLOYEE",
+          "tenantId": "livelihood"
+        }
+      ]
+    }
+  },
+  "bom": [
+    {
+      "report_tender_no": "TND/2026/0142",
+      "report_po_wo_number": "PO-2026-000871",
+      "report_no": "ICC-2026-0031",
+      "report_date": "14-09-2026",
+      "report_invoice_number": "INV-2026-4417",
+      "site_name": "Sunrise Weavers Cooperative",
+      "site_block_taluk": "Hosakote",
+      "site_district": "Bengaluru Rural",
+      "site_state": "Karnataka",
+      "site_pincode": "562114",
+      "site_latitude": "13.0707",
+      "site_longitude": "77.7945",
+      "solution_sector": "Textiles & Craft",
+      "solution_sunshine_hours": "3.5 Hours",
+      "bom_solar_panel_product": "Solar Panel",
+      "bom_solar_panel_make": "ACME Industries",
+      "bom_solar_panel_capacity": "525 Wp",
+      "bom_solar_panel_quantity": "4",
+      "bom_battery_product": "Battery",
+      "bom_battery_make": "ACME Industries",
+      "bom_battery_capacity": "525 Wp",
+      "bom_battery_quantity": "4",
+      "bom_inverter_pcu_product": "Inverter Pcu",
+      "bom_inverter_pcu_make": "ACME Industries",
+      "bom_inverter_pcu_capacity": "525 Wp",
+      "bom_inverter_pcu_quantity": "4",
+      "bom_mounting_structure_product": "Mounting Structure",
+      "bom_mounting_structure_make": "ACME Industries",
+      "bom_mounting_structure_capacity": "525 Wp",
+      "bom_mounting_structure_quantity": "4",
+      "bom_rack_enclosure_product": "Rack Enclosure",
+      "bom_rack_enclosure_make": "ACME Industries",
+      "bom_rack_enclosure_capacity": "525 Wp",
+      "bom_rack_enclosure_quantity": "4",
+      "bom_cable_1_product": "Cable 1",
+      "bom_cable_1_make": "ACME Industries",
+      "bom_cable_1_capacity": "525 Wp",
+      "bom_cable_1_quantity": "4",
+      "bom_cable_2_product": "Cable 2",
+      "bom_cable_2_make": "ACME Industries",
+      "bom_cable_2_capacity": "525 Wp",
+      "bom_cable_2_quantity": "4",
+      "bom_cable_3_product": "Cable 3",
+      "bom_cable_3_make": "ACME Industries",
+      "bom_cable_3_capacity": "525 Wp",
+      "bom_cable_3_quantity": "4",
+      "bom_cable_4_product": "Cable 4",
+      "bom_cable_4_make": "ACME Industries",
+      "bom_cable_4_capacity": "525 Wp",
+      "bom_cable_4_quantity": "4",
+      "bom_cable_5_product": "Cable 5",
+      "bom_cable_5_make": "ACME Industries",
+      "bom_cable_5_capacity": "525 Wp",
+      "bom_cable_5_quantity": "4",
+      "bom_cable_6_product": "Cable 6",
+      "bom_cable_6_make": "ACME Industries",
+      "bom_cable_6_capacity": "525 Wp",
+      "bom_cable_6_quantity": "4",
+      "bom_cable_7_product": "Cable 7",
+      "bom_cable_7_make": "ACME Industries",
+      "bom_cable_7_capacity": "525 Wp",
+      "bom_cable_7_quantity": "4",
+      "bom_cable_8_product": "Cable 8",
+      "bom_cable_8_make": "ACME Industries",
+      "bom_cable_8_capacity": "525 Wp",
+      "bom_cable_8_quantity": "4",
+      "bom_switch_socket_mcb_1_product": "Switch Socket Mcb 1",
+      "bom_switch_socket_mcb_1_make": "ACME Industries",
+      "bom_switch_socket_mcb_1_capacity": "525 Wp",
+      "bom_switch_socket_mcb_1_quantity": "4",
+      "bom_switch_socket_mcb_2_product": "Switch Socket Mcb 2",
+      "bom_switch_socket_mcb_2_make": "ACME Industries",
+      "bom_switch_socket_mcb_2_capacity": "525 Wp",
+      "bom_switch_socket_mcb_2_quantity": "4",
+      "bom_switch_socket_mcb_3_product": "Switch Socket Mcb 3",
+      "bom_switch_socket_mcb_3_make": "ACME Industries",
+      "bom_switch_socket_mcb_3_capacity": "525 Wp",
+      "bom_switch_socket_mcb_3_quantity": "4",
+      "bom_switch_socket_mcb_4_product": "Switch Socket Mcb 4",
+      "bom_switch_socket_mcb_4_make": "ACME Industries",
+      "bom_switch_socket_mcb_4_capacity": "525 Wp",
+      "bom_switch_socket_mcb_4_quantity": "4",
+      "bom_switch_socket_mcb_5_product": "Switch Socket Mcb 5",
+      "bom_switch_socket_mcb_5_make": "ACME Industries",
+      "bom_switch_socket_mcb_5_capacity": "525 Wp",
+      "bom_switch_socket_mcb_5_quantity": "4",
+      "bom_lighting_fan_1_product": "Lighting Fan 1",
+      "bom_lighting_fan_1_make": "ACME Industries",
+      "bom_lighting_fan_1_capacity": "525 Wp",
+      "bom_lighting_fan_1_quantity": "4",
+      "bom_lighting_fan_2_product": "Lighting Fan 2",
+      "bom_lighting_fan_2_make": "ACME Industries",
+      "bom_lighting_fan_2_capacity": "525 Wp",
+      "bom_lighting_fan_2_quantity": "4",
+      "bom_lighting_fan_3_product": "Lighting Fan 3",
+      "bom_lighting_fan_3_make": "ACME Industries",
+      "bom_lighting_fan_3_capacity": "525 Wp",
+      "bom_lighting_fan_3_quantity": "4",
+      "bom_earthing_product": "Earthing",
+      "bom_earthing_make": "ACME Industries",
+      "bom_earthing_capacity": "525 Wp",
+      "bom_earthing_quantity": "4",
+      "bom_safety_docs_1_product": "Safety Docs 1",
+      "bom_safety_docs_1_make": "ACME Industries",
+      "bom_safety_docs_1_capacity": "525 Wp",
+      "bom_safety_docs_1_quantity": "4",
+      "bom_safety_docs_2_product": "Safety Docs 2",
+      "bom_safety_docs_2_make": "ACME Industries",
+      "bom_safety_docs_2_capacity": "525 Wp",
+      "bom_safety_docs_2_quantity": "4",
+      "bom_safety_docs_3_product": "Safety Docs 3",
+      "bom_safety_docs_3_make": "ACME Industries",
+      "bom_safety_docs_3_capacity": "525 Wp",
+      "bom_safety_docs_3_quantity": "4",
+      "bom_consumables_product": "Consumables",
+      "bom_consumables_make": "ACME Industries",
+      "bom_consumables_capacity": "525 Wp",
+      "bom_consumables_quantity": "4",
+      "system_date_of_recording": "14-09-2026",
+      "system_time_of_recording": "11:45 AM",
+      "system_weather_condition": "Clear Sky",
+      "system_array_size_kwp": "4.2",
+      "system_array_no_modules": "8",
+      "system_array_no_strings": "2",
+      "system_array_modules_per_string": "4",
+      "system_array_each_module_capacity_wp": "525",
+      "system_ajb_voc_string_1_measured": "230.5",
+      "system_ajb_voc_string_1_uom": "V",
+      "system_ajb_voc_string_2_measured": "230.5",
+      "system_ajb_voc_string_2_uom": "V",
+      "system_ajb_voc_string_3_measured": "230.5",
+      "system_ajb_voc_string_3_uom": "V",
+      "system_ajb_voc_string_4_measured": "230.5",
+      "system_ajb_voc_string_4_uom": "V",
+      "system_ajb_voc_string_5_measured": "230.5",
+      "system_ajb_voc_string_5_uom": "V",
+      "system_ajb_voc_array_measured": "230.5",
+      "system_ajb_voc_array_uom": "V",
+      "system_ajb_vmp_string_1_measured": "230.5",
+      "system_ajb_vmp_string_1_uom": "V",
+      "system_ajb_vmp_string_2_measured": "230.5",
+      "system_ajb_vmp_string_2_uom": "V",
+      "system_ajb_vmp_string_3_measured": "230.5",
+      "system_ajb_vmp_string_3_uom": "V",
+      "system_ajb_vmp_string_4_measured": "230.5",
+      "system_ajb_vmp_string_4_uom": "V",
+      "system_ajb_vmp_string_5_measured": "230.5",
+      "system_ajb_vmp_string_5_uom": "V",
+      "system_ajb_vmp_array_measured": "230.5",
+      "system_ajb_vmp_array_uom": "V",
+      "system_ajb_imp_string_1_measured": "230.5",
+      "system_ajb_imp_string_1_uom": "A",
+      "system_ajb_imp_string_2_measured": "230.5",
+      "system_ajb_imp_string_2_uom": "A",
+      "system_ajb_imp_string_3_measured": "230.5",
+      "system_ajb_imp_string_3_uom": "A",
+      "system_ajb_imp_string_4_measured": "230.5",
+      "system_ajb_imp_string_4_uom": "A",
+      "system_ajb_imp_string_5_measured": "230.5",
+      "system_ajb_imp_string_5_uom": "A",
+      "system_ajb_imp_array_measured": "230.5",
+      "system_ajb_imp_array_uom": "A",
+      "system_ajb_pmp_string_1_measured": "230.5",
+      "system_ajb_pmp_string_1_uom": "W",
+      "system_ajb_pmp_string_2_measured": "230.5",
+      "system_ajb_pmp_string_2_uom": "W",
+      "system_ajb_pmp_string_3_measured": "230.5",
+      "system_ajb_pmp_string_3_uom": "W",
+      "system_ajb_pmp_string_4_measured": "230.5",
+      "system_ajb_pmp_string_4_uom": "W",
+      "system_ajb_pmp_string_5_measured": "230.5",
+      "system_ajb_pmp_string_5_uom": "W",
+      "system_ajb_pmp_array_measured": "230.5",
+      "system_ajb_pmp_array_uom": "W",
+      "system_battery_bank_voltage_measured": "230.5",
+      "system_battery_bank_voltage_uom": "V",
+      "system_battery_bank_current_measured": "230.5",
+      "system_battery_bank_current_uom": "A",
+      "system_pcu_grid_off_output_voltage_measured": "230.5",
+      "system_pcu_grid_off_output_voltage_uom": "V",
+      "system_pcu_grid_on_output_voltage_measured": "230.5",
+      "system_pcu_grid_on_output_voltage_uom": "V",
+      "system_pcu_grid_off_output_frequency_measured": "230.5",
+      "system_pcu_grid_off_output_frequency_uom": "Hz",
+      "system_pcu_grid_on_output_frequency_measured": "230.5",
+      "system_pcu_grid_on_output_frequency_uom": "Hz",
+      "system_pcu_grid_off_output_current_full_load_measured": "230.5",
+      "system_pcu_grid_off_output_current_full_load_uom": "A",
+      "system_pcu_grid_on_output_current_full_load_measured": "230.5",
+      "system_pcu_grid_on_output_current_full_load_uom": "A",
+      "system_inverter_priority": "Solar-Battery-Grid",
+      "system_grid_export_feature": "Disabled",
+      "system_battery_settings_ah": "150",
+      "system_battery_type": "Tubular",
+      "system_load_running_on": "Inverter",
+      "system_changeover_orientation": "Solar",
+      "system_changeover_functional_solar_grid": "Yes",
+      "system_socket_phase_neutral_measured": "230.5",
+      "system_socket_phase_neutral_uom": "V",
+      "system_socket_phase_earth_measured": "230.5",
+      "system_socket_phase_earth_uom": "V",
+      "system_socket_earth_neutral_measured": "230.5",
+      "system_socket_earth_neutral_uom": "V",
+      "system_earth_pit_dc_earthing_measured": "230.5",
+      "system_earth_pit_dc_earthing_uom": "Ohm",
+      "system_earth_pit_ac_earthing_measured": "230.5",
+      "system_earth_pit_ac_earthing_uom": "Ohm",
+      "system_earth_pit_lightning_arrester_1_measured": "230.5",
+      "system_earth_pit_lightning_arrester_1_uom": "Ohm",
+      "system_earth_pit_lightning_arrester_2_measured": "230.5",
+      "system_earth_pit_lightning_arrester_2_uom": "Ohm",
+      "tenantId": "livelihood",
+      "applicationNumber": "LIVELIHOOD-ICC-2026-000031",
+      "end_user_name": "Kavitha Reddy",
+      "end_user_contact_no": "+91 98450 33127",
+      "end_user_registered_mobile": "+91-XXXXXX9142",
+      "end_user_verified_at": "14 09 26 12:30",
+      "end_user_verification_status": "Success",
+      "end_user_verification_id": "ABCDXX12",
+      "technician_name": "Ravi Kumar",
+      "technician_contact_no": "+91 99860 54321",
+      "technician_registered_mobile": "+91-XXXXXX9152",
+      "technician_vendor_organisation": "Suryodaya Energy Services",
+      "technician_submitted_at": "14 09 26 13:05",
+      "documents": [
+        {
+          "documentType": "INSTALLATION_IMAGE-1",
+          "documentName": "Solar Panel",
+          "fileStoreIds": [
+            "REPLACE_WITH_FILESTORE_ID_1_1",
+            "REPLACE_WITH_FILESTORE_ID_1_2"
+          ]
+        },
+        {
+          "documentType": "INSTALLATION_IMAGE-2",
+          "documentName": "Battery",
+          "fileStoreIds": [
+            "REPLACE_WITH_FILESTORE_ID_2_1"
+          ]
+        },
+        {
+          "documentType": "INSTALLATION_IMAGE-3",
+          "documentName": "Inverter",
+          "fileStoreIds": [
+            "REPLACE_WITH_FILESTORE_ID_3_1",
+            "REPLACE_WITH_FILESTORE_ID_3_2"
+          ]
+        },
+        {
+          "documentType": "INSTALLATION_IMAGE-4",
+          "documentName": "Mounting Structure",
+          "fileStoreIds": [
+            "REPLACE_WITH_FILESTORE_ID_4_1"
+          ]
+        },
+        {
+          "documentType": "INSTALLATION_IMAGE-5",
+          "documentName": "Rack/Enclosure",
+          "fileStoreIds": [
+            "REPLACE_WITH_FILESTORE_ID_5_1",
+            "REPLACE_WITH_FILESTORE_ID_5_2",
+            "REPLACE_WITH_FILESTORE_ID_5_3"
+          ]
+        },
+        {
+          "documentType": "INSTALLATION_IMAGE-6",
+          "documentName": "Junction/Protection Box",
+          "fileStoreIds": [
+            "REPLACE_WITH_FILESTORE_ID_6_1"
+          ]
+        },
+        {
+          "documentType": "INSTALLATION_IMAGE-7",
+          "documentName": "Section 7",
+          "fileStoreIds": [
+            "REPLACE_WITH_FILESTORE_ID_7_1",
+            "REPLACE_WITH_FILESTORE_ID_7_2",
+            "REPLACE_WITH_FILESTORE_ID_7_3"
+          ]
+        },
+        {
+          "documentType": "INSTALLATION_IMAGE-8",
+          "documentName": "Cables",
+          "fileStoreIds": [
+            "REPLACE_WITH_FILESTORE_ID_8_1"
+          ]
+        },
+        {
+          "documentType": "INSTALLATION_IMAGE-9",
+          "documentName": "Switch/Socket/MCB",
+          "fileStoreIds": [
+            "REPLACE_WITH_FILESTORE_ID_9_1"
+          ]
+        },
+        {
+          "documentType": "INSTALLATION_IMAGE-10",
+          "documentName": "Earthing",
+          "fileStoreIds": [
+            "REPLACE_WITH_FILESTORE_ID_10_1"
+          ]
+        },
+        {
+          "documentType": "INSTALLATION_IMAGE-11",
+          "documentName": "Safety Docs",
+          "fileStoreIds": [
+            "REPLACE_WITH_FILESTORE_ID_11_1"
+          ]
+        },
+        {
+          "documentType": "INSTALLATION_IMAGE-12",
+          "documentName": "Lighting/Fan",
+          "fileStoreIds": [
+            "REPLACE_WITH_FILESTORE_ID_12_1",
+            "REPLACE_WITH_FILESTORE_ID_12_2"
+          ]
+        },
+        {
+          "documentType": "INSTALLATION_IMAGE-13",
+          "documentName": "Section 13",
+          "fileStoreIds": [
+            "REPLACE_WITH_FILESTORE_ID_13_1",
+            "REPLACE_WITH_FILESTORE_ID_13_2",
+            "REPLACE_WITH_FILESTORE_ID_13_3"
+          ]
+        },
+        {
+          "documentType": "INSTALLATION_IMAGE-14",
+          "documentName": "Section 14",
+          "fileStoreIds": [
+            "REPLACE_WITH_FILESTORE_ID_14_1",
+            "REPLACE_WITH_FILESTORE_ID_14_2",
+            "REPLACE_WITH_FILESTORE_ID_14_3"
+          ]
+        },
+        {
+          "documentType": "INSTALLATION_IMAGE-15",
+          "documentName": "RMS",
+          "fileStoreIds": [
+            "REPLACE_WITH_FILESTORE_ID_15_1"
+          ]
+        },
+        {
+          "documentType": "INSTALLATION_IMAGE-16",
+          "documentName": "End User place (Long Shot)",
+          "fileStoreIds": [
+            "REPLACE_WITH_FILESTORE_ID_16_1"
+          ]
+        },
+        {
+          "documentType": "INSTALLATION_IMAGE-17",
+          "documentName": "End User with Solar System",
+          "fileStoreIds": [
+            "REPLACE_WITH_FILESTORE_ID_17_1"
+          ]
+        }
+      ]
+    }
+  ]
+}
