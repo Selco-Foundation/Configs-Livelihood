@@ -1916,6 +1916,106 @@
           }
         ],
         "unbreakable": true
+      },
+      {
+        "text": "Signatures",
+        "style": "header"
+      },
+      {
+        "table": {
+          "widths": [
+            "50%",
+            "50%"
+          ],
+          "body": [
+            [
+              {
+                "stack": [
+                  {
+                    "text": "End user & signature",
+                    "style": "fieldLabel"
+                  },
+                  {
+                    "text": "End user name: {{end_user_name}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Contact no: {{end_user_contact_no}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "VERIFIED VIA Verification Code (in lieu of signature)",
+                    "style": "small",
+                    "bold": true,
+                    "margin": [
+                      0,
+                      4,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "text": "Registered Mobile: {{end_user_registered_mobile}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Verified At: {{end_user_verified_at}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Verification Status: {{end_user_verification_status}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Verification ID: {{end_user_verification_id}}",
+                    "style": "small"
+                  }
+                ]
+              },
+              {
+                "stack": [
+                  {
+                    "text": "Technician Signature",
+                    "style": "fieldLabel"
+                  },
+                  {
+                    "text": "Name: {{technician_name}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Contact no: {{technician_contact_no}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Submitted by",
+                    "style": "small",
+                    "bold": true,
+                    "margin": [
+                      0,
+                      4,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "text": "Registered Mobile: {{technician_registered_mobile}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Vendor Organisation: {{technician_vendor_organisation}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "At: {{technician_submitted_at}}",
+                    "style": "small"
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        "layout": "",
+        "unbreakable": true
       }
     ],
     "styles": {

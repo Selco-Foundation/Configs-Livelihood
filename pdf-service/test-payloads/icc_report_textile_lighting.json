@@ -240,6 +240,17 @@
       "system_earth_pit_lightning_arrester_2_uom": "Ohm",
       "tenantId": "livelihood",
       "applicationNumber": "LIVELIHOOD-ICC-2026-000031",
+      "end_user_name": "Kavitha Reddy",
+      "end_user_contact_no": "+91 98450 33127",
+      "end_user_registered_mobile": "+91-XXXXXX9142",
+      "end_user_verified_at": "14 09 26 12:30",
+      "end_user_verification_status": "Success",
+      "end_user_verification_id": "ABCDXX12",
+      "technician_name": "Ravi Kumar",
+      "technician_contact_no": "+91 99860 54321",
+      "technician_registered_mobile": "+91-XXXXXX9152",
+      "technician_vendor_organisation": "Suryodaya Energy Services",
+      "technician_submitted_at": "14 09 26 13:05",
       "documents": [
         {
           "documentType": "INSTALLATION_IMAGE-1",

@@ -1350,6 +1350,72 @@
                 "value": {
                   "path": "$.system_earth_pit_lightning_arrester_2_uom"
                 }
+              },
+              {
+                "variable": "end_user_name",
+                "value": {
+                  "path": "$.end_user_name"
+                }
+              },
+              {
+                "variable": "end_user_contact_no",
+                "value": {
+                  "path": "$.end_user_contact_no"
+                }
+              },
+              {
+                "variable": "end_user_registered_mobile",
+                "value": {
+                  "path": "$.end_user_registered_mobile"
+                }
+              },
+              {
+                "variable": "end_user_verified_at",
+                "value": {
+                  "path": "$.end_user_verified_at"
+                }
+              },
+              {
+                "variable": "end_user_verification_status",
+                "value": {
+                  "path": "$.end_user_verification_status"
+                }
+              },
+              {
+                "variable": "end_user_verification_id",
+                "value": {
+                  "path": "$.end_user_verification_id"
+                }
+              },
+              {
+                "variable": "technician_name",
+                "value": {
+                  "path": "$.technician_name"
+                }
+              },
+              {
+                "variable": "technician_contact_no",
+                "value": {
+                  "path": "$.technician_contact_no"
+                }
+              },
+              {
+                "variable": "technician_registered_mobile",
+                "value": {
+                  "path": "$.technician_registered_mobile"
+                }
+              },
+              {
+                "variable": "technician_vendor_organisation",
+                "value": {
+                  "path": "$.technician_vendor_organisation"
+                }
+              },
+              {
+                "variable": "technician_submitted_at",
+                "value": {
+                  "path": "$.technician_submitted_at"
+                }
               }
             ]
           },
