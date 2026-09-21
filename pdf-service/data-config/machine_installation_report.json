@@ -242,7 +242,7 @@
                 ]
               },
               {
-                "path": "http://egov-filestore.core:8080/filestore/v1/files/actualurl",
+                "path": "http://ingestion-service.core:8080/ingestion-service/document/links",
                 "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='MACHINE_DEMO_VIDEO')].fileStoreIds[0]",
                 "apiRequest": null,
                 "requesttype": "GET",

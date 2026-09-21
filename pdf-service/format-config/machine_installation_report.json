@@ -109,11 +109,6 @@
         "margin": [0, 2, 0, 0]
       },
       {
-        "text": "{{machine_demo_video_url}}",
-        "style": "linkUrl",
-        "link": "{{machine_demo_video_url}}"
-      },
-      {
         "text": "End User Handover",
         "style": "subHeader"
       },
@@ -328,11 +323,6 @@
         "fontSize": 8,
         "color": "#1A0DAB",
         "decoration": "underline"
-      },
-      "linkUrl": {
-        "fontSize": 6.5,
-        "color": "#1A0DAB",
-        "margin": [0, 1, 0, 0]
       },
       "photoTitle": {
         "fontSize": 9,
