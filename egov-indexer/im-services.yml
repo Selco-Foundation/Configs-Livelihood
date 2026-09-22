@@ -170,6 +170,8 @@ ServiceMaps:
                 outJsonPath: $.Data.comments
               - inJsonPath: $.indexView.boundary
                 outJsonPath: $.Data.incident.boundary
+              - inJsonPath: $.indexView.assetGroup
+                outJsonPath: $.Data.incident.assetGroup
               - inJsonPath: $.incidentRequest.incident.additionalDetail.rejectReason
                 outJsonPath: $.Data.incident.additionalDetail.rejectReason
               # Escalation fields for SLA breach detection
@@ -350,6 +352,8 @@ ServiceMaps:
                 outJsonPath: $.Data.comments
               - inJsonPath: $.indexView.boundary
                 outJsonPath: $.Data.incident.boundary
+              - inJsonPath: $.indexView.assetGroup
+                outJsonPath: $.Data.incident.assetGroup
               - inJsonPath: $.indexView.latestRejectReason
                 outJsonPath: $.Data.latestRejectReason
               # Escalation fields for SLA breach detection
