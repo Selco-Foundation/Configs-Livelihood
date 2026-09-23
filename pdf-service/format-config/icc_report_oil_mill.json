@@ -1,0 +1,2205 @@
+{
+  "key": "icc_report_oil_mill",
+  "config": {
+    "content": [
+      {
+        "text": "INSTALLATION COMPLETION REPORT",
+        "style": "header",
+        "alignment": "center"
+      },
+      {
+        "table": {
+          "widths": [
+            "40%",
+            "60%"
+          ],
+          "body": [
+            [
+              {
+                "text": "Tender No.",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{report_tender_no}}"
+              }
+            ],
+            [
+              {
+                "text": "Purchase / Work Order No.",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{report_po_wo_number}}"
+              }
+            ],
+            [
+              {
+                "text": "Report No.",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{report_no}}"
+              }
+            ],
+            [
+              {
+                "text": "Date",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{report_date}}"
+              }
+            ],
+            [
+              {
+                "text": "Invoice Number",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{report_invoice_number}}"
+              }
+            ]
+          ]
+        },
+        "layout": "lightHorizontalLines",
+        "margin": [
+          0,
+          0,
+          0,
+          12
+        ]
+      },
+      {
+        "text": "Name & Address of Installation Site",
+        "style": "subHeader"
+      },
+      {
+        "table": {
+          "widths": [
+            "40%",
+            "60%"
+          ],
+          "body": [
+            [
+              {
+                "text": "Name",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{site_name}}"
+              }
+            ],
+            [
+              {
+                "text": "Block / Taluk",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{site_block_taluk}}"
+              }
+            ],
+            [
+              {
+                "text": "District",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{site_district}}"
+              }
+            ],
+            [
+              {
+                "text": "State",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{site_state}}"
+              }
+            ],
+            [
+              {
+                "text": "Pincode",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{site_pincode}}"
+              }
+            ],
+            [
+              {
+                "text": "Latitude",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{site_latitude}}"
+              }
+            ],
+            [
+              {
+                "text": "Longitude",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{site_longitude}}"
+              }
+            ]
+          ]
+        },
+        "layout": "lightHorizontalLines",
+        "margin": [
+          0,
+          0,
+          0,
+          12
+        ]
+      },
+      {
+        "text": "Solution",
+        "style": "subHeader"
+      },
+      {
+        "table": {
+          "widths": [
+            "40%",
+            "60%"
+          ],
+          "body": [
+            [
+              {
+                "text": "Solution",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "Oil Mill"
+              }
+            ],
+            [
+              {
+                "text": "Bundle / Item Code",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "202526PASF0000390"
+              }
+            ],
+            [
+              {
+                "text": "Sector",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{solution_sector}}"
+              }
+            ],
+            [
+              {
+                "text": "Sunshine Hours",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{solution_sunshine_hours}}"
+              }
+            ]
+          ]
+        },
+        "layout": "lightHorizontalLines",
+        "margin": [
+          0,
+          0,
+          0,
+          12
+        ]
+      },
+      {
+        "text": "Bill Of Material (For Solar System)",
+        "style": "header"
+      },
+      {
+        "table": {
+          "headerRows": 1,
+          "widths": [
+            35,
+            "*",
+            85,
+            85,
+            55
+          ],
+          "body": [
+            [
+              {
+                "text": "Sl. No.",
+                "style": "tableHeader"
+              },
+              {
+                "text": "Product",
+                "style": "tableHeader"
+              },
+              {
+                "text": "Make",
+                "style": "tableHeader"
+              },
+              {
+                "text": "Capacity",
+                "style": "tableHeader"
+              },
+              {
+                "text": "Quantity",
+                "style": "tableHeader"
+              }
+            ],
+            [
+              {
+                "text": "Solar Panel",
+                "style": "groupHeader",
+                "colSpan": 5
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              "1",
+              "{{bom_solar_panel_product}}",
+              "{{bom_solar_panel_make}}",
+              "{{bom_solar_panel_capacity}}",
+              "{{bom_solar_panel_quantity}}"
+            ],
+            [
+              {
+                "text": "Battery",
+                "style": "groupHeader",
+                "colSpan": 5
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              "2",
+              "{{bom_battery_product}}",
+              "{{bom_battery_make}}",
+              "{{bom_battery_capacity}}",
+              "{{bom_battery_quantity}}"
+            ],
+            [
+              {
+                "text": "Inverter / PCU",
+                "style": "groupHeader",
+                "colSpan": 5
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              "3",
+              "{{bom_inverter_pcu_product}}",
+              "{{bom_inverter_pcu_make}}",
+              "{{bom_inverter_pcu_capacity}}",
+              "{{bom_inverter_pcu_quantity}}"
+            ],
+            [
+              {
+                "text": "Mounting Structure",
+                "style": "groupHeader",
+                "colSpan": 5
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              "4",
+              "{{bom_mounting_structure_product}}",
+              "{{bom_mounting_structure_make}}",
+              "{{bom_mounting_structure_capacity}}",
+              "{{bom_mounting_structure_quantity}}"
+            ],
+            [
+              {
+                "text": "Rack / Enclosure",
+                "style": "groupHeader",
+                "colSpan": 5
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              "5",
+              "{{bom_rack_enclosure_1_product}}",
+              "{{bom_rack_enclosure_1_make}}",
+              "{{bom_rack_enclosure_1_capacity}}",
+              "{{bom_rack_enclosure_1_quantity}}"
+            ],
+            [
+              "6",
+              "{{bom_rack_enclosure_2_product}}",
+              "{{bom_rack_enclosure_2_make}}",
+              "{{bom_rack_enclosure_2_capacity}}",
+              "{{bom_rack_enclosure_2_quantity}}"
+            ],
+            [
+              {
+                "text": "Junction / Protection Box",
+                "style": "groupHeader",
+                "colSpan": 5
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              "7",
+              "{{bom_junction_protection_box_1_product}}",
+              "{{bom_junction_protection_box_1_make}}",
+              "{{bom_junction_protection_box_1_capacity}}",
+              "{{bom_junction_protection_box_1_quantity}}"
+            ],
+            [
+              "8",
+              "{{bom_junction_protection_box_2_product}}",
+              "{{bom_junction_protection_box_2_make}}",
+              "{{bom_junction_protection_box_2_capacity}}",
+              "{{bom_junction_protection_box_2_quantity}}"
+            ],
+            [
+              {
+                "text": "Cable",
+                "style": "groupHeader",
+                "colSpan": 5
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              "9",
+              "{{bom_cable_1_product}}",
+              "{{bom_cable_1_make}}",
+              "{{bom_cable_1_capacity}}",
+              "{{bom_cable_1_quantity}}"
+            ],
+            [
+              "10",
+              "{{bom_cable_2_product}}",
+              "{{bom_cable_2_make}}",
+              "{{bom_cable_2_capacity}}",
+              "{{bom_cable_2_quantity}}"
+            ],
+            [
+              "11",
+              "{{bom_cable_3_product}}",
+              "{{bom_cable_3_make}}",
+              "{{bom_cable_3_capacity}}",
+              "{{bom_cable_3_quantity}}"
+            ],
+            [
+              "12",
+              "{{bom_cable_4_product}}",
+              "{{bom_cable_4_make}}",
+              "{{bom_cable_4_capacity}}",
+              "{{bom_cable_4_quantity}}"
+            ],
+            [
+              "13",
+              "{{bom_cable_5_product}}",
+              "{{bom_cable_5_make}}",
+              "{{bom_cable_5_capacity}}",
+              "{{bom_cable_5_quantity}}"
+            ],
+            [
+              "14",
+              "{{bom_cable_6_product}}",
+              "{{bom_cable_6_make}}",
+              "{{bom_cable_6_capacity}}",
+              "{{bom_cable_6_quantity}}"
+            ],
+            [
+              "15",
+              "{{bom_cable_7_product}}",
+              "{{bom_cable_7_make}}",
+              "{{bom_cable_7_capacity}}",
+              "{{bom_cable_7_quantity}}"
+            ],
+            [
+              "16",
+              "{{bom_cable_8_product}}",
+              "{{bom_cable_8_make}}",
+              "{{bom_cable_8_capacity}}",
+              "{{bom_cable_8_quantity}}"
+            ],
+            [
+              "17",
+              "{{bom_cable_9_product}}",
+              "{{bom_cable_9_make}}",
+              "{{bom_cable_9_capacity}}",
+              "{{bom_cable_9_quantity}}"
+            ],
+            [
+              "18",
+              "{{bom_cable_10_product}}",
+              "{{bom_cable_10_make}}",
+              "{{bom_cable_10_capacity}}",
+              "{{bom_cable_10_quantity}}"
+            ],
+            [
+              "19",
+              "{{bom_cable_11_product}}",
+              "{{bom_cable_11_make}}",
+              "{{bom_cable_11_capacity}}",
+              "{{bom_cable_11_quantity}}"
+            ],
+            [
+              "20",
+              "{{bom_cable_12_product}}",
+              "{{bom_cable_12_make}}",
+              "{{bom_cable_12_capacity}}",
+              "{{bom_cable_12_quantity}}"
+            ],
+            [
+              "21",
+              "{{bom_cable_13_product}}",
+              "{{bom_cable_13_make}}",
+              "{{bom_cable_13_capacity}}",
+              "{{bom_cable_13_quantity}}"
+            ],
+            [
+              "22",
+              "{{bom_cable_14_product}}",
+              "{{bom_cable_14_make}}",
+              "{{bom_cable_14_capacity}}",
+              "{{bom_cable_14_quantity}}"
+            ],
+            [
+              "23",
+              "{{bom_cable_15_product}}",
+              "{{bom_cable_15_make}}",
+              "{{bom_cable_15_capacity}}",
+              "{{bom_cable_15_quantity}}"
+            ],
+            [
+              {
+                "text": "Switch / Socket / MCB",
+                "style": "groupHeader",
+                "colSpan": 5
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              "24",
+              "{{bom_switch_socket_mcb_1_product}}",
+              "{{bom_switch_socket_mcb_1_make}}",
+              "{{bom_switch_socket_mcb_1_capacity}}",
+              "{{bom_switch_socket_mcb_1_quantity}}"
+            ],
+            [
+              "25",
+              "{{bom_switch_socket_mcb_2_product}}",
+              "{{bom_switch_socket_mcb_2_make}}",
+              "{{bom_switch_socket_mcb_2_capacity}}",
+              "{{bom_switch_socket_mcb_2_quantity}}"
+            ],
+            [
+              "26",
+              "{{bom_switch_socket_mcb_3_product}}",
+              "{{bom_switch_socket_mcb_3_make}}",
+              "{{bom_switch_socket_mcb_3_capacity}}",
+              "{{bom_switch_socket_mcb_3_quantity}}"
+            ],
+            [
+              "27",
+              "{{bom_switch_socket_mcb_4_product}}",
+              "{{bom_switch_socket_mcb_4_make}}",
+              "{{bom_switch_socket_mcb_4_capacity}}",
+              "{{bom_switch_socket_mcb_4_quantity}}"
+            ],
+            [
+              "28",
+              "{{bom_switch_socket_mcb_5_product}}",
+              "{{bom_switch_socket_mcb_5_make}}",
+              "{{bom_switch_socket_mcb_5_capacity}}",
+              "{{bom_switch_socket_mcb_5_quantity}}"
+            ],
+            [
+              {
+                "text": "Lighting / Fan",
+                "style": "groupHeader",
+                "colSpan": 5
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              "29",
+              "{{bom_lighting_fan_product}}",
+              "{{bom_lighting_fan_make}}",
+              "{{bom_lighting_fan_capacity}}",
+              "{{bom_lighting_fan_quantity}}"
+            ],
+            [
+              {
+                "text": "Earthing",
+                "style": "groupHeader",
+                "colSpan": 5
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              "30",
+              "{{bom_earthing_1_product}}",
+              "{{bom_earthing_1_make}}",
+              "{{bom_earthing_1_capacity}}",
+              "{{bom_earthing_1_quantity}}"
+            ],
+            [
+              "31",
+              "{{bom_earthing_2_product}}",
+              "{{bom_earthing_2_make}}",
+              "{{bom_earthing_2_capacity}}",
+              "{{bom_earthing_2_quantity}}"
+            ],
+            [
+              "32",
+              "{{bom_earthing_3_product}}",
+              "{{bom_earthing_3_make}}",
+              "{{bom_earthing_3_capacity}}",
+              "{{bom_earthing_3_quantity}}"
+            ],
+            [
+              {
+                "text": "Safety / Docs",
+                "style": "groupHeader",
+                "colSpan": 5
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              "33",
+              "{{bom_safety_docs_1_product}}",
+              "{{bom_safety_docs_1_make}}",
+              "{{bom_safety_docs_1_capacity}}",
+              "{{bom_safety_docs_1_quantity}}"
+            ],
+            [
+              "34",
+              "{{bom_safety_docs_2_product}}",
+              "{{bom_safety_docs_2_make}}",
+              "{{bom_safety_docs_2_capacity}}",
+              "{{bom_safety_docs_2_quantity}}"
+            ],
+            [
+              "35",
+              "{{bom_safety_docs_3_product}}",
+              "{{bom_safety_docs_3_make}}",
+              "{{bom_safety_docs_3_capacity}}",
+              "{{bom_safety_docs_3_quantity}}"
+            ],
+            [
+              "36",
+              "{{bom_safety_docs_4_product}}",
+              "{{bom_safety_docs_4_make}}",
+              "{{bom_safety_docs_4_capacity}}",
+              "{{bom_safety_docs_4_quantity}}"
+            ],
+            [
+              "37",
+              "{{bom_safety_docs_5_product}}",
+              "{{bom_safety_docs_5_make}}",
+              "{{bom_safety_docs_5_capacity}}",
+              "{{bom_safety_docs_5_quantity}}"
+            ],
+            [
+              {
+                "text": "Fire Extinguisher",
+                "style": "groupHeader",
+                "colSpan": 5
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              "38",
+              "{{bom_fire_extinguisher_product}}",
+              "{{bom_fire_extinguisher_make}}",
+              "{{bom_fire_extinguisher_capacity}}",
+              "{{bom_fire_extinguisher_quantity}}"
+            ],
+            [
+              {
+                "text": "Consumables",
+                "style": "groupHeader",
+                "colSpan": 5
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              "39",
+              "{{bom_consumables_product}}",
+              "{{bom_consumables_make}}",
+              "{{bom_consumables_capacity}}",
+              "{{bom_consumables_quantity}}"
+            ]
+          ]
+        },
+        "layout": ""
+      },
+      {
+        "text": "Note: 'Make' and any blank 'Quantity' cells (dependent on string configuration, cable run length, or site layout) are to be filled in by the installing engineer on site.",
+        "style": "note"
+      },
+      {
+        "text": "Associated Machines",
+        "style": "header"
+      },
+      {
+        "table": {
+          "headerRows": 1,
+          "widths": [
+            35,
+            "*",
+            85,
+            85,
+            55
+          ],
+          "body": [
+            [
+              {
+                "text": "Sl. No.",
+                "style": "tableHeader"
+              },
+              {
+                "text": "Product",
+                "style": "tableHeader"
+              },
+              {
+                "text": "Make",
+                "style": "tableHeader"
+              },
+              {
+                "text": "Capacity",
+                "style": "tableHeader"
+              },
+              {
+                "text": "Quantity",
+                "style": "tableHeader"
+              }
+            ],
+            [
+              {
+                "text": "Machine",
+                "style": "groupHeader",
+                "colSpan": 5
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              "1",
+              "{{machine_1_product}}",
+              "{{machine_1_make}}",
+              "{{machine_1_capacity}}",
+              "{{machine_1_quantity}}"
+            ],
+            [
+              "2",
+              "{{machine_2_product}}",
+              "{{machine_2_make}}",
+              "{{machine_2_capacity}}",
+              "{{machine_2_quantity}}"
+            ]
+          ]
+        },
+        "layout": ""
+      },
+      {
+        "text": "SYSTEM FUNCTIONALITY PARAMETERS",
+        "style": "header"
+      },
+      {
+        "table": {
+          "widths": [
+            "40%",
+            "60%"
+          ],
+          "body": [
+            [
+              {
+                "text": "Date of recording",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{system_date_of_recording}}"
+              }
+            ],
+            [
+              {
+                "text": "Time of recording",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{system_time_of_recording}}"
+              }
+            ],
+            [
+              {
+                "text": "Weather Condition at the time of recording",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{system_weather_condition}}"
+              }
+            ]
+          ]
+        },
+        "layout": "lightHorizontalLines",
+        "margin": [
+          0,
+          0,
+          0,
+          12
+        ]
+      },
+      {
+        "text": "Array Details",
+        "style": "subHeader"
+      },
+      {
+        "table": {
+          "widths": [
+            "40%",
+            "60%"
+          ],
+          "body": [
+            [
+              {
+                "text": "Array Size (kWp)",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{system_array_size_kwp}}"
+              }
+            ],
+            [
+              {
+                "text": "No. of modules",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{system_array_no_modules}}"
+              }
+            ],
+            [
+              {
+                "text": "No. of strings",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{system_array_no_strings}}"
+              }
+            ],
+            [
+              {
+                "text": "No. of modules per string",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{system_array_modules_per_string}}"
+              }
+            ],
+            [
+              {
+                "text": "Each module capacity (Wp)",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{system_array_each_module_capacity_wp}}"
+              }
+            ]
+          ]
+        },
+        "layout": "lightHorizontalLines",
+        "margin": [
+          0,
+          0,
+          0,
+          12
+        ]
+      },
+      {
+        "text": "Array Parameters (At the AJB)",
+        "style": "subHeader"
+      },
+      {
+        "table": {
+          "headerRows": 1,
+          "widths": [
+            "*",
+            45,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "body": [
+            [
+              {
+                "text": "Test Condition",
+                "style": "tableHeader"
+              },
+              {
+                "text": "Parameter",
+                "style": "tableHeader"
+              },
+              {
+                "text": "String 1",
+                "style": "tableHeader"
+              },
+              {
+                "text": "String 2",
+                "style": "tableHeader"
+              },
+              {
+                "text": "String 3",
+                "style": "tableHeader"
+              },
+              {
+                "text": "String 4",
+                "style": "tableHeader"
+              },
+              {
+                "text": "String 5",
+                "style": "tableHeader"
+              },
+              {
+                "text": "Array",
+                "style": "tableHeader"
+              }
+            ],
+            [
+              {
+                "text": "Grid OFF + AJB MCB OFF",
+                "style": "small"
+              },
+              {
+                "text": "Voc (V)",
+                "style": "small"
+              },
+              {
+                "text": "{{system_ajb_voc_string_1_measured}} {{system_ajb_voc_string_1_uom}}",
+                "style": "small"
+              },
+              {
+                "text": "{{system_ajb_voc_string_2_measured}} {{system_ajb_voc_string_2_uom}}",
+                "style": "small"
+              },
+              {
+                "text": "{{system_ajb_voc_string_3_measured}} {{system_ajb_voc_string_3_uom}}",
+                "style": "small"
+              },
+              {
+                "text": "{{system_ajb_voc_string_4_measured}} {{system_ajb_voc_string_4_uom}}",
+                "style": "small"
+              },
+              {
+                "text": "{{system_ajb_voc_string_5_measured}} {{system_ajb_voc_string_5_uom}}",
+                "style": "small"
+              },
+              {
+                "text": "{{system_ajb_voc_array_measured}} {{system_ajb_voc_array_uom}}",
+                "style": "small"
+              }
+            ],
+            [
+              {
+                "text": "Grid OFF + AJB MCB ON (wait 20s)",
+                "style": "small"
+              },
+              {
+                "text": "Vmp (V)",
+                "style": "small"
+              },
+              {
+                "text": "{{system_ajb_vmp_string_1_measured}} {{system_ajb_vmp_string_1_uom}}",
+                "style": "small"
+              },
+              {
+                "text": "{{system_ajb_vmp_string_2_measured}} {{system_ajb_vmp_string_2_uom}}",
+                "style": "small"
+              },
+              {
+                "text": "{{system_ajb_vmp_string_3_measured}} {{system_ajb_vmp_string_3_uom}}",
+                "style": "small"
+              },
+              {
+                "text": "{{system_ajb_vmp_string_4_measured}} {{system_ajb_vmp_string_4_uom}}",
+                "style": "small"
+              },
+              {
+                "text": "{{system_ajb_vmp_string_5_measured}} {{system_ajb_vmp_string_5_uom}}",
+                "style": "small"
+              },
+              {
+                "text": "{{system_ajb_vmp_array_measured}} {{system_ajb_vmp_array_uom}}",
+                "style": "small"
+              }
+            ],
+            [
+              {
+                "text": "Grid OFF + AJB MCB ON (wait 20s)",
+                "style": "small"
+              },
+              {
+                "text": "Imp (A)",
+                "style": "small"
+              },
+              {
+                "text": "{{system_ajb_imp_string_1_measured}} {{system_ajb_imp_string_1_uom}}",
+                "style": "small"
+              },
+              {
+                "text": "{{system_ajb_imp_string_2_measured}} {{system_ajb_imp_string_2_uom}}",
+                "style": "small"
+              },
+              {
+                "text": "{{system_ajb_imp_string_3_measured}} {{system_ajb_imp_string_3_uom}}",
+                "style": "small"
+              },
+              {
+                "text": "{{system_ajb_imp_string_4_measured}} {{system_ajb_imp_string_4_uom}}",
+                "style": "small"
+              },
+              {
+                "text": "{{system_ajb_imp_string_5_measured}} {{system_ajb_imp_string_5_uom}}",
+                "style": "small"
+              },
+              {
+                "text": "{{system_ajb_imp_array_measured}} {{system_ajb_imp_array_uom}}",
+                "style": "small"
+              }
+            ],
+            [
+              {
+                "text": "Grid OFF + AJB MCB ON (wait 20s)",
+                "style": "small"
+              },
+              {
+                "text": "Pmp (W)",
+                "style": "small"
+              },
+              {
+                "text": "{{system_ajb_pmp_string_1_measured}} {{system_ajb_pmp_string_1_uom}}",
+                "style": "small"
+              },
+              {
+                "text": "{{system_ajb_pmp_string_2_measured}} {{system_ajb_pmp_string_2_uom}}",
+                "style": "small"
+              },
+              {
+                "text": "{{system_ajb_pmp_string_3_measured}} {{system_ajb_pmp_string_3_uom}}",
+                "style": "small"
+              },
+              {
+                "text": "{{system_ajb_pmp_string_4_measured}} {{system_ajb_pmp_string_4_uom}}",
+                "style": "small"
+              },
+              {
+                "text": "{{system_ajb_pmp_string_5_measured}} {{system_ajb_pmp_string_5_uom}}",
+                "style": "small"
+              },
+              {
+                "text": "{{system_ajb_pmp_array_measured}} {{system_ajb_pmp_array_uom}}",
+                "style": "small"
+              }
+            ]
+          ]
+        },
+        "layout": ""
+      },
+      {
+        "text": "Battery Bank Parameters (With Grid OFF & Load ON)",
+        "style": "subHeader"
+      },
+      {
+        "table": {
+          "headerRows": 1,
+          "widths": [
+            "*",
+            120,
+            60
+          ],
+          "body": [
+            [
+              {
+                "text": "Particulars",
+                "style": "tableHeader"
+              },
+              {
+                "text": "Measured Value",
+                "style": "tableHeader"
+              },
+              {
+                "text": "Unit",
+                "style": "tableHeader"
+              }
+            ],
+            [
+              "Battery Bank Voltage",
+              "{{system_battery_bank_voltage_measured}}",
+              "{{system_battery_bank_voltage_uom}}"
+            ],
+            [
+              "Battery Bank Current",
+              "{{system_battery_bank_current_measured}}",
+              "{{system_battery_bank_current_uom}}"
+            ]
+          ]
+        },
+        "layout": ""
+      },
+      {
+        "text": "PCU/Inverter Parameters (1-Phase / 3-Phase as applicable)",
+        "style": "subHeader"
+      },
+      {
+        "table": {
+          "headerRows": 1,
+          "widths": [
+            "*",
+            80,
+            45,
+            80,
+            45
+          ],
+          "body": [
+            [
+              {
+                "text": "Particulars",
+                "style": "tableHeader"
+              },
+              {
+                "text": "Measurement w/ Grid OFF",
+                "style": "tableHeader"
+              },
+              {
+                "text": "Unit",
+                "style": "tableHeader"
+              },
+              {
+                "text": "Measurement w/ Grid ON",
+                "style": "tableHeader"
+              },
+              {
+                "text": "Unit",
+                "style": "tableHeader"
+              }
+            ],
+            [
+              "Load voltage / Inverter output voltage",
+              "{{system_pcu_grid_off_output_voltage_measured}}",
+              "{{system_pcu_grid_off_output_voltage_uom}}",
+              "{{system_pcu_grid_on_output_voltage_measured}}",
+              "{{system_pcu_grid_on_output_voltage_uom}}"
+            ],
+            [
+              "Inverter output frequency",
+              "{{system_pcu_grid_off_output_frequency_measured}}",
+              "{{system_pcu_grid_off_output_frequency_uom}}",
+              "{{system_pcu_grid_on_output_frequency_measured}}",
+              "{{system_pcu_grid_on_output_frequency_uom}}"
+            ],
+            [
+              "Inverter output current at full load",
+              "{{system_pcu_grid_off_output_current_full_load_measured}}",
+              "{{system_pcu_grid_off_output_current_full_load_uom}}",
+              "{{system_pcu_grid_on_output_current_full_load_measured}}",
+              "{{system_pcu_grid_on_output_current_full_load_uom}}"
+            ]
+          ]
+        },
+        "layout": ""
+      },
+      {
+        "text": "PCU/Inverter Display & Setting",
+        "style": "subHeader"
+      },
+      {
+        "table": {
+          "widths": [
+            "40%",
+            "60%"
+          ],
+          "body": [
+            [
+              {
+                "text": "Inverter Priority Setting (Solar-Battery-Grid / Solar-Grid-Battery)",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{system_inverter_priority}}"
+              }
+            ],
+            [
+              {
+                "text": "Grid Export Feature (Enabled / Disabled)",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{system_grid_export_feature}}"
+              }
+            ],
+            [
+              {
+                "text": "Battery Settings (Ah)",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{system_battery_settings_ah}}"
+              }
+            ],
+            [
+              {
+                "text": "Battery Type (Tubular / VRLA / LiFePO4)",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{system_battery_type}}"
+              }
+            ],
+            [
+              {
+                "text": "Load is running on (Inverter / Grid)",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{system_load_running_on}}"
+              }
+            ]
+          ]
+        },
+        "layout": "lightHorizontalLines",
+        "margin": [
+          0,
+          0,
+          0,
+          12
+        ]
+      },
+      {
+        "text": "Changeover Switch Settings",
+        "style": "subHeader"
+      },
+      {
+        "table": {
+          "widths": [
+            "40%",
+            "60%"
+          ],
+          "body": [
+            [
+              {
+                "text": "Changeover switch orientation (Solar / Grid)",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{system_changeover_orientation}}"
+              }
+            ],
+            [
+              {
+                "text": "Changeover switch functional for both solar & grid (Yes / No)",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{system_changeover_functional_solar_grid}}"
+              }
+            ]
+          ]
+        },
+        "layout": "lightHorizontalLines",
+        "margin": [
+          0,
+          0,
+          0,
+          12
+        ]
+      },
+      {
+        "text": "Measurements at Sockets",
+        "style": "subHeader"
+      },
+      {
+        "table": {
+          "headerRows": 1,
+          "widths": [
+            "*",
+            120,
+            60
+          ],
+          "body": [
+            [
+              {
+                "text": "Particulars",
+                "style": "tableHeader"
+              },
+              {
+                "text": "Measured Value",
+                "style": "tableHeader"
+              },
+              {
+                "text": "Unit",
+                "style": "tableHeader"
+              }
+            ],
+            [
+              "Voltage between Phase & Neutral",
+              "{{system_socket_phase_neutral_measured}}",
+              "{{system_socket_phase_neutral_uom}}"
+            ],
+            [
+              "Voltage between Phase & Earth",
+              "{{system_socket_phase_earth_measured}}",
+              "{{system_socket_phase_earth_uom}}"
+            ],
+            [
+              "Voltage between Earth & Neutral",
+              "{{system_socket_earth_neutral_measured}}",
+              "{{system_socket_earth_neutral_uom}}"
+            ]
+          ]
+        },
+        "layout": ""
+      },
+      {
+        "text": "Earth Pit Tests (standalone, before connecting to system)",
+        "style": "subHeader"
+      },
+      {
+        "table": {
+          "headerRows": 1,
+          "widths": [
+            "*",
+            120,
+            60
+          ],
+          "body": [
+            [
+              {
+                "text": "Earth Pit Resistance Test",
+                "style": "tableHeader"
+              },
+              {
+                "text": "Measured Value",
+                "style": "tableHeader"
+              },
+              {
+                "text": "Unit",
+                "style": "tableHeader"
+              }
+            ],
+            [
+              "DC Earthing",
+              "{{system_earth_pit_dc_earthing_measured}}",
+              "{{system_earth_pit_dc_earthing_uom}}"
+            ],
+            [
+              "AC Earthing",
+              "{{system_earth_pit_ac_earthing_measured}}",
+              "{{system_earth_pit_ac_earthing_uom}}"
+            ],
+            [
+              "Lightning Arrester-1",
+              "{{system_earth_pit_lightning_arrester_1_measured}}",
+              "{{system_earth_pit_lightning_arrester_1_uom}}"
+            ],
+            [
+              "Lightning Arrester-2",
+              "{{system_earth_pit_lightning_arrester_2_measured}}",
+              "{{system_earth_pit_lightning_arrester_2_uom}}"
+            ]
+          ]
+        },
+        "layout": ""
+      },
+      {
+        "text": "Installation Images",
+        "style": "header",
+        "pageBreak": "before"
+      },
+      {
+        "stack": [
+          {
+            "text": "{{installation_image_1_title}}",
+            "style": "tableHeader",
+            "margin": [
+              0,
+              10,
+              0,
+              2
+            ]
+          },
+          {
+            "columns": [
+              {
+                "image": "{{INSTALLATION_IMAGE_1_1}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              },
+              {
+                "image": "{{INSTALLATION_IMAGE_1_2}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              }
+            ],
+            "columnGap": 5
+          }
+        ],
+        "unbreakable": true
+      },
+      {
+        "stack": [
+          {
+            "text": "{{installation_image_2_title}}",
+            "style": "tableHeader",
+            "margin": [
+              0,
+              10,
+              0,
+              2
+            ]
+          },
+          {
+            "columns": [
+              {
+                "image": "{{INSTALLATION_IMAGE_2_1}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              }
+            ],
+            "columnGap": 5
+          }
+        ],
+        "unbreakable": true
+      },
+      {
+        "stack": [
+          {
+            "text": "{{installation_image_3_title}}",
+            "style": "tableHeader",
+            "margin": [
+              0,
+              10,
+              0,
+              2
+            ]
+          },
+          {
+            "columns": [
+              {
+                "image": "{{INSTALLATION_IMAGE_3_1}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              },
+              {
+                "image": "{{INSTALLATION_IMAGE_3_2}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              }
+            ],
+            "columnGap": 5
+          }
+        ],
+        "unbreakable": true
+      },
+      {
+        "stack": [
+          {
+            "text": "{{installation_image_4_title}}",
+            "style": "tableHeader",
+            "margin": [
+              0,
+              10,
+              0,
+              2
+            ]
+          },
+          {
+            "columns": [
+              {
+                "image": "{{INSTALLATION_IMAGE_4_1}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              }
+            ],
+            "columnGap": 5
+          }
+        ],
+        "unbreakable": true,
+        "pageBreak": "before"
+      },
+      {
+        "stack": [
+          {
+            "text": "{{installation_image_5_title}}",
+            "style": "tableHeader",
+            "margin": [
+              0,
+              10,
+              0,
+              2
+            ]
+          },
+          {
+            "columns": [
+              {
+                "image": "{{INSTALLATION_IMAGE_5_1}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              },
+              {
+                "image": "{{INSTALLATION_IMAGE_5_2}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              },
+              {
+                "image": "{{INSTALLATION_IMAGE_5_3}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              }
+            ],
+            "columnGap": 5
+          }
+        ],
+        "unbreakable": true
+      },
+      {
+        "stack": [
+          {
+            "text": "{{installation_image_6_title}}",
+            "style": "tableHeader",
+            "margin": [
+              0,
+              10,
+              0,
+              2
+            ]
+          },
+          {
+            "columns": [
+              {
+                "image": "{{INSTALLATION_IMAGE_6_1}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              }
+            ],
+            "columnGap": 5
+          }
+        ],
+        "unbreakable": true
+      },
+      {
+        "stack": [
+          {
+            "text": "{{installation_image_7_title}}",
+            "style": "tableHeader",
+            "margin": [
+              0,
+              10,
+              0,
+              2
+            ]
+          },
+          {
+            "columns": [
+              {
+                "image": "{{INSTALLATION_IMAGE_7_1}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              },
+              {
+                "image": "{{INSTALLATION_IMAGE_7_2}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              },
+              {
+                "image": "{{INSTALLATION_IMAGE_7_3}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              }
+            ],
+            "columnGap": 5
+          }
+        ],
+        "unbreakable": true,
+        "pageBreak": "before"
+      },
+      {
+        "stack": [
+          {
+            "text": "{{installation_image_8_title}}",
+            "style": "tableHeader",
+            "margin": [
+              0,
+              10,
+              0,
+              2
+            ]
+          },
+          {
+            "columns": [
+              {
+                "image": "{{INSTALLATION_IMAGE_8_1}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              }
+            ],
+            "columnGap": 5
+          }
+        ],
+        "unbreakable": true
+      },
+      {
+        "stack": [
+          {
+            "text": "{{installation_image_9_title}}",
+            "style": "tableHeader",
+            "margin": [
+              0,
+              10,
+              0,
+              2
+            ]
+          },
+          {
+            "columns": [
+              {
+                "image": "{{INSTALLATION_IMAGE_9_1}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              }
+            ],
+            "columnGap": 5
+          }
+        ],
+        "unbreakable": true
+      },
+      {
+        "stack": [
+          {
+            "text": "{{installation_image_10_title}}",
+            "style": "tableHeader",
+            "margin": [
+              0,
+              10,
+              0,
+              2
+            ]
+          },
+          {
+            "columns": [
+              {
+                "image": "{{INSTALLATION_IMAGE_10_1}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              }
+            ],
+            "columnGap": 5
+          }
+        ],
+        "unbreakable": true,
+        "pageBreak": "before"
+      },
+      {
+        "stack": [
+          {
+            "text": "{{installation_image_11_title}}",
+            "style": "tableHeader",
+            "margin": [
+              0,
+              10,
+              0,
+              2
+            ]
+          },
+          {
+            "columns": [
+              {
+                "image": "{{INSTALLATION_IMAGE_11_1}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              }
+            ],
+            "columnGap": 5
+          }
+        ],
+        "unbreakable": true
+      },
+      {
+        "stack": [
+          {
+            "text": "{{installation_image_12_title}}",
+            "style": "tableHeader",
+            "margin": [
+              0,
+              10,
+              0,
+              2
+            ]
+          },
+          {
+            "columns": [
+              {
+                "image": "{{INSTALLATION_IMAGE_12_1}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              },
+              {
+                "image": "{{INSTALLATION_IMAGE_12_2}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              }
+            ],
+            "columnGap": 5
+          }
+        ],
+        "unbreakable": true
+      },
+      {
+        "stack": [
+          {
+            "text": "{{installation_image_13_title}}",
+            "style": "tableHeader",
+            "margin": [
+              0,
+              10,
+              0,
+              2
+            ]
+          },
+          {
+            "columns": [
+              {
+                "image": "{{INSTALLATION_IMAGE_13_1}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              },
+              {
+                "image": "{{INSTALLATION_IMAGE_13_2}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              },
+              {
+                "image": "{{INSTALLATION_IMAGE_13_3}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              }
+            ],
+            "columnGap": 5
+          }
+        ],
+        "unbreakable": true,
+        "pageBreak": "before"
+      },
+      {
+        "stack": [
+          {
+            "text": "{{installation_image_14_title}}",
+            "style": "tableHeader",
+            "margin": [
+              0,
+              10,
+              0,
+              2
+            ]
+          },
+          {
+            "columns": [
+              {
+                "image": "{{INSTALLATION_IMAGE_14_1}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              },
+              {
+                "image": "{{INSTALLATION_IMAGE_14_2}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              },
+              {
+                "image": "{{INSTALLATION_IMAGE_14_3}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              }
+            ],
+            "columnGap": 5
+          }
+        ],
+        "unbreakable": true
+      },
+      {
+        "stack": [
+          {
+            "text": "{{installation_image_15_title}}",
+            "style": "tableHeader",
+            "margin": [
+              0,
+              10,
+              0,
+              2
+            ]
+          },
+          {
+            "columns": [
+              {
+                "image": "{{INSTALLATION_IMAGE_15_1}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              }
+            ],
+            "columnGap": 5
+          }
+        ],
+        "unbreakable": true
+      },
+      {
+        "stack": [
+          {
+            "text": "{{installation_image_16_title}}",
+            "style": "tableHeader",
+            "margin": [
+              0,
+              10,
+              0,
+              2
+            ]
+          },
+          {
+            "columns": [
+              {
+                "image": "{{INSTALLATION_IMAGE_16_1}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              }
+            ],
+            "columnGap": 5
+          }
+        ],
+        "unbreakable": true,
+        "pageBreak": "before"
+      },
+      {
+        "stack": [
+          {
+            "text": "{{installation_image_17_title}}",
+            "style": "tableHeader",
+            "margin": [
+              0,
+              10,
+              0,
+              2
+            ]
+          },
+          {
+            "columns": [
+              {
+                "image": "{{INSTALLATION_IMAGE_17_1}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
+              }
+            ],
+            "columnGap": 5
+          }
+        ],
+        "unbreakable": true
+      },
+      {
+        "text": "Signatures",
+        "style": "header"
+      },
+      {
+        "table": {
+          "widths": [
+            "50%",
+            "50%"
+          ],
+          "body": [
+            [
+              {
+                "stack": [
+                  {
+                    "text": "End user & signature",
+                    "style": "fieldLabel"
+                  },
+                  {
+                    "text": "End user name: {{end_user_name}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Contact no: {{end_user_contact_no}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "VERIFIED VIA Verification Code (in lieu of signature)",
+                    "style": "small",
+                    "bold": true,
+                    "margin": [
+                      0,
+                      4,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "text": "Registered Mobile: {{end_user_registered_mobile}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Verified At: {{end_user_verified_at}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Verification Status: {{end_user_verification_status}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Verification ID: {{end_user_verification_id}}",
+                    "style": "small"
+                  }
+                ]
+              },
+              {
+                "stack": [
+                  {
+                    "text": "Technician Signature",
+                    "style": "fieldLabel"
+                  },
+                  {
+                    "text": "Name: {{technician_name}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Contact no: {{technician_contact_no}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Submitted by",
+                    "style": "small",
+                    "bold": true,
+                    "margin": [
+                      0,
+                      4,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "text": "Registered Mobile: {{technician_registered_mobile}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "Vendor Organisation: {{technician_vendor_organisation}}",
+                    "style": "small"
+                  },
+                  {
+                    "text": "At: {{technician_submitted_at}}",
+                    "style": "small"
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        "layout": "",
+        "unbreakable": true
+      }
+    ],
+    "styles": {
+      "header": {
+        "fontSize": 16,
+        "bold": true,
+        "margin": [
+          0,
+          14,
+          0,
+          6
+        ]
+      },
+      "subHeader": {
+        "fontSize": 13,
+        "bold": true,
+        "margin": [
+          0,
+          10,
+          0,
+          4
+        ]
+      },
+      "tableHeader": {
+        "fontSize": 11,
+        "bold": true,
+        "margin": [
+          0,
+          4,
+          0,
+          4
+        ]
+      },
+      "groupHeader": {
+        "fontSize": 11,
+        "bold": true,
+        "fillColor": "#EFEFEF",
+        "margin": [
+          0,
+          3,
+          0,
+          3
+        ]
+      },
+      "fieldLabel": {
+        "fontSize": 10,
+        "bold": true,
+        "margin": [
+          0,
+          3,
+          0,
+          3
+        ]
+      },
+      "small": {
+        "fontSize": 9
+      },
+      "note": {
+        "fontSize": 9,
+        "italics": true,
+        "margin": [
+          0,
+          6,
+          0,
+          12
+        ]
+      }
+    }
+  }
+}
