@@ -148,6 +148,10 @@ ServiceMaps:
                 outJsonPath: $.Data.declinedTimestamp
               - inJsonPath: $.indexView.isReopened
                 outJsonPath: $.Data.isReopened
+              - inJsonPath: $.indexView.endUserName
+                outJsonPath: $.Data.endUserName
+              - inJsonPath: $.indexView.endUserMobile
+                outJsonPath: $.Data.endUserMobile
               - inJsonPath: $.indexView.phcSubType_localized
                 outJsonPath: $.Data.incident.phcSubType_localized
               - inJsonPath: $.indexView.tenantId_localized
@@ -332,6 +336,10 @@ ServiceMaps:
                 outJsonPath: $.Data.declinedTimestamp
               - inJsonPath: $.indexView.isReopened
                 outJsonPath: $.Data.isReopened
+              - inJsonPath: $.indexView.endUserName
+                outJsonPath: $.Data.endUserName
+              - inJsonPath: $.indexView.endUserMobile
+                outJsonPath: $.Data.endUserMobile
               - inJsonPath: $.indexView.phcSubType_localized
                 outJsonPath: $.Data.incident.phcSubType_localized
               - inJsonPath: $.indexView.tenantId_localized
@@ -545,6 +553,10 @@ ServiceMaps:
                 outJsonPath: $.Data.declinedTimestamp
               - inJsonPath: $.indexView.isReopened
                 outJsonPath: $.Data.isReopened
+              - inJsonPath: $.indexView.endUserName
+                outJsonPath: $.Data.endUserName
+              - inJsonPath: $.indexView.endUserMobile
+                outJsonPath: $.Data.endUserMobile
               - inJsonPath: $.indexView.phcSubType_localized
                 outJsonPath: $.Data.incident.phcSubType_localized
               - inJsonPath: $.indexView.tenantId_localized
