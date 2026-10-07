@@ -38,10 +38,10 @@ serviceMaps:
       queryMaps:
         - query: >
             INSERT INTO facility (id, tenant_id, facility_name, facility_type, facility_category, facility_subtype, facility_ownership, facility_region, addressId, facility_details,
-              wf_status, additional_details, is_active, boundary_code, is_onm_ready, facility_poc_name, facility_poc_phone, facility_poc_email, facility_poc_username, hfr_id, nin_id, user_id, facility_status,
+              wf_status, additional_details, is_active, boundary_code, is_onm_ready, end_user_type, facility_poc_name, facility_poc_phone, facility_poc_email, facility_poc_username, hfr_id, nin_id, user_id, facility_status,
               created_by, created_at, updated_by, updated_at
             )
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
           basePath: $
           jsonMaps:
             - jsonPath: $.facility_id
@@ -63,6 +63,7 @@ serviceMaps:
             - jsonPath: $.isActive
             - jsonPath: $.boundaryCode
             - jsonPath: $.isOnmReady
+            - jsonPath: $.endUserType
             - jsonPath: $.facility_poc_name
             - jsonPath: $.facility_poc_phone
             - jsonPath: $.facility_poc_email
@@ -82,7 +83,7 @@ serviceMaps:
       isTransaction: true
       queryMaps:
         - query: >
-            UPDATE facility SET facility_name = ?, facility_type = ?, facility_subtype = ?, addressId = ?, facility_details = ?, additional_details = ?, is_onm_ready = ?,
+            UPDATE facility SET facility_name = ?, facility_type = ?, facility_subtype = ?, addressId = ?, facility_details = ?, additional_details = ?, is_onm_ready = ?, end_user_type = ?,
             facility_poc_name = ?, facility_poc_phone = ?, facility_poc_email = ?, hfr_id = ?, nin_id = ?, user_id = ?, facility_status = ?, is_active= ? 
             WHERE id = ? AND tenant_id = ?;
           basePath: $.FacilityUpdate
@@ -98,6 +99,7 @@ serviceMaps:
               type: JSON
               dbType: JSONB
             - jsonPath: $.FacilityUpdate.isOnmReady
+            - jsonPath: $.FacilityUpdate.endUserType
             - jsonPath: $.FacilityUpdate.facility_poc_name
             - jsonPath: $.FacilityUpdate.facility_poc_phone
             - jsonPath: $.FacilityUpdate.facility_poc_email
