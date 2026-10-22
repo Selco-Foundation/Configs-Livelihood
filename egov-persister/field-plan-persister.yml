@@ -72,7 +72,7 @@ serviceMaps:
       transactionCodeJsonPath: $.id
       auditAttributeBasePath: $.*
       queryMaps:
-        - query: UPDATE field_plans SET name = ?, project_id = ?, health_facility_number = ?, start_date = ?, end_date = ?, geography_scope = ?, selected_activities = ?, status = ?, additional_details = ?, isDeleted = ?, last_modified_by = ?, last_modified_time = ? WHERE id = ?;
+        - query: UPDATE field_plans SET name = ?, project_id = ?, health_facility_number = ?, start_date = ?, end_date = ?, geography_scope = ?, selected_activities = ?, status = ?, additional_details = ?, isDeleted = ?, sectors = ?, last_modified_by = ?, last_modified_time = ? WHERE id = ?;
           basePath: $.FieldPlans.*
           jsonMaps:
             - jsonPath: $.FieldPlans.*.name
@@ -100,6 +100,10 @@ serviceMaps:
               dbType: JSONB
 
             - jsonPath: $.FieldPlans.*.isDeleted
+
+            - jsonPath: $.FieldPlans.*.sectors
+              type: JSON
+              dbType: JSONB
 
             - jsonPath: $.FieldPlans.*.auditDetails.lastModifiedBy
 
