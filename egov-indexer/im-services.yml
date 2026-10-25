@@ -146,6 +146,12 @@ ServiceMaps:
                 outJsonPath: $.Data.resolvedTimestamp
               - inJsonPath: $.indexView.declinedTimestamp
                 outJsonPath: $.Data.declinedTimestamp
+              - inJsonPath: $.indexView.isReopened
+                outJsonPath: $.Data.isReopened
+              - inJsonPath: $.indexView.endUserName
+                outJsonPath: $.Data.endUserName
+              - inJsonPath: $.indexView.endUserMobile
+                outJsonPath: $.Data.endUserMobile
               - inJsonPath: $.indexView.phcSubType_localized
                 outJsonPath: $.Data.incident.phcSubType_localized
               - inJsonPath: $.indexView.tenantId_localized
@@ -170,6 +176,8 @@ ServiceMaps:
                 outJsonPath: $.Data.comments
               - inJsonPath: $.indexView.boundary
                 outJsonPath: $.Data.incident.boundary
+              - inJsonPath: $.indexView.assetGroup
+                outJsonPath: $.Data.incident.assetGroup
               - inJsonPath: $.incidentRequest.incident.additionalDetail.rejectReason
                 outJsonPath: $.Data.incident.additionalDetail.rejectReason
               # Escalation fields for SLA breach detection
@@ -326,6 +334,12 @@ ServiceMaps:
                 outJsonPath: $.Data.resolvedTimestamp
               - inJsonPath: $.indexView.declinedTimestamp
                 outJsonPath: $.Data.declinedTimestamp
+              - inJsonPath: $.indexView.isReopened
+                outJsonPath: $.Data.isReopened
+              - inJsonPath: $.indexView.endUserName
+                outJsonPath: $.Data.endUserName
+              - inJsonPath: $.indexView.endUserMobile
+                outJsonPath: $.Data.endUserMobile
               - inJsonPath: $.indexView.phcSubType_localized
                 outJsonPath: $.Data.incident.phcSubType_localized
               - inJsonPath: $.indexView.tenantId_localized
@@ -350,6 +364,8 @@ ServiceMaps:
                 outJsonPath: $.Data.comments
               - inJsonPath: $.indexView.boundary
                 outJsonPath: $.Data.incident.boundary
+              - inJsonPath: $.indexView.assetGroup
+                outJsonPath: $.Data.incident.assetGroup
               - inJsonPath: $.indexView.latestRejectReason
                 outJsonPath: $.Data.latestRejectReason
               # Escalation fields for SLA breach detection
@@ -535,6 +551,12 @@ ServiceMaps:
                 outJsonPath: $.Data.resolvedTimestamp
               - inJsonPath: $.indexView.declinedTimestamp
                 outJsonPath: $.Data.declinedTimestamp
+              - inJsonPath: $.indexView.isReopened
+                outJsonPath: $.Data.isReopened
+              - inJsonPath: $.indexView.endUserName
+                outJsonPath: $.Data.endUserName
+              - inJsonPath: $.indexView.endUserMobile
+                outJsonPath: $.Data.endUserMobile
               - inJsonPath: $.indexView.phcSubType_localized
                 outJsonPath: $.Data.incident.phcSubType_localized
               - inJsonPath: $.indexView.tenantId_localized
