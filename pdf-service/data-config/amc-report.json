@@ -1,8 +1,8 @@
 {
   "key": "amc-report",
   "DataConfigs": {
-    "serviceName": "rainmaker-tl",
-    "version": "1.0.0",
+    "serviceName": "rainmaker-livelihood-amc",
+    "version": "2.0.0",
     "baseKeyPath": "$.amc",
     "entityIdPath": "$.amc.report_id",
     "isCommonTableBorderRequired": true,
@@ -13,64 +13,282 @@
         "mappings": [
           {
             "direct": [
-              { "variable": "servicePersonName",        "value": { "path": "$.service_person_name" } },
-              { "variable": "servicePersonContact",     "value": { "path": "$.service_person_contact" } },
-
-              { "variable": "check_solar_panels_cleaned", "value": { "path": "$.check_solar_panels_cleaned" } },
-
-              { "variable": "check_mounting_structure", "value": { "path": "$.check_mounting_structure" } },
-              { "variable": "check_cables_panels",      "value": { "path": "$.check_cables_panels" } },
-
-              { "variable": "check_inverter_cleaned",   "value": { "path": "$.check_inverter_cleaned" } },
-              { "variable": "check_inverter_cables",    "value": { "path": "$.check_inverter_cables" } },
-
-              { "variable": "check_battery_connections","value": { "path": "$.check_battery_connections" } },
-              { "variable": "check_battery_jelly",      "value": { "path": "$.check_battery_jelly" } },
-              { "variable": "check_battery_water",      "value": { "path": "$.check_battery_water" } },
-              { "variable": "check_battery_backup",     "value": { "path": "$.check_battery_backup" } },
-              { "variable": "check_battery_cleaned",    "value": { "path": "$.check_battery_cleaned" } },
-              { "variable": "check_battery_corrosion",  "value": { "path": "$.check_battery_corrosion" } },
-
-              { "variable": "check_earthing",           "value": { "path": "$.check_earthing" } },
-              { "variable": "check_surge",              "value": { "path": "$.check_surge" } },
-              { "variable": "check_earthing_pits",           "value": { "path": "$.check_earthing_pits" } },
-              { "variable": "check_earthing_cables",              "value": { "path": "$.check_earthing_cables" } },
-
-
-              { "variable": "check_lightning_arrestor", "value": { "path": "$.check_lightning_arrestor" } },
-              { "variable": "check_gipb",               "value": { "path": "$.check_gipb" } },
-              { "variable": "check_ajb",                "value": { "path": "$.check_ajb" } },
-              { "variable": "check_changeover",         "value": { "path": "$.check_changeover" } },
-
-              { "variable": "check_solar_array",        "value": { "path": "$.check_solar_array" } },
-              { "variable": "check_general_condition",  "value": { "path": "$.check_general_condition" } },
-
-              { "variable": "battery_bank_voltage",     "value": { "path": "$.battery_bank_voltage" } },
-              { "variable": "inverter_reading",         "value": { "path": "$.inverter_reading" } },
-
-              { "variable": "panel_string_1",           "value": { "path": "$.panel_string_1" } },
-              { "variable": "panel_string_2",           "value": { "path": "$.panel_string_2" } },
-              { "variable": "panel_string_3",           "value": { "path": "$.panel_string_3" } },
-              { "variable": "panel_string_4",           "value": { "path": "$.panel_string_4" } },
-              { "variable": "panel_string_5",           "value": { "path": "$.panel_string_5" } },
-
-              { "variable": "faults_observed",          "value": { "path": "$.faults_observed" } },
-              { "variable": "immediate_fix_done",       "value": { "path": "$.immediate_fix_done" } },
-              { "variable": "parts_repaired",           "value": { "path": "$.parts_repaired" } },
-              { "variable": "informed_CRM",             "value": { "path": "$.informed_CRM" } },
-
-              { "variable": "service_person_remarks",   "value": { "path": "$.service_person_remarks" } },
-              { "variable": "health_staff_remarks",         "value": { "path": "$.health_staff_remarks" } },
-
-              { "variable": "img1_taken",               "value": { "path": "$.img1_taken" } }
-            ],
-            "externalApi": [],
-            "derived": [],
-            "qrcode": [
               {
-                "variable": "amc_qr",
-                "text": "AMC-{{servicePersonContact}}",
-                "localisation": false
+                "variable": "report_id",
+                "value": {
+                  "path": "$.report_id"
+                }
+              },
+              {
+                "variable": "report_status",
+                "value": {
+                  "path": "$.report_status"
+                }
+              },
+              {
+                "variable": "system_in_use",
+                "value": {
+                  "path": "$.system_in_use"
+                }
+              },
+              {
+                "variable": "system_functional",
+                "value": {
+                  "path": "$.system_functional"
+                }
+              },
+              {
+                "variable": "end_user_name",
+                "value": {
+                  "path": "$.end_user_name"
+                }
+              },
+              {
+                "variable": "end_user_phone",
+                "value": {
+                  "path": "$.end_user_phone"
+                }
+              },
+              {
+                "variable": "state",
+                "value": {
+                  "path": "$.state"
+                }
+              },
+              {
+                "variable": "district",
+                "value": {
+                  "path": "$.district"
+                }
+              },
+              {
+                "variable": "block",
+                "value": {
+                  "path": "$.block"
+                }
+              },
+              {
+                "variable": "project_name",
+                "value": {
+                  "path": "$.project_name"
+                }
+              },
+              {
+                "variable": "vendor_name",
+                "value": {
+                  "path": "$.vendor_name"
+                }
+              },
+              {
+                "variable": "field_staff_name",
+                "value": {
+                  "path": "$.field_staff_name"
+                }
+              },
+              {
+                "variable": "amc_number",
+                "value": {
+                  "path": "$.amc_number"
+                }
+              },
+              {
+                "variable": "scheduled_date",
+                "value": {
+                  "path": "$.scheduled_date"
+                }
+              },
+              {
+                "variable": "amc_start_date",
+                "value": {
+                  "path": "$.amc_start_date"
+                }
+              },
+              {
+                "variable": "amc_end_date",
+                "value": {
+                  "path": "$.amc_end_date"
+                }
+              },
+              {
+                "variable": "first_submission_date",
+                "value": {
+                  "path": "$.first_submission_date"
+                }
+              },
+              {
+                "variable": "latest_submission_date",
+                "value": {
+                  "path": "$.latest_submission_date"
+                }
+              },
+              {
+                "variable": "step_action",
+                "value": {
+                  "path": "$.step_action"
+                }
+              },
+              {
+                "variable": "step_by",
+                "value": {
+                  "path": "$.step_by"
+                }
+              },
+              {
+                "variable": "step_at",
+                "value": {
+                  "path": "$.step_at"
+                }
+              },
+              {
+                "variable": "step_comment",
+                "value": {
+                  "path": "$.step_comment"
+                }
+              },
+              {
+                "variable": "responses",
+                "value": {
+                  "path": "$.responses.*"
+                },
+                "type": "array",
+                "format": {
+                  "type": "string",
+                  "scema": [
+                    {
+                      "variable": "label",
+                      "value": "label",
+                      "type": "string"
+                    },
+                    {
+                      "variable": "value",
+                      "value": "value",
+                      "type": "string"
+                    }
+                  ]
+                }
+              },
+              {
+                "variable": "readings",
+                "value": {
+                  "path": "$.readings.*"
+                },
+                "type": "array",
+                "format": {
+                  "type": "string",
+                  "scema": [
+                    {
+                      "variable": "parameter",
+                      "value": "parameter",
+                      "type": "string"
+                    },
+                    {
+                      "variable": "reading",
+                      "value": "reading",
+                      "type": "string"
+                    },
+                    {
+                      "variable": "accepted",
+                      "value": "accepted",
+                      "type": "string"
+                    },
+                    {
+                      "variable": "result",
+                      "value": "result",
+                      "type": "string"
+                    }
+                  ]
+                }
+              },
+              {
+                "variable": "documents",
+                "value": {
+                  "path": "$.documents.*"
+                },
+                "type": "array",
+                "format": {
+                  "type": "string",
+                  "scema": [
+                    {
+                      "variable": "documentType",
+                      "value": "documentType",
+                      "type": "string"
+                    },
+                    {
+                      "variable": "count",
+                      "value": "count",
+                      "type": "string"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "externalAPI": [
+              {
+                "path": "http://egov-filestore.core:8080/filestore/v1/files/url",
+                "queryParam": "tenantId=$.tenantId,fileStoreIds=$.photo_verification_id",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "photo_verification",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core:8080/filestore/v1/files/url",
+                "queryParam": "tenantId=$.tenantId,fileStoreIds=$.photo_ne_pcu_id",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "photo_ne_pcu",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core:8080/filestore/v1/files/url",
+                "queryParam": "tenantId=$.tenantId,fileStoreIds=$.photo_ne_grid_id",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "photo_ne_grid",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core:8080/filestore/v1/files/url",
+                "queryParam": "tenantId=$.tenantId,fileStoreIds=$.photo_solar_spd_id",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "photo_solar_spd",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
+              },
+              {
+                "path": "http://egov-filestore.core:8080/filestore/v1/files/url",
+                "queryParam": "tenantId=$.tenantId,fileStoreIds=$.photo_grid_spd_id",
+                "apiRequest": null,
+                "requesttype": "GET",
+                "responseMapping": [
+                  {
+                    "variable": "photo_grid_spd",
+                    "value": "$.fileStoreIds[0].url",
+                    "type": "image"
+                  }
+                ]
               }
             ]
           }
