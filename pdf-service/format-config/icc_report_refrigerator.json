@@ -588,7 +588,7 @@
             ],
             [
               {
-                "text": "Earthing",
+                "text": "Lightning Protection",
                 "style": "groupHeader",
                 "colSpan": 5
               },
@@ -607,13 +607,39 @@
             ],
             [
               "25",
+              "{{bom_lightning_protection_product}}",
+              "{{bom_lightning_protection_make}}",
+              "{{bom_lightning_protection_capacity}}",
+              "{{bom_lightning_protection_quantity}}"
+            ],
+            [
+              {
+                "text": "Earthing",
+                "style": "groupHeader",
+                "colSpan": 5
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              "26",
               "{{bom_earthing_1_product}}",
               "{{bom_earthing_1_make}}",
               "{{bom_earthing_1_capacity}}",
               "{{bom_earthing_1_quantity}}"
             ],
             [
-              "26",
+              "27",
               "{{bom_earthing_2_product}}",
               "{{bom_earthing_2_make}}",
               "{{bom_earthing_2_capacity}}",
@@ -639,28 +665,28 @@
               }
             ],
             [
-              "27",
+              "28",
               "{{bom_safety_docs_1_product}}",
               "{{bom_safety_docs_1_make}}",
               "{{bom_safety_docs_1_capacity}}",
               "{{bom_safety_docs_1_quantity}}"
             ],
             [
-              "28",
+              "29",
               "{{bom_safety_docs_2_product}}",
               "{{bom_safety_docs_2_make}}",
               "{{bom_safety_docs_2_capacity}}",
               "{{bom_safety_docs_2_quantity}}"
             ],
             [
-              "29",
+              "30",
               "{{bom_safety_docs_3_product}}",
               "{{bom_safety_docs_3_make}}",
               "{{bom_safety_docs_3_capacity}}",
               "{{bom_safety_docs_3_quantity}}"
             ],
             [
-              "30",
+              "31",
               "{{bom_safety_docs_4_product}}",
               "{{bom_safety_docs_4_make}}",
               "{{bom_safety_docs_4_capacity}}",
@@ -686,7 +712,7 @@
               }
             ],
             [
-              "31",
+              "32",
               "{{bom_consumables_product}}",
               "{{bom_consumables_make}}",
               "{{bom_consumables_capacity}}",
@@ -758,10 +784,10 @@
             ],
             [
               "1",
-              "{{machine_product}}",
-              "{{machine_make}}",
-              "{{machine_capacity}}",
-              "{{machine_quantity}}"
+              "{{machine_1_product}}",
+              "{{machine_1_make}}",
+              "{{machine_1_capacity}}",
+              "{{machine_1_quantity}}"
             ]
           ]
         },
