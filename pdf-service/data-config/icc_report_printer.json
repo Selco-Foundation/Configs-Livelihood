@@ -506,30 +506,6 @@
                 }
               },
               {
-                "variable": "machine_2_product",
-                "value": {
-                  "path": "$.machine_2_product"
-                }
-              },
-              {
-                "variable": "machine_2_make",
-                "value": {
-                  "path": "$.machine_2_make"
-                }
-              },
-              {
-                "variable": "machine_2_capacity",
-                "value": {
-                  "path": "$.machine_2_capacity"
-                }
-              },
-              {
-                "variable": "machine_2_quantity",
-                "value": {
-                  "path": "$.machine_2_quantity"
-                }
-              },
-              {
                 "variable": "system_date_of_recording",
                 "value": {
                   "path": "$.system_date_of_recording"
