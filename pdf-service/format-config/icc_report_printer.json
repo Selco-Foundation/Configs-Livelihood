@@ -1462,22 +1462,6 @@
                   155,
                   180
                 ]
-              },
-              {
-                "image": "{{INSTALLATION_IMAGE_7_2}}",
-                "width": 155,
-                "fit": [
-                  155,
-                  180
-                ]
-              },
-              {
-                "image": "{{INSTALLATION_IMAGE_7_3}}",
-                "width": 155,
-                "fit": [
-                  155,
-                  180
-                ]
               }
             ],
             "columnGap": 5
@@ -1592,6 +1576,14 @@
                   155,
                   180
                 ]
+              },
+              {
+                "image": "{{INSTALLATION_IMAGE_11_2}}",
+                "width": 155,
+                "fit": [
+                  155,
+                  180
+                ]
               }
             ],
             "columnGap": 5
@@ -1615,14 +1607,6 @@
             "columns": [
               {
                 "image": "{{INSTALLATION_IMAGE_12_1}}",
-                "width": 155,
-                "fit": [
-                  155,
-                  180
-                ]
-              },
-              {
-                "image": "{{INSTALLATION_IMAGE_12_2}}",
                 "width": 155,
                 "fit": [
                   155,
@@ -1656,22 +1640,6 @@
                   155,
                   180
                 ]
-              },
-              {
-                "image": "{{INSTALLATION_IMAGE_13_2}}",
-                "width": 155,
-                "fit": [
-                  155,
-                  180
-                ]
-              },
-              {
-                "image": "{{INSTALLATION_IMAGE_13_3}}",
-                "width": 155,
-                "fit": [
-                  155,
-                  180
-                ]
               }
             ],
             "columnGap": 5
@@ -1696,107 +1664,6 @@
             "columns": [
               {
                 "image": "{{INSTALLATION_IMAGE_14_1}}",
-                "width": 155,
-                "fit": [
-                  155,
-                  180
-                ]
-              },
-              {
-                "image": "{{INSTALLATION_IMAGE_14_2}}",
-                "width": 155,
-                "fit": [
-                  155,
-                  180
-                ]
-              },
-              {
-                "image": "{{INSTALLATION_IMAGE_14_3}}",
-                "width": 155,
-                "fit": [
-                  155,
-                  180
-                ]
-              }
-            ],
-            "columnGap": 5
-          }
-        ],
-        "unbreakable": true
-      },
-      {
-        "stack": [
-          {
-            "text": "{{installation_image_15_title}}",
-            "style": "tableHeader",
-            "margin": [
-              0,
-              10,
-              0,
-              2
-            ]
-          },
-          {
-            "columns": [
-              {
-                "image": "{{INSTALLATION_IMAGE_15_1}}",
-                "width": 155,
-                "fit": [
-                  155,
-                  180
-                ]
-              }
-            ],
-            "columnGap": 5
-          }
-        ],
-        "unbreakable": true
-      },
-      {
-        "stack": [
-          {
-            "text": "{{installation_image_16_title}}",
-            "style": "tableHeader",
-            "margin": [
-              0,
-              10,
-              0,
-              2
-            ]
-          },
-          {
-            "columns": [
-              {
-                "image": "{{INSTALLATION_IMAGE_16_1}}",
-                "width": 155,
-                "fit": [
-                  155,
-                  180
-                ]
-              }
-            ],
-            "columnGap": 5
-          }
-        ],
-        "unbreakable": true,
-        "pageBreak": "before"
-      },
-      {
-        "stack": [
-          {
-            "text": "{{installation_image_17_title}}",
-            "style": "tableHeader",
-            "margin": [
-              0,
-              10,
-              0,
-              2
-            ]
-          },
-          {
-            "columns": [
-              {
-                "image": "{{INSTALLATION_IMAGE_17_1}}",
                 "width": 155,
                 "fit": [
                   155,
