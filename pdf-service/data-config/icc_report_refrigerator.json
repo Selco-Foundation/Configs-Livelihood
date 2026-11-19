@@ -674,6 +674,30 @@
                 }
               },
               {
+                "variable": "bom_lightning_protection_product",
+                "value": {
+                  "path": "$.bom_lightning_protection_product"
+                }
+              },
+              {
+                "variable": "bom_lightning_protection_make",
+                "value": {
+                  "path": "$.bom_lightning_protection_make"
+                }
+              },
+              {
+                "variable": "bom_lightning_protection_capacity",
+                "value": {
+                  "path": "$.bom_lightning_protection_capacity"
+                }
+              },
+              {
+                "variable": "bom_lightning_protection_quantity",
+                "value": {
+                  "path": "$.bom_lightning_protection_quantity"
+                }
+              },
+              {
                 "variable": "bom_earthing_1_product",
                 "value": {
                   "path": "$.bom_earthing_1_product"
@@ -842,27 +866,27 @@
                 }
               },
               {
-                "variable": "machine_product",
+                "variable": "machine_1_product",
                 "value": {
-                  "path": "$.machine_product"
+                  "path": "$.machine_1_product"
                 }
               },
               {
-                "variable": "machine_make",
+                "variable": "machine_1_make",
                 "value": {
-                  "path": "$.machine_make"
+                  "path": "$.machine_1_make"
                 }
               },
               {
-                "variable": "machine_capacity",
+                "variable": "machine_1_capacity",
                 "value": {
-                  "path": "$.machine_capacity"
+                  "path": "$.machine_1_capacity"
                 }
               },
               {
-                "variable": "machine_quantity",
+                "variable": "machine_1_quantity",
                 "value": {
-                  "path": "$.machine_quantity"
+                  "path": "$.machine_1_quantity"
                 }
               },
               {

@@ -616,7 +616,7 @@
             ],
             [
               {
-                "text": "Earthing",
+                "text": "Lightning Protection",
                 "style": "groupHeader",
                 "colSpan": 5
               },
@@ -635,24 +635,43 @@
             ],
             [
               "29",
-              "{{bom_earthing_1_product}}",
-              "{{bom_earthing_1_make}}",
-              "{{bom_earthing_1_capacity}}",
-              "{{bom_earthing_1_quantity}}"
+              "{{bom_lightning_protection_1_product}}",
+              "{{bom_lightning_protection_1_make}}",
+              "{{bom_lightning_protection_1_capacity}}",
+              "{{bom_lightning_protection_1_quantity}}"
             ],
             [
               "30",
-              "{{bom_earthing_2_product}}",
-              "{{bom_earthing_2_make}}",
-              "{{bom_earthing_2_capacity}}",
-              "{{bom_earthing_2_quantity}}"
+              "{{bom_lightning_protection_2_product}}",
+              "{{bom_lightning_protection_2_make}}",
+              "{{bom_lightning_protection_2_capacity}}",
+              "{{bom_lightning_protection_2_quantity}}"
+            ],
+            [
+              {
+                "text": "Earthing",
+                "style": "groupHeader",
+                "colSpan": 5
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
             ],
             [
               "31",
-              "{{bom_earthing_3_product}}",
-              "{{bom_earthing_3_make}}",
-              "{{bom_earthing_3_capacity}}",
-              "{{bom_earthing_3_quantity}}"
+              "{{bom_earthing_product}}",
+              "{{bom_earthing_make}}",
+              "{{bom_earthing_capacity}}",
+              "{{bom_earthing_quantity}}"
             ],
             [
               {
@@ -793,10 +812,10 @@
             ],
             [
               "1",
-              "{{machine_product}}",
-              "{{machine_make}}",
-              "{{machine_capacity}}",
-              "{{machine_quantity}}"
+              "{{machine_1_product}}",
+              "{{machine_1_make}}",
+              "{{machine_1_capacity}}",
+              "{{machine_1_quantity}}"
             ]
           ]
         },

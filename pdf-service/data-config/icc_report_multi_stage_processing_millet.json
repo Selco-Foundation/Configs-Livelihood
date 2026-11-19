@@ -674,75 +674,75 @@
                 }
               },
               {
-                "variable": "bom_earthing_1_product",
+                "variable": "bom_lightning_protection_1_product",
                 "value": {
-                  "path": "$.bom_earthing_1_product"
+                  "path": "$.bom_lightning_protection_1_product"
                 }
               },
               {
-                "variable": "bom_earthing_1_make",
+                "variable": "bom_lightning_protection_1_make",
                 "value": {
-                  "path": "$.bom_earthing_1_make"
+                  "path": "$.bom_lightning_protection_1_make"
                 }
               },
               {
-                "variable": "bom_earthing_1_capacity",
+                "variable": "bom_lightning_protection_1_capacity",
                 "value": {
-                  "path": "$.bom_earthing_1_capacity"
+                  "path": "$.bom_lightning_protection_1_capacity"
                 }
               },
               {
-                "variable": "bom_earthing_1_quantity",
+                "variable": "bom_lightning_protection_1_quantity",
                 "value": {
-                  "path": "$.bom_earthing_1_quantity"
+                  "path": "$.bom_lightning_protection_1_quantity"
                 }
               },
               {
-                "variable": "bom_earthing_2_product",
+                "variable": "bom_lightning_protection_2_product",
                 "value": {
-                  "path": "$.bom_earthing_2_product"
+                  "path": "$.bom_lightning_protection_2_product"
                 }
               },
               {
-                "variable": "bom_earthing_2_make",
+                "variable": "bom_lightning_protection_2_make",
                 "value": {
-                  "path": "$.bom_earthing_2_make"
+                  "path": "$.bom_lightning_protection_2_make"
                 }
               },
               {
-                "variable": "bom_earthing_2_capacity",
+                "variable": "bom_lightning_protection_2_capacity",
                 "value": {
-                  "path": "$.bom_earthing_2_capacity"
+                  "path": "$.bom_lightning_protection_2_capacity"
                 }
               },
               {
-                "variable": "bom_earthing_2_quantity",
+                "variable": "bom_lightning_protection_2_quantity",
                 "value": {
-                  "path": "$.bom_earthing_2_quantity"
+                  "path": "$.bom_lightning_protection_2_quantity"
                 }
               },
               {
-                "variable": "bom_earthing_3_product",
+                "variable": "bom_earthing_product",
                 "value": {
-                  "path": "$.bom_earthing_3_product"
+                  "path": "$.bom_earthing_product"
                 }
               },
               {
-                "variable": "bom_earthing_3_make",
+                "variable": "bom_earthing_make",
                 "value": {
-                  "path": "$.bom_earthing_3_make"
+                  "path": "$.bom_earthing_make"
                 }
               },
               {
-                "variable": "bom_earthing_3_capacity",
+                "variable": "bom_earthing_capacity",
                 "value": {
-                  "path": "$.bom_earthing_3_capacity"
+                  "path": "$.bom_earthing_capacity"
                 }
               },
               {
-                "variable": "bom_earthing_3_quantity",
+                "variable": "bom_earthing_quantity",
                 "value": {
-                  "path": "$.bom_earthing_3_quantity"
+                  "path": "$.bom_earthing_quantity"
                 }
               },
               {
@@ -914,27 +914,27 @@
                 }
               },
               {
-                "variable": "machine_product",
+                "variable": "machine_1_product",
                 "value": {
-                  "path": "$.machine_product"
+                  "path": "$.machine_1_product"
                 }
               },
               {
-                "variable": "machine_make",
+                "variable": "machine_1_make",
                 "value": {
-                  "path": "$.machine_make"
+                  "path": "$.machine_1_make"
                 }
               },
               {
-                "variable": "machine_capacity",
+                "variable": "machine_1_capacity",
                 "value": {
-                  "path": "$.machine_capacity"
+                  "path": "$.machine_1_capacity"
                 }
               },
               {
-                "variable": "machine_quantity",
+                "variable": "machine_1_quantity",
                 "value": {
-                  "path": "$.machine_quantity"
+                  "path": "$.machine_1_quantity"
                 }
               },
               {

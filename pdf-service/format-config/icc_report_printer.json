@@ -619,13 +619,6 @@
               "{{machine_1_make}}",
               "{{machine_1_capacity}}",
               "{{machine_1_quantity}}"
-            ],
-            [
-              "2",
-              "{{machine_2_product}}",
-              "{{machine_2_make}}",
-              "{{machine_2_capacity}}",
-              "{{machine_2_quantity}}"
             ]
           ]
         },

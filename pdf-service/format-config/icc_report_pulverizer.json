@@ -831,10 +831,10 @@
             ],
             [
               "1",
-              "{{machine_product}}",
-              "{{machine_make}}",
-              "{{machine_capacity}}",
-              "{{machine_quantity}}"
+              "{{machine_1_product}}",
+              "{{machine_1_make}}",
+              "{{machine_1_capacity}}",
+              "{{machine_1_quantity}}"
             ]
           ]
         },
