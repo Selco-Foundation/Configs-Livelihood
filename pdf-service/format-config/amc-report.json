@@ -6,12 +6,12 @@
       42,
       46,
       42,
-      60
+      68
     ],
     "defaultStyle": {
       "fontSize": 9
     },
-    "footer": "function (page) { var out = [];if (page > 1) { out.push({ text: 'AMC Report', bold: true, fontSize: 10, relativePosition: { x: 42, y: -760 } });out.push({ canvas: [{ type: 'line', x1: 0, y1: 0, x2: 511, y2: 0, lineWidth: 0.7 }], relativePosition: { x: 42, y: -744 } }); }out.push({ canvas: [{ type: 'line', x1: 0, y1: 0, x2: 511, y2: 0, lineWidth: 0.7 }], margin: [42, 0, 42, 4] });out.push({ columns: [{ text: 'Generated from Setu4Livelihoods.', fontSize: 8, color: '#555555' },{ text: 'Page ' + page, alignment: 'right', fontSize: 8, color: '#555555' }], margin: [42, 0, 42, 0] });return out; }",
+    "footer": "function (page) { var out = [];if (page > 1) { out.push({ text: 'AMC Report', bold: true, fontSize: 10, relativePosition: { x: 42, y: -752 } });out.push({ canvas: [{ type: 'line', x1: 0, y1: 0, x2: 511, y2: 0, lineWidth: 0.7 }], relativePosition: { x: 42, y: -736 } }); }out.push({ canvas: [{ type: 'line', x1: 0, y1: 0, x2: 511, y2: 0, lineWidth: 0.7 }], margin: [42, 8, 42, 4] });out.push({ columns: [{ text: 'Generated from Setu4Livelihoods.', fontSize: 8, color: '#555555' },{ text: 'Page ' + page, alignment: 'right', fontSize: 8, color: '#555555' }], margin: [42, 0, 42, 0] });return out; }",
     "content": [
       {
         "columns": [
