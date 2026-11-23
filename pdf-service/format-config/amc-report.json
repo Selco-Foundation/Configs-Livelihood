@@ -3,562 +3,1286 @@
   "config": {
     "pageSize": "A4",
     "pageMargins": [
-      28,
-      28,
-      28,
-      28
+      42,
+      46,
+      42,
+      60
     ],
     "defaultStyle": {
       "fontSize": 9
     },
+    "footer": "function (page) { var out = [];if (page > 1) { out.push({ text: 'AMC Report', bold: true, fontSize: 10, relativePosition: { x: 42, y: -760 } });out.push({ canvas: [{ type: 'line', x1: 0, y1: 0, x2: 511, y2: 0, lineWidth: 0.7 }], relativePosition: { x: 42, y: -744 } }); }out.push({ canvas: [{ type: 'line', x1: 0, y1: 0, x2: 511, y2: 0, lineWidth: 0.7 }], margin: [42, 0, 42, 4] });out.push({ columns: [{ text: 'Generated from Setu4Livelihoods.', fontSize: 8, color: '#555555' },{ text: 'Page ' + page, alignment: 'right', fontSize: 8, color: '#555555' }], margin: [42, 0, 42, 0] });return out; }",
     "content": [
       {
-        "text": "AMC VISIT REPORT",
-        "style": "title"
-      },
-      {
-        "text": "Placeholder layout, to be replaced by the client's format",
-        "style": "note"
-      },
-      {
-        "table": {
-          "widths": [
-            "18%",
-            "32%",
-            "18%",
-            "32%"
-          ],
-          "body": [
-            [
+        "columns": [
+          {
+            "width": "*",
+            "stack": [
               {
-                "text": "Report status",
-                "style": "label"
+                "text": "AMC Report",
+                "fontSize": 22,
+                "bold": true
               },
               {
-                "text": "{{report_status}}",
-                "style": "value"
+                "text": "Annual maintenance of livelihood solar system",
+                "fontSize": 10.5
               },
               {
-                "text": "Report ID",
-                "style": "label"
-              },
-              {
-                "text": "{{report_id}}",
-                "style": "value"
-              }
-            ]
-          ]
-        },
-        "layout": {}
-      },
-      {
-        "text": "End user and AMC",
-        "style": "sectionHeader"
-      },
-      {
-        "table": {
-          "widths": [
-            "18%",
-            "32%",
-            "18%",
-            "32%"
-          ],
-          "body": [
-            [
-              {
-                "text": "End user",
-                "style": "label"
-              },
-              {
-                "text": "{{end_user_name}}",
-                "style": "value"
-              },
-              {
-                "text": "Phone",
-                "style": "label"
-              },
-              {
-                "text": "{{end_user_phone}}",
-                "style": "value"
-              }
-            ],
-            [
-              {
-                "text": "State",
-                "style": "label"
-              },
-              {
-                "text": "{{state}}",
-                "style": "value"
-              },
-              {
-                "text": "District",
-                "style": "label"
-              },
-              {
-                "text": "{{district}}",
-                "style": "value"
-              }
-            ],
-            [
-              {
-                "text": "Block",
-                "style": "label"
-              },
-              {
-                "text": "{{block}}",
-                "style": "value"
-              },
-              {
-                "text": "Project",
-                "style": "label"
-              },
-              {
-                "text": "{{project_name}}",
-                "style": "value"
-              }
-            ],
-            [
-              {
-                "text": "Vendor",
-                "style": "label"
-              },
-              {
-                "text": "{{vendor_name}}",
-                "style": "value"
-              },
-              {
-                "text": "Field staff",
-                "style": "label"
-              },
-              {
-                "text": "{{field_staff_name}}",
-                "style": "value"
-              }
-            ],
-            [
-              {
-                "text": "AMC visit",
-                "style": "label"
-              },
-              {
-                "text": "{{amc_number}}",
-                "style": "value"
-              },
-              {
-                "text": "Scheduled date",
-                "style": "label"
-              },
-              {
-                "text": "{{scheduled_date}}",
-                "style": "value"
-              }
-            ],
-            [
-              {
-                "text": "AMC start",
-                "style": "label"
-              },
-              {
-                "text": "{{amc_start_date}}",
-                "style": "value"
-              },
-              {
-                "text": "AMC end",
-                "style": "label"
-              },
-              {
-                "text": "{{amc_end_date}}",
-                "style": "value"
-              }
-            ],
-            [
-              {
-                "text": "First submitted",
-                "style": "label"
-              },
-              {
-                "text": "{{first_submission_date}}",
-                "style": "value"
-              },
-              {
-                "text": "Last submitted",
-                "style": "label"
-              },
-              {
-                "text": "{{latest_submission_date}}",
-                "style": "value"
-              }
-            ]
-          ]
-        },
-        "layout": {}
-      },
-      {
-        "text": "System status",
-        "style": "sectionHeader"
-      },
-      {
-        "table": {
-          "widths": [
-            "18%",
-            "32%",
-            "18%",
-            "32%"
-          ],
-          "body": [
-            [
-              {
-                "text": "System in use",
-                "style": "label"
-              },
-              {
-                "text": "{{system_in_use}}",
-                "style": "value"
-              },
-              {
-                "text": "System functional",
-                "style": "label"
-              },
-              {
-                "text": "{{system_functional}}",
-                "style": "value"
-              }
-            ]
-          ]
-        },
-        "layout": {}
-      },
-      {
-        "text": "Report answers",
-        "style": "sectionHeader"
-      },
-      {
-        "table": {
-          "headerRows": 1,
-          "widths": [
-            "45%",
-            "55%"
-          ],
-          "body": [
-            [
-              {
-                "text": "Question",
-                "style": "tableHeader"
-              },
-              {
-                "text": "Answer",
-                "style": "tableHeader"
-              }
-            ],
-            "{{#responses}}[{\"text\":\"{{label}}\", \"style\":\"value\"}, {\"text\":\"{{value}}\", \"style\":\"value\"}]{{/responses}}"
-          ]
-        },
-        "layout": {}
-      },
-      {
-        "text": "Readings checked for auto-approval",
-        "style": "sectionHeader"
-      },
-      {
-        "table": {
-          "headerRows": 1,
-          "widths": [
-            "40%",
-            "20%",
-            "25%",
-            "15%"
-          ],
-          "body": [
-            [
-              {
-                "text": "Parameter",
-                "style": "tableHeader"
-              },
-              {
-                "text": "Reading",
-                "style": "tableHeader"
-              },
-              {
-                "text": "Accepted",
-                "style": "tableHeader"
-              },
-              {
-                "text": "Result",
-                "style": "tableHeader"
-              }
-            ],
-            "{{#readings}}[{\"text\":\"{{parameter}}\", \"style\":\"value\"}, {\"text\":\"{{reading}}\", \"style\":\"value\"}, {\"text\":\"{{accepted}}\", \"style\":\"value\"}, {\"text\":\"{{result}}\", \"style\":\"value\"}]{{/readings}}"
-          ]
-        },
-        "layout": {}
-      },
-      {
-        "text": "Latest action",
-        "style": "sectionHeader"
-      },
-      {
-        "table": {
-          "widths": [
-            "18%",
-            "32%",
-            "18%",
-            "32%"
-          ],
-          "body": [
-            [
-              {
-                "text": "Action",
-                "style": "label"
-              },
-              {
-                "text": "{{step_action}}",
-                "style": "value"
-              },
-              {
-                "text": "By",
-                "style": "label"
-              },
-              {
-                "text": "{{step_by}}",
-                "style": "value"
-              }
-            ],
-            [
-              {
-                "text": "When",
-                "style": "label"
-              },
-              {
-                "text": "{{step_at}}",
-                "style": "value"
-              },
-              {
-                "text": "Reason / comment",
-                "style": "label"
-              },
-              {
-                "text": "{{step_comment}}",
-                "style": "value"
-              }
-            ]
-          ]
-        },
-        "layout": {}
-      },
-      {
-        "text": "Photos",
-        "style": "sectionHeader"
-      },
-      {
-        "table": {
-          "headerRows": 1,
-          "widths": [
-            "70%",
-            "30%"
-          ],
-          "body": [
-            [
-              {
-                "text": "Photo type",
-                "style": "tableHeader"
-              },
-              {
-                "text": "Count",
-                "style": "tableHeader"
-              }
-            ],
-            "{{#documents}}[{\"text\":\"{{documentType}}\", \"style\":\"value\"}, {\"text\":\"{{count}}\", \"style\":\"value\"}]{{/documents}}"
-          ]
-        },
-        "layout": {}
-      },
-      {
-        "table": {
-          "widths": [
-            "50%",
-            "50%"
-          ],
-          "body": [
-            [
-              {
-                "stack": [
-                  {
-                    "text": "Field staff with the end user and the system",
-                    "style": "photoTitle"
-                  },
-                  {
-                    "image": "{{photo_verification}}",
-                    "fit": [
-                      240,
-                      180
-                    ]
-                  }
-                ],
+                "text": "SELCO Foundation",
+                "fontSize": 9,
                 "margin": [
                   0,
+                  2,
                   0,
-                  0,
-                  8
+                  0
                 ]
-              },
-              {
-                "stack": [
-                  {
-                    "text": "Neutral to earth voltage, PCU output",
-                    "style": "photoTitle"
-                  },
-                  {
-                    "image": "{{photo_ne_pcu}}",
-                    "fit": [
-                      240,
-                      180
-                    ]
-                  }
-                ],
-                "margin": [
-                  0,
-                  0,
-                  0,
-                  8
-                ]
-              }
-            ],
-            [
-              {
-                "stack": [
-                  {
-                    "text": "Neutral to earth voltage, grid input",
-                    "style": "photoTitle"
-                  },
-                  {
-                    "image": "{{photo_ne_grid}}",
-                    "fit": [
-                      240,
-                      180
-                    ]
-                  }
-                ],
-                "margin": [
-                  0,
-                  0,
-                  0,
-                  8
-                ]
-              },
-              {
-                "stack": [
-                  {
-                    "text": "Solar SPD",
-                    "style": "photoTitle"
-                  },
-                  {
-                    "image": "{{photo_solar_spd}}",
-                    "fit": [
-                      240,
-                      180
-                    ]
-                  }
-                ],
-                "margin": [
-                  0,
-                  0,
-                  0,
-                  8
-                ]
-              }
-            ],
-            [
-              {
-                "stack": [
-                  {
-                    "text": "Grid input SPD",
-                    "style": "photoTitle"
-                  },
-                  {
-                    "image": "{{photo_grid_spd}}",
-                    "fit": [
-                      240,
-                      180
-                    ]
-                  }
-                ],
-                "margin": [
-                  0,
-                  0,
-                  0,
-                  8
-                ]
-              },
-              {
-                "text": ""
               }
             ]
-          ]
-        },
-        "layout": "noBorders",
+          },
+          {
+            "width": 220,
+            "text": "{{vendor_name}}",
+            "fontSize": 12,
+            "bold": true,
+            "alignment": "right",
+            "margin": [
+              0,
+              26,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "canvas": [
+          {
+            "type": "line",
+            "x1": 0,
+            "y1": 0,
+            "x2": 511,
+            "y2": 0,
+            "lineWidth": 1.5
+          }
+        ],
         "margin": [
           0,
           8,
           0,
-          0
-        ]
-      }
-    ],
-    "styles": {
-      "title": {
-        "fontSize": 15,
-        "bold": true,
-        "alignment": "center",
-        "margin": [
-          0,
-          0,
-          0,
-          2
+          4
         ]
       },
-      "note": {
-        "fontSize": 8,
-        "italics": true,
-        "color": "#666666",
-        "alignment": "center",
-        "margin": [
-          0,
-          0,
-          0,
-          8
-        ]
+      {
+        "text": "Vendor and visit",
+        "style": "section"
       },
-      "sectionHeader": {
-        "fontSize": 11,
-        "bold": true,
+      {
+        "canvas": [
+          {
+            "type": "line",
+            "x1": 0,
+            "y1": 0,
+            "x2": 511,
+            "y2": 0,
+            "lineWidth": 1.2
+          }
+        ],
         "margin": [
           0,
-          10,
+          0,
           0,
           4
         ]
       },
-      "tableHeader": {
-        "fontSize": 9,
-        "bold": true,
-        "fillColor": "#EEEEEE"
+      {
+        "table": {
+          "widths": [
+            97,
+            139,
+            97,
+            141
+          ],
+          "dontBreakRows": true,
+          "body": [
+            [
+              {
+                "text": "Vendor name",
+                "style": "label",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              },
+              {
+                "text": "{{vendor_name}}",
+                "style": "value",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              },
+              {
+                "text": "Date of visit",
+                "style": "label",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              },
+              {
+                "text": "{{visit_date}}",
+                "style": "value",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              }
+            ],
+            [
+              {
+                "text": "Service by",
+                "style": "label",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              },
+              {
+                "text": "{{service_by}}",
+                "style": "value",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              },
+              {
+                "text": "Contact number",
+                "style": "label",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              },
+              {
+                "text": "{{service_by_phone}}",
+                "style": "value",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              }
+            ]
+          ]
+        }
       },
-      "label": {
-        "fontSize": 9,
-        "bold": true
+      {
+        "text": "Site details",
+        "style": "section"
       },
-      "value": {
-        "fontSize": 9
+      {
+        "canvas": [
+          {
+            "type": "line",
+            "x1": 0,
+            "y1": 0,
+            "x2": 511,
+            "y2": 0,
+            "lineWidth": 1.2
+          }
+        ],
+        "margin": [
+          0,
+          0,
+          0,
+          4
+        ]
       },
-      "photoTitle": {
-        "fontSize": 9,
+      {
+        "table": {
+          "widths": [
+            97,
+            139,
+            97,
+            141
+          ],
+          "dontBreakRows": true,
+          "body": [
+            [
+              {
+                "text": "End user name",
+                "style": "label",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              },
+              {
+                "text": "{{end_user_name}}",
+                "style": "value",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              },
+              {
+                "text": "Contact number",
+                "style": "label",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              },
+              {
+                "text": "{{end_user_phone}}",
+                "style": "value",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              }
+            ],
+            [
+              {
+                "text": "Date of installation",
+                "style": "label",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              },
+              {
+                "text": "{{installation_date}}",
+                "style": "value",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              },
+              {
+                "text": "Taluk / Block",
+                "style": "label",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              },
+              {
+                "text": "{{block}}",
+                "style": "value",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              }
+            ],
+            [
+              {
+                "text": "District",
+                "style": "label",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              },
+              {
+                "text": "{{district}}",
+                "style": "value",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              },
+              {
+                "text": "PIN code",
+                "style": "label",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              },
+              {
+                "text": "{{pin_code}}",
+                "style": "value",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              }
+            ],
+            [
+              {
+                "text": "Purchase order no",
+                "style": "label",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              },
+              {
+                "text": "{{purchase_order_number}}",
+                "style": "value",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              },
+              {
+                "text": " ",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              },
+              {
+                "text": " ",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "text": "Charge Controller / PCU",
+        "style": "section"
+      },
+      {
+        "canvas": [
+          {
+            "type": "line",
+            "x1": 0,
+            "y1": 0,
+            "x2": 511,
+            "y2": 0,
+            "lineWidth": 1.2
+          }
+        ],
+        "margin": [
+          0,
+          0,
+          0,
+          4
+        ]
+      },
+      {
+        "table": {
+          "widths": [
+            97,
+            139,
+            97,
+            141
+          ],
+          "dontBreakRows": true,
+          "body": [
+            [
+              {
+                "text": "Priority",
+                "style": "label",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              },
+              {
+                "text": "{{pcu_priority}}",
+                "style": "value",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              },
+              {
+                "text": "No of panels in a string",
+                "style": "label",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              },
+              {
+                "text": "{{panels_per_string}}",
+                "style": "value",
+                "border": [
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "text": "Observation points",
+        "style": "section"
+      },
+      {
+        "canvas": [
+          {
+            "type": "line",
+            "x1": 0,
+            "y1": 0,
+            "x2": 511,
+            "y2": 0,
+            "lineWidth": 1.2
+          }
+        ],
+        "margin": [
+          0,
+          0,
+          0,
+          4
+        ]
+      },
+      {
+        "table": {
+          "headerRows": 1,
+          "dontBreakRows": true,
+          "widths": [
+            24,
+            383,
+            76
+          ],
+          "body": [
+            [
+              {
+                "text": "#",
+                "style": "th"
+              },
+              {
+                "text": "Observation point",
+                "style": "th"
+              },
+              {
+                "text": "Response",
+                "style": "th"
+              }
+            ],
+            [
+              {
+                "text": "Solar panel",
+                "style": "th",
+                "colSpan": 3
+              },
+              {
+                "text": " "
+              },
+              {
+                "text": " "
+              }
+            ],
+            [
+              {
+                "text": "4.1",
+                "style": "no"
+              },
+              {
+                "text": "Cables are tied to the frame / protection",
+                "style": "td"
+              },
+              {
+                "text": "{{obs_1}}",
+                "style": "{{obs_1_style}}"
+              }
+            ],
+            [
+              {
+                "text": "4.2",
+                "style": "no"
+              },
+              {
+                "text": "Are the panels clean?",
+                "style": "td"
+              },
+              {
+                "text": "{{obs_2}}",
+                "style": "{{obs_2_style}}"
+              }
+            ],
+            [
+              {
+                "text": "4.3",
+                "style": "no"
+              },
+              {
+                "text": "Rusting on MMS",
+                "style": "td"
+              },
+              {
+                "text": "{{obs_3}}",
+                "style": "{{obs_3_style}}"
+              }
+            ],
+            [
+              {
+                "text": "4.4",
+                "style": "no"
+              },
+              {
+                "text": "Rusting on nuts and bolts",
+                "style": "td"
+              },
+              {
+                "text": "{{obs_4}}",
+                "style": "{{obs_4_style}}"
+              }
+            ],
+            [
+              {
+                "text": "Array junction box (AJB)",
+                "style": "th",
+                "colSpan": 3
+              },
+              {
+                "text": " "
+              },
+              {
+                "text": " "
+              }
+            ],
+            [
+              {
+                "text": "4.5",
+                "style": "no"
+              },
+              {
+                "text": "AJB is mounted firm to the vertical surface",
+                "style": "td"
+              },
+              {
+                "text": "{{obs_5}}",
+                "style": "{{obs_5_style}}"
+              }
+            ],
+            [
+              {
+                "text": "Battery",
+                "style": "th",
+                "colSpan": 3
+              },
+              {
+                "text": " "
+              },
+              {
+                "text": " "
+              }
+            ],
+            [
+              {
+                "text": "4.6",
+                "style": "no"
+              },
+              {
+                "text": "Are battery terminals clean?",
+                "style": "td"
+              },
+              {
+                "text": "{{obs_6}}",
+                "style": "{{obs_6_style}}"
+              }
+            ],
+            [
+              {
+                "text": "4.7",
+                "style": "no"
+              },
+              {
+                "text": "Petroleum jelly is applied at all battery terminals",
+                "style": "td"
+              },
+              {
+                "text": "{{obs_7}}",
+                "style": "{{obs_7_style}}"
+              }
+            ],
+            [
+              {
+                "text": "4.8",
+                "style": "no"
+              },
+              {
+                "text": "Float indicators are not damaged",
+                "style": "td"
+              },
+              {
+                "text": "{{obs_8}}",
+                "style": "{{obs_8_style}}"
+              }
+            ],
+            [
+              {
+                "text": "4.9",
+                "style": "no"
+              },
+              {
+                "text": "Is the distilled water level between the green and red marks on the float indicator?",
+                "style": "td"
+              },
+              {
+                "text": "{{obs_9}}",
+                "style": "{{obs_9_style}}"
+              }
+            ],
+            [
+              {
+                "text": "Inverter / PCU",
+                "style": "th",
+                "colSpan": 3
+              },
+              {
+                "text": " "
+              },
+              {
+                "text": " "
+              }
+            ],
+            [
+              {
+                "text": "4.10",
+                "style": "no"
+              },
+              {
+                "text": "Cables entering the PCU are intact, without loose connections",
+                "style": "td"
+              },
+              {
+                "text": "{{obs_10}}",
+                "style": "{{obs_10_style}}"
+              }
+            ],
+            [
+              {
+                "text": "Lightning arrestor (LA)",
+                "style": "th",
+                "colSpan": 3
+              },
+              {
+                "text": " "
+              },
+              {
+                "text": " "
+              }
+            ],
+            [
+              {
+                "text": "4.11",
+                "style": "no"
+              },
+              {
+                "text": "Insulation is provided between the LA and the elevation pole using ceramic insulators",
+                "style": "td"
+              },
+              {
+                "text": "{{obs_11}}",
+                "style": "{{obs_11_style}}"
+              }
+            ],
+            [
+              {
+                "text": "4.12",
+                "style": "no"
+              },
+              {
+                "text": "The entire lightning arrestor set-up is firmly fixed over the roof surface",
+                "style": "td"
+              },
+              {
+                "text": "{{obs_12}}",
+                "style": "{{obs_12_style}}"
+              }
+            ],
+            [
+              {
+                "text": "4.13",
+                "style": "no"
+              },
+              {
+                "text": "GI strips / cable are provided with saddle insulators on the RCC roof",
+                "style": "td"
+              },
+              {
+                "text": "{{obs_13}}",
+                "style": "{{obs_13_style}}"
+              }
+            ],
+            [
+              {
+                "text": "Earthing",
+                "style": "th",
+                "colSpan": 3
+              },
+              {
+                "text": " "
+              },
+              {
+                "text": " "
+              }
+            ],
+            [
+              {
+                "text": "4.14",
+                "style": "no"
+              },
+              {
+                "text": "Down conductor is protected with conduit pipe until the pit",
+                "style": "td"
+              },
+              {
+                "text": "{{obs_14}}",
+                "style": "{{obs_14_style}}"
+              }
+            ],
+            [
+              {
+                "text": "4.15",
+                "style": "no"
+              },
+              {
+                "text": "Is the earthing cable in full contact with the electrode?",
+                "style": "td"
+              },
+              {
+                "text": "{{obs_15}}",
+                "style": "{{obs_15_style}}"
+              }
+            ],
+            [
+              {
+                "text": "4.16",
+                "style": "no"
+              },
+              {
+                "text": "Earth electrodes are buried well in the earth",
+                "style": "td"
+              },
+              {
+                "text": "{{obs_16}}",
+                "style": "{{obs_16_style}}"
+              }
+            ],
+            [
+              {
+                "text": "Cable management",
+                "style": "th",
+                "colSpan": 3
+              },
+              {
+                "text": " "
+              },
+              {
+                "text": " "
+              }
+            ],
+            [
+              {
+                "text": "4.17",
+                "style": "no"
+              },
+              {
+                "text": "All cables connections were found secure with ends crimped with lugs",
+                "style": "td"
+              },
+              {
+                "text": "{{obs_17}}",
+                "style": "{{obs_17_style}}"
+              }
+            ],
+            [
+              {
+                "text": "4.18",
+                "style": "no"
+              },
+              {
+                "text": "Are any cables damaged or worn out",
+                "style": "td"
+              },
+              {
+                "text": "{{obs_18}}",
+                "style": "{{obs_18_style}}"
+              }
+            ],
+            [
+              {
+                "text": "4.19",
+                "style": "no"
+              },
+              {
+                "text": "MC4 connectors are intact and properly interlocked",
+                "style": "td"
+              },
+              {
+                "text": "{{obs_19}}",
+                "style": "{{obs_19_style}}"
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "text": "Capture readings",
+        "style": "section"
+      },
+      {
+        "canvas": [
+          {
+            "type": "line",
+            "x1": 0,
+            "y1": 0,
+            "x2": 511,
+            "y2": 0,
+            "lineWidth": 1.2
+          }
+        ],
+        "margin": [
+          0,
+          0,
+          0,
+          4
+        ]
+      },
+      {
+        "table": {
+          "headerRows": 1,
+          "dontBreakRows": true,
+          "widths": [
+            24,
+            258,
+            100,
+            92
+          ],
+          "body": [
+            [
+              {
+                "text": "#",
+                "style": "th"
+              },
+              {
+                "text": "Reading / field",
+                "style": "th"
+              },
+              {
+                "text": "Value",
+                "style": "th"
+              },
+              {
+                "text": "Photo",
+                "style": "th"
+              }
+            ],
+            "{{#reading_rows}}[{\"text\":\"{{no}}\", \"style\":\"no\", \"margin\":[1, {{#photo}}22{{/photo}}{{^photo}}2{{/photo}}, 1, 2]}, {\"text\":\"{{label}}\", \"style\":\"td\", \"margin\":[1, {{#photo}}22{{/photo}}{{^photo}}2{{/photo}}, 1, 2]}, {\"text\":\"{{value}}\", \"style\":\"{{style}}\", \"margin\":[1, {{#photo}}22{{/photo}}{{^photo}}2{{/photo}}, 1, 2]}, {{#p_ne_pcu}}{\"image\":\"{{photo_ne_pcu}}\", \"fit\":[86, 56], \"margin\":[0, 2, 0, 2]}{{/p_ne_pcu}}{{^p_ne_pcu}}{{#p_ne_grid}}{\"image\":\"{{photo_ne_grid}}\", \"fit\":[86, 56], \"margin\":[0, 2, 0, 2]}{{/p_ne_grid}}{{^p_ne_grid}}{{#p_solar_spd}}{\"image\":\"{{photo_solar_spd}}\", \"fit\":[86, 56], \"margin\":[0, 2, 0, 2]}{{/p_solar_spd}}{{^p_solar_spd}}{{#p_grid_spd}}{\"image\":\"{{photo_grid_spd}}\", \"fit\":[86, 56], \"margin\":[0, 2, 0, 2]}{{/p_grid_spd}}{{^p_grid_spd}}{\"text\":\" \"}{{/p_grid_spd}}{{/p_solar_spd}}{{/p_ne_grid}}{{/p_ne_pcu}}]{{/reading_rows}}"
+          ]
+        }
+      },
+      {
+        "text": "Remarks",
+        "style": "section"
+      },
+      {
+        "canvas": [
+          {
+            "type": "line",
+            "x1": 0,
+            "y1": 0,
+            "x2": 511,
+            "y2": 0,
+            "lineWidth": 1.2
+          }
+        ],
+        "margin": [
+          0,
+          0,
+          0,
+          4
+        ]
+      },
+      {
+        "table": {
+          "widths": [
+            501
+          ],
+          "body": [
+            [
+              {
+                "stack": [
+                  {
+                    "text": "Vendor remarks",
+                    "style": "label"
+                  },
+                  {
+                    "text": "{{vendor_remarks}}",
+                    "style": "td",
+                    "margin": [
+                      0,
+                      6,
+                      0,
+                      2
+                    ]
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        "margin": [
+          0,
+          0,
+          0,
+          6
+        ]
+      },
+      {
+        "table": {
+          "widths": [
+            501
+          ],
+          "body": [
+            [
+              {
+                "stack": [
+                  {
+                    "text": "End User remarks",
+                    "style": "label"
+                  },
+                  {
+                    "text": "{{end_user_remarks}}",
+                    "style": "td",
+                    "margin": [
+                      0,
+                      6,
+                      0,
+                      2
+                    ]
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        "margin": [
+          0,
+          0,
+          0,
+          6
+        ]
+      },
+      {
+        "stack": [
+          {
+            "text": "Photograph with the system",
+            "style": "section"
+          },
+          {
+            "canvas": [
+              {
+                "type": "line",
+                "x1": 0,
+                "y1": 0,
+                "x2": 511,
+                "y2": 0,
+                "lineWidth": 1.2
+              }
+            ],
+            "margin": [
+              0,
+              0,
+              0,
+              4
+            ]
+          },
+          {
+            "image": "{{photo_verification}}",
+            "fit": [
+              270,
+              176
+            ]
+          }
+        ],
+        "unbreakable": true
+      },
+      {
+        "stack": [
+          {
+            "text": "Signatures",
+            "style": "section"
+          },
+          {
+            "canvas": [
+              {
+                "type": "line",
+                "x1": 0,
+                "y1": 0,
+                "x2": 511,
+                "y2": 0,
+                "lineWidth": 1.2
+              }
+            ],
+            "margin": [
+              0,
+              0,
+              0,
+              4
+            ]
+          },
+          {
+            "table": {
+              "widths": [
+                246,
+                246
+              ],
+              "dontBreakRows": true,
+              "body": [
+                [
+                  {
+                    "stack": [
+                      {
+                        "text": "End user & signature",
+                        "style": "signTitle"
+                      },
+                      {
+                        "text": "End user name: {{end_user_name}}",
+                        "fontSize": 9
+                      },
+                      {
+                        "text": "Contact no: {{end_user_phone}}",
+                        "fontSize": 9
+                      },
+                      {
+                        "text": "VERIFIED VIA Verification Code",
+                        "fontSize": 9,
+                        "bold": true,
+                        "margin": [
+                          0,
+                          6,
+                          0,
+                          0
+                        ]
+                      },
+                      {
+                        "text": "(in lieu of signature)",
+                        "fontSize": 9,
+                        "bold": true
+                      },
+                      {
+                        "text": "Registered Mobile: {{end_user_phone}}",
+                        "fontSize": 9
+                      },
+                      {
+                        "text": "Verified At: {{verified_at}}",
+                        "fontSize": 9
+                      },
+                      {
+                        "text": "Verification Status: {{verification_status}}",
+                        "fontSize": 9
+                      },
+                      {
+                        "text": "Verification ID: {{verification_id}}",
+                        "fontSize": 9
+                      }
+                    ],
+                    "margin": [
+                      3,
+                      4,
+                      3,
+                      4
+                    ]
+                  },
+                  {
+                    "stack": [
+                      {
+                        "text": "Technician Signature",
+                        "style": "signTitle"
+                      },
+                      {
+                        "text": "Name: {{service_by}}",
+                        "fontSize": 9
+                      },
+                      {
+                        "text": "Contact no: {{service_by_phone}}",
+                        "fontSize": 9
+                      },
+                      {
+                        "text": "Submitted by",
+                        "fontSize": 9,
+                        "bold": true,
+                        "margin": [
+                          0,
+                          6,
+                          0,
+                          0
+                        ]
+                      },
+                      {
+                        "text": "Registered Mobile: {{technician_mobile}}",
+                        "fontSize": 9
+                      },
+                      {
+                        "text": "Vendor Organisation: {{vendor_name}}",
+                        "fontSize": 9
+                      },
+                      {
+                        "text": "At: {{submitted_at}}",
+                        "fontSize": 9
+                      }
+                    ],
+                    "margin": [
+                      3,
+                      4,
+                      3,
+                      4
+                    ]
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "unbreakable": true
+      }
+    ],
+    "styles": {
+      "section": {
+        "fontSize": 13,
         "bold": true,
         "margin": [
           0,
-          4,
+          12,
           0,
+          3
+        ]
+      },
+      "th": {
+        "fontSize": 9,
+        "bold": true,
+        "margin": [
+          1,
+          2,
+          1,
           2
+        ]
+      },
+      "td": {
+        "fontSize": 9,
+        "margin": [
+          1,
+          2,
+          1,
+          2
+        ]
+      },
+      "ans": {
+        "fontSize": 9,
+        "bold": true,
+        "margin": [
+          1,
+          2,
+          1,
+          2
+        ]
+      },
+      "plain": {
+        "fontSize": 9,
+        "margin": [
+          1,
+          2,
+          1,
+          2
+        ]
+      },
+      "no": {
+        "fontSize": 9,
+        "color": "#555555",
+        "margin": [
+          1,
+          2,
+          1,
+          2
+        ]
+      },
+      "label": {
+        "fontSize": 8.5,
+        "color": "#555555",
+        "margin": [
+          0,
+          3,
+          0,
+          3
+        ]
+      },
+      "value": {
+        "fontSize": 10,
+        "bold": true,
+        "margin": [
+          0,
+          3,
+          0,
+          3
+        ]
+      },
+      "signTitle": {
+        "fontSize": 10.5,
+        "bold": true,
+        "margin": [
+          0,
+          0,
+          0,
+          4
         ]
       }
     }
