@@ -2,10 +2,10 @@
   "key": "amc-report",
   "DataConfigs": {
     "serviceName": "rainmaker-livelihood-amc",
-    "version": "2.0.0",
+    "version": "3.0.0",
     "baseKeyPath": "$.amc",
     "entityIdPath": "$.amc.report_id",
-    "isCommonTableBorderRequired": true,
+    "isCommonTableBorderRequired": false,
     "mappings": [
       {
         "topic": "amc-pdf-generation",
@@ -20,21 +20,27 @@
                 }
               },
               {
-                "variable": "report_status",
+                "variable": "vendor_name",
                 "value": {
-                  "path": "$.report_status"
+                  "path": "$.vendor_name"
                 }
               },
               {
-                "variable": "system_in_use",
+                "variable": "visit_date",
                 "value": {
-                  "path": "$.system_in_use"
+                  "path": "$.visit_date"
                 }
               },
               {
-                "variable": "system_functional",
+                "variable": "service_by",
                 "value": {
-                  "path": "$.system_functional"
+                  "path": "$.service_by"
+                }
+              },
+              {
+                "variable": "service_by_phone",
+                "value": {
+                  "path": "$.service_by_phone"
                 }
               },
               {
@@ -50,15 +56,9 @@
                 }
               },
               {
-                "variable": "state",
+                "variable": "installation_date",
                 "value": {
-                  "path": "$.state"
-                }
-              },
-              {
-                "variable": "district",
-                "value": {
-                  "path": "$.district"
+                  "path": "$.installation_date"
                 }
               },
               {
@@ -68,92 +68,319 @@
                 }
               },
               {
-                "variable": "project_name",
+                "variable": "district",
                 "value": {
-                  "path": "$.project_name"
+                  "path": "$.district"
                 }
               },
               {
-                "variable": "vendor_name",
+                "variable": "pin_code",
                 "value": {
-                  "path": "$.vendor_name"
+                  "path": "$.pin_code"
                 }
               },
               {
-                "variable": "field_staff_name",
+                "variable": "purchase_order_number",
                 "value": {
-                  "path": "$.field_staff_name"
+                  "path": "$.purchase_order_number"
                 }
               },
               {
-                "variable": "amc_number",
+                "variable": "pcu_priority",
                 "value": {
-                  "path": "$.amc_number"
+                  "path": "$.pcu_priority"
                 }
               },
               {
-                "variable": "scheduled_date",
+                "variable": "panels_per_string",
                 "value": {
-                  "path": "$.scheduled_date"
+                  "path": "$.panels_per_string"
                 }
               },
               {
-                "variable": "amc_start_date",
+                "variable": "obs_1",
                 "value": {
-                  "path": "$.amc_start_date"
+                  "path": "$.obs_1"
                 }
               },
               {
-                "variable": "amc_end_date",
+                "variable": "obs_1_style",
                 "value": {
-                  "path": "$.amc_end_date"
+                  "path": "$.obs_1_style"
                 }
               },
               {
-                "variable": "first_submission_date",
+                "variable": "obs_2",
                 "value": {
-                  "path": "$.first_submission_date"
+                  "path": "$.obs_2"
                 }
               },
               {
-                "variable": "latest_submission_date",
+                "variable": "obs_2_style",
                 "value": {
-                  "path": "$.latest_submission_date"
+                  "path": "$.obs_2_style"
                 }
               },
               {
-                "variable": "step_action",
+                "variable": "obs_3",
                 "value": {
-                  "path": "$.step_action"
+                  "path": "$.obs_3"
                 }
               },
               {
-                "variable": "step_by",
+                "variable": "obs_3_style",
                 "value": {
-                  "path": "$.step_by"
+                  "path": "$.obs_3_style"
                 }
               },
               {
-                "variable": "step_at",
+                "variable": "obs_4",
                 "value": {
-                  "path": "$.step_at"
+                  "path": "$.obs_4"
                 }
               },
               {
-                "variable": "step_comment",
+                "variable": "obs_4_style",
                 "value": {
-                  "path": "$.step_comment"
+                  "path": "$.obs_4_style"
                 }
               },
               {
-                "variable": "responses",
+                "variable": "obs_5",
                 "value": {
-                  "path": "$.responses.*"
+                  "path": "$.obs_5"
+                }
+              },
+              {
+                "variable": "obs_5_style",
+                "value": {
+                  "path": "$.obs_5_style"
+                }
+              },
+              {
+                "variable": "obs_6",
+                "value": {
+                  "path": "$.obs_6"
+                }
+              },
+              {
+                "variable": "obs_6_style",
+                "value": {
+                  "path": "$.obs_6_style"
+                }
+              },
+              {
+                "variable": "obs_7",
+                "value": {
+                  "path": "$.obs_7"
+                }
+              },
+              {
+                "variable": "obs_7_style",
+                "value": {
+                  "path": "$.obs_7_style"
+                }
+              },
+              {
+                "variable": "obs_8",
+                "value": {
+                  "path": "$.obs_8"
+                }
+              },
+              {
+                "variable": "obs_8_style",
+                "value": {
+                  "path": "$.obs_8_style"
+                }
+              },
+              {
+                "variable": "obs_9",
+                "value": {
+                  "path": "$.obs_9"
+                }
+              },
+              {
+                "variable": "obs_9_style",
+                "value": {
+                  "path": "$.obs_9_style"
+                }
+              },
+              {
+                "variable": "obs_10",
+                "value": {
+                  "path": "$.obs_10"
+                }
+              },
+              {
+                "variable": "obs_10_style",
+                "value": {
+                  "path": "$.obs_10_style"
+                }
+              },
+              {
+                "variable": "obs_11",
+                "value": {
+                  "path": "$.obs_11"
+                }
+              },
+              {
+                "variable": "obs_11_style",
+                "value": {
+                  "path": "$.obs_11_style"
+                }
+              },
+              {
+                "variable": "obs_12",
+                "value": {
+                  "path": "$.obs_12"
+                }
+              },
+              {
+                "variable": "obs_12_style",
+                "value": {
+                  "path": "$.obs_12_style"
+                }
+              },
+              {
+                "variable": "obs_13",
+                "value": {
+                  "path": "$.obs_13"
+                }
+              },
+              {
+                "variable": "obs_13_style",
+                "value": {
+                  "path": "$.obs_13_style"
+                }
+              },
+              {
+                "variable": "obs_14",
+                "value": {
+                  "path": "$.obs_14"
+                }
+              },
+              {
+                "variable": "obs_14_style",
+                "value": {
+                  "path": "$.obs_14_style"
+                }
+              },
+              {
+                "variable": "obs_15",
+                "value": {
+                  "path": "$.obs_15"
+                }
+              },
+              {
+                "variable": "obs_15_style",
+                "value": {
+                  "path": "$.obs_15_style"
+                }
+              },
+              {
+                "variable": "obs_16",
+                "value": {
+                  "path": "$.obs_16"
+                }
+              },
+              {
+                "variable": "obs_16_style",
+                "value": {
+                  "path": "$.obs_16_style"
+                }
+              },
+              {
+                "variable": "obs_17",
+                "value": {
+                  "path": "$.obs_17"
+                }
+              },
+              {
+                "variable": "obs_17_style",
+                "value": {
+                  "path": "$.obs_17_style"
+                }
+              },
+              {
+                "variable": "obs_18",
+                "value": {
+                  "path": "$.obs_18"
+                }
+              },
+              {
+                "variable": "obs_18_style",
+                "value": {
+                  "path": "$.obs_18_style"
+                }
+              },
+              {
+                "variable": "obs_19",
+                "value": {
+                  "path": "$.obs_19"
+                }
+              },
+              {
+                "variable": "obs_19_style",
+                "value": {
+                  "path": "$.obs_19_style"
+                }
+              },
+              {
+                "variable": "vendor_remarks",
+                "value": {
+                  "path": "$.vendor_remarks"
+                }
+              },
+              {
+                "variable": "end_user_remarks",
+                "value": {
+                  "path": "$.end_user_remarks"
+                }
+              },
+              {
+                "variable": "verified_at",
+                "value": {
+                  "path": "$.verified_at"
+                }
+              },
+              {
+                "variable": "verification_status",
+                "value": {
+                  "path": "$.verification_status"
+                }
+              },
+              {
+                "variable": "verification_id",
+                "value": {
+                  "path": "$.verification_id"
+                }
+              },
+              {
+                "variable": "technician_mobile",
+                "value": {
+                  "path": "$.technician_mobile"
+                }
+              },
+              {
+                "variable": "submitted_at",
+                "value": {
+                  "path": "$.submitted_at"
+                }
+              },
+              {
+                "variable": "reading_rows",
+                "value": {
+                  "path": "$.reading_rows.*"
                 },
                 "type": "array",
                 "format": {
                   "type": "string",
                   "scema": [
+                    {
+                      "variable": "no",
+                      "value": "no",
+                      "type": "string"
+                    },
                     {
                       "variable": "label",
                       "value": "label",
@@ -163,59 +390,35 @@
                       "variable": "value",
                       "value": "value",
                       "type": "string"
-                    }
-                  ]
-                }
-              },
-              {
-                "variable": "readings",
-                "value": {
-                  "path": "$.readings.*"
-                },
-                "type": "array",
-                "format": {
-                  "type": "string",
-                  "scema": [
+                    },
                     {
-                      "variable": "parameter",
-                      "value": "parameter",
+                      "variable": "style",
+                      "value": "style",
                       "type": "string"
                     },
                     {
-                      "variable": "reading",
-                      "value": "reading",
+                      "variable": "photo",
+                      "value": "photo",
                       "type": "string"
                     },
                     {
-                      "variable": "accepted",
-                      "value": "accepted",
+                      "variable": "p_ne_pcu",
+                      "value": "p_ne_pcu",
                       "type": "string"
                     },
                     {
-                      "variable": "result",
-                      "value": "result",
-                      "type": "string"
-                    }
-                  ]
-                }
-              },
-              {
-                "variable": "documents",
-                "value": {
-                  "path": "$.documents.*"
-                },
-                "type": "array",
-                "format": {
-                  "type": "string",
-                  "scema": [
-                    {
-                      "variable": "documentType",
-                      "value": "documentType",
+                      "variable": "p_ne_grid",
+                      "value": "p_ne_grid",
                       "type": "string"
                     },
                     {
-                      "variable": "count",
-                      "value": "count",
+                      "variable": "p_solar_spd",
+                      "value": "p_solar_spd",
+                      "type": "string"
+                    },
+                    {
+                      "variable": "p_grid_spd",
+                      "value": "p_grid_spd",
                       "type": "string"
                     }
                   ]
