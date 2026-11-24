@@ -184,6 +184,15 @@
             ],
             [
               {
+                "text": "System Type",
+                "style": "fieldLabel"
+              },
+              {
+                "text": "{{system_type}}"
+              }
+            ],
+            [
+              {
                 "text": "Sector",
                 "style": "fieldLabel"
               },
