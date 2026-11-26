@@ -1524,87 +1524,87 @@
           {
             "direct": [
               {
-                "variable": "installation_image_1_title",
+                "variable": "installation_photo_1_title",
                 "value": {
-                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-1')].documentName"
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_PHOTO-1')].documentName"
                 }
               },
               {
-                "variable": "installation_image_2_title",
+                "variable": "installation_photo_2_title",
                 "value": {
-                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-2')].documentName"
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_PHOTO-2')].documentName"
                 }
               },
               {
-                "variable": "installation_image_3_title",
+                "variable": "installation_photo_3_title",
                 "value": {
-                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-3')].documentName"
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_PHOTO-3')].documentName"
                 }
               },
               {
-                "variable": "installation_image_4_title",
+                "variable": "installation_photo_4_title",
                 "value": {
-                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-4')].documentName"
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_PHOTO-4')].documentName"
                 }
               },
               {
-                "variable": "installation_image_5_title",
+                "variable": "installation_photo_5_title",
                 "value": {
-                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-5')].documentName"
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_PHOTO-5')].documentName"
                 }
               },
               {
-                "variable": "installation_image_6_title",
+                "variable": "installation_photo_6_title",
                 "value": {
-                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-6')].documentName"
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_PHOTO-6')].documentName"
                 }
               },
               {
-                "variable": "installation_image_7_title",
+                "variable": "installation_photo_18_title",
                 "value": {
-                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-7')].documentName"
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_PHOTO-18')].documentName"
                 }
               },
               {
-                "variable": "installation_image_8_title",
+                "variable": "installation_photo_8_title",
                 "value": {
-                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-8')].documentName"
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_PHOTO-8')].documentName"
                 }
               },
               {
-                "variable": "installation_image_9_title",
+                "variable": "installation_photo_9_title",
                 "value": {
-                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-9')].documentName"
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_PHOTO-9')].documentName"
                 }
               },
               {
-                "variable": "installation_image_10_title",
+                "variable": "installation_photo_11_title",
                 "value": {
-                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-10')].documentName"
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_PHOTO-11')].documentName"
                 }
               },
               {
-                "variable": "installation_image_11_title",
+                "variable": "installation_photo_12_title",
                 "value": {
-                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-11')].documentName"
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_PHOTO-12')].documentName"
                 }
               },
               {
-                "variable": "installation_image_12_title",
+                "variable": "installation_photo_15_title",
                 "value": {
-                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-12')].documentName"
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_PHOTO-15')].documentName"
                 }
               },
               {
-                "variable": "installation_image_13_title",
+                "variable": "installation_photo_16_title",
                 "value": {
-                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-13')].documentName"
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_PHOTO-16')].documentName"
                 }
               },
               {
-                "variable": "installation_image_14_title",
+                "variable": "installation_photo_17_title",
                 "value": {
-                  "path": "$.documents[?(@.documentType=='INSTALLATION_IMAGE-14')].documentName"
+                  "path": "$.documents[?(@.documentType=='INSTALLATION_PHOTO-17')].documentName"
                 }
               }
             ]
@@ -1613,12 +1613,12 @@
             "externalAPI": [
               {
                 "path": "http://egov-filestore.core:8080/filestore/v1/files/actualurl",
-                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-1')].fileStoreIds[0]",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_PHOTO-1')].fileStoreIds[0]",
                 "apiRequest": null,
                 "requesttype": "GET",
                 "responseMapping": [
                   {
-                    "variable": "INSTALLATION_IMAGE_1_1",
+                    "variable": "INSTALLATION_PHOTO_1_1",
                     "value": "$.fileStoreIds[0].url",
                     "type": "image"
                   }
@@ -1626,12 +1626,12 @@
               },
               {
                 "path": "http://egov-filestore.core:8080/filestore/v1/files/actualurl",
-                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-1')].fileStoreIds[1]",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_PHOTO-1')].fileStoreIds[1]",
                 "apiRequest": null,
                 "requesttype": "GET",
                 "responseMapping": [
                   {
-                    "variable": "INSTALLATION_IMAGE_1_2",
+                    "variable": "INSTALLATION_PHOTO_1_2",
                     "value": "$.fileStoreIds[0].url",
                     "type": "image"
                   }
@@ -1639,12 +1639,12 @@
               },
               {
                 "path": "http://egov-filestore.core:8080/filestore/v1/files/actualurl",
-                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-2')].fileStoreIds[0]",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_PHOTO-2')].fileStoreIds[0]",
                 "apiRequest": null,
                 "requesttype": "GET",
                 "responseMapping": [
                   {
-                    "variable": "INSTALLATION_IMAGE_2_1",
+                    "variable": "INSTALLATION_PHOTO_2_1",
                     "value": "$.fileStoreIds[0].url",
                     "type": "image"
                   }
@@ -1652,12 +1652,12 @@
               },
               {
                 "path": "http://egov-filestore.core:8080/filestore/v1/files/actualurl",
-                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-3')].fileStoreIds[0]",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_PHOTO-3')].fileStoreIds[0]",
                 "apiRequest": null,
                 "requesttype": "GET",
                 "responseMapping": [
                   {
-                    "variable": "INSTALLATION_IMAGE_3_1",
+                    "variable": "INSTALLATION_PHOTO_3_1",
                     "value": "$.fileStoreIds[0].url",
                     "type": "image"
                   }
@@ -1665,12 +1665,12 @@
               },
               {
                 "path": "http://egov-filestore.core:8080/filestore/v1/files/actualurl",
-                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-3')].fileStoreIds[1]",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_PHOTO-3')].fileStoreIds[1]",
                 "apiRequest": null,
                 "requesttype": "GET",
                 "responseMapping": [
                   {
-                    "variable": "INSTALLATION_IMAGE_3_2",
+                    "variable": "INSTALLATION_PHOTO_3_2",
                     "value": "$.fileStoreIds[0].url",
                     "type": "image"
                   }
@@ -1678,12 +1678,12 @@
               },
               {
                 "path": "http://egov-filestore.core:8080/filestore/v1/files/actualurl",
-                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-4')].fileStoreIds[0]",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_PHOTO-4')].fileStoreIds[0]",
                 "apiRequest": null,
                 "requesttype": "GET",
                 "responseMapping": [
                   {
-                    "variable": "INSTALLATION_IMAGE_4_1",
+                    "variable": "INSTALLATION_PHOTO_4_1",
                     "value": "$.fileStoreIds[0].url",
                     "type": "image"
                   }
@@ -1691,12 +1691,12 @@
               },
               {
                 "path": "http://egov-filestore.core:8080/filestore/v1/files/actualurl",
-                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-5')].fileStoreIds[0]",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_PHOTO-5')].fileStoreIds[0]",
                 "apiRequest": null,
                 "requesttype": "GET",
                 "responseMapping": [
                   {
-                    "variable": "INSTALLATION_IMAGE_5_1",
+                    "variable": "INSTALLATION_PHOTO_5_1",
                     "value": "$.fileStoreIds[0].url",
                     "type": "image"
                   }
@@ -1704,12 +1704,12 @@
               },
               {
                 "path": "http://egov-filestore.core:8080/filestore/v1/files/actualurl",
-                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-5')].fileStoreIds[1]",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_PHOTO-5')].fileStoreIds[1]",
                 "apiRequest": null,
                 "requesttype": "GET",
                 "responseMapping": [
                   {
-                    "variable": "INSTALLATION_IMAGE_5_2",
+                    "variable": "INSTALLATION_PHOTO_5_2",
                     "value": "$.fileStoreIds[0].url",
                     "type": "image"
                   }
@@ -1717,12 +1717,12 @@
               },
               {
                 "path": "http://egov-filestore.core:8080/filestore/v1/files/actualurl",
-                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-5')].fileStoreIds[2]",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_PHOTO-5')].fileStoreIds[2]",
                 "apiRequest": null,
                 "requesttype": "GET",
                 "responseMapping": [
                   {
-                    "variable": "INSTALLATION_IMAGE_5_3",
+                    "variable": "INSTALLATION_PHOTO_5_3",
                     "value": "$.fileStoreIds[0].url",
                     "type": "image"
                   }
@@ -1730,12 +1730,12 @@
               },
               {
                 "path": "http://egov-filestore.core:8080/filestore/v1/files/actualurl",
-                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-6')].fileStoreIds[0]",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_PHOTO-6')].fileStoreIds[0]",
                 "apiRequest": null,
                 "requesttype": "GET",
                 "responseMapping": [
                   {
-                    "variable": "INSTALLATION_IMAGE_6_1",
+                    "variable": "INSTALLATION_PHOTO_6_1",
                     "value": "$.fileStoreIds[0].url",
                     "type": "image"
                   }
@@ -1743,12 +1743,12 @@
               },
               {
                 "path": "http://egov-filestore.core:8080/filestore/v1/files/actualurl",
-                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-7')].fileStoreIds[0]",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_PHOTO-18')].fileStoreIds[0]",
                 "apiRequest": null,
                 "requesttype": "GET",
                 "responseMapping": [
                   {
-                    "variable": "INSTALLATION_IMAGE_7_1",
+                    "variable": "INSTALLATION_PHOTO_18_1",
                     "value": "$.fileStoreIds[0].url",
                     "type": "image"
                   }
@@ -1756,12 +1756,12 @@
               },
               {
                 "path": "http://egov-filestore.core:8080/filestore/v1/files/actualurl",
-                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-8')].fileStoreIds[0]",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_PHOTO-8')].fileStoreIds[0]",
                 "apiRequest": null,
                 "requesttype": "GET",
                 "responseMapping": [
                   {
-                    "variable": "INSTALLATION_IMAGE_8_1",
+                    "variable": "INSTALLATION_PHOTO_8_1",
                     "value": "$.fileStoreIds[0].url",
                     "type": "image"
                   }
@@ -1769,12 +1769,12 @@
               },
               {
                 "path": "http://egov-filestore.core:8080/filestore/v1/files/actualurl",
-                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-9')].fileStoreIds[0]",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_PHOTO-9')].fileStoreIds[0]",
                 "apiRequest": null,
                 "requesttype": "GET",
                 "responseMapping": [
                   {
-                    "variable": "INSTALLATION_IMAGE_9_1",
+                    "variable": "INSTALLATION_PHOTO_9_1",
                     "value": "$.fileStoreIds[0].url",
                     "type": "image"
                   }
@@ -1782,12 +1782,12 @@
               },
               {
                 "path": "http://egov-filestore.core:8080/filestore/v1/files/actualurl",
-                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-10')].fileStoreIds[0]",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_PHOTO-11')].fileStoreIds[0]",
                 "apiRequest": null,
                 "requesttype": "GET",
                 "responseMapping": [
                   {
-                    "variable": "INSTALLATION_IMAGE_10_1",
+                    "variable": "INSTALLATION_PHOTO_11_1",
                     "value": "$.fileStoreIds[0].url",
                     "type": "image"
                   }
@@ -1795,12 +1795,12 @@
               },
               {
                 "path": "http://egov-filestore.core:8080/filestore/v1/files/actualurl",
-                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-11')].fileStoreIds[0]",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_PHOTO-12')].fileStoreIds[0]",
                 "apiRequest": null,
                 "requesttype": "GET",
                 "responseMapping": [
                   {
-                    "variable": "INSTALLATION_IMAGE_11_1",
+                    "variable": "INSTALLATION_PHOTO_12_1",
                     "value": "$.fileStoreIds[0].url",
                     "type": "image"
                   }
@@ -1808,12 +1808,12 @@
               },
               {
                 "path": "http://egov-filestore.core:8080/filestore/v1/files/actualurl",
-                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-11')].fileStoreIds[1]",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_PHOTO-12')].fileStoreIds[1]",
                 "apiRequest": null,
                 "requesttype": "GET",
                 "responseMapping": [
                   {
-                    "variable": "INSTALLATION_IMAGE_11_2",
+                    "variable": "INSTALLATION_PHOTO_12_2",
                     "value": "$.fileStoreIds[0].url",
                     "type": "image"
                   }
@@ -1821,12 +1821,12 @@
               },
               {
                 "path": "http://egov-filestore.core:8080/filestore/v1/files/actualurl",
-                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-12')].fileStoreIds[0]",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_PHOTO-15')].fileStoreIds[0]",
                 "apiRequest": null,
                 "requesttype": "GET",
                 "responseMapping": [
                   {
-                    "variable": "INSTALLATION_IMAGE_12_1",
+                    "variable": "INSTALLATION_PHOTO_15_1",
                     "value": "$.fileStoreIds[0].url",
                     "type": "image"
                   }
@@ -1834,12 +1834,12 @@
               },
               {
                 "path": "http://egov-filestore.core:8080/filestore/v1/files/actualurl",
-                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-13')].fileStoreIds[0]",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_PHOTO-16')].fileStoreIds[0]",
                 "apiRequest": null,
                 "requesttype": "GET",
                 "responseMapping": [
                   {
-                    "variable": "INSTALLATION_IMAGE_13_1",
+                    "variable": "INSTALLATION_PHOTO_16_1",
                     "value": "$.fileStoreIds[0].url",
                     "type": "image"
                   }
@@ -1847,12 +1847,12 @@
               },
               {
                 "path": "http://egov-filestore.core:8080/filestore/v1/files/actualurl",
-                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_IMAGE-14')].fileStoreIds[0]",
+                "queryParam": "tenantId=$.tenantId,fileStoreId=$.documents[?(@.documentType=='INSTALLATION_PHOTO-17')].fileStoreIds[0]",
                 "apiRequest": null,
                 "requesttype": "GET",
                 "responseMapping": [
                   {
-                    "variable": "INSTALLATION_IMAGE_14_1",
+                    "variable": "INSTALLATION_PHOTO_17_1",
                     "value": "$.fileStoreIds[0].url",
                     "type": "image"
                   }

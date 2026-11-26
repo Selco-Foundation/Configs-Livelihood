@@ -1374,7 +1374,7 @@
       {
         "stack": [
           {
-            "text": "{{installation_image_1_title}}",
+            "text": "{{installation_photo_1_title}}",
             "style": "tableHeader",
             "margin": [
               0,
@@ -1386,7 +1386,7 @@
           {
             "columns": [
               {
-                "image": "{{INSTALLATION_IMAGE_1_1}}",
+                "image": "{{INSTALLATION_PHOTO_1_1}}",
                 "width": 155,
                 "fit": [
                   155,
@@ -1394,7 +1394,7 @@
                 ]
               },
               {
-                "image": "{{INSTALLATION_IMAGE_1_2}}",
+                "image": "{{INSTALLATION_PHOTO_1_2}}",
                 "width": 155,
                 "fit": [
                   155,
@@ -1410,7 +1410,7 @@
       {
         "stack": [
           {
-            "text": "{{installation_image_2_title}}",
+            "text": "{{installation_photo_2_title}}",
             "style": "tableHeader",
             "margin": [
               0,
@@ -1422,7 +1422,7 @@
           {
             "columns": [
               {
-                "image": "{{INSTALLATION_IMAGE_2_1}}",
+                "image": "{{INSTALLATION_PHOTO_2_1}}",
                 "width": 155,
                 "fit": [
                   155,
@@ -1438,7 +1438,7 @@
       {
         "stack": [
           {
-            "text": "{{installation_image_3_title}}",
+            "text": "{{installation_photo_3_title}}",
             "style": "tableHeader",
             "margin": [
               0,
@@ -1450,7 +1450,7 @@
           {
             "columns": [
               {
-                "image": "{{INSTALLATION_IMAGE_3_1}}",
+                "image": "{{INSTALLATION_PHOTO_3_1}}",
                 "width": 155,
                 "fit": [
                   155,
@@ -1458,7 +1458,7 @@
                 ]
               },
               {
-                "image": "{{INSTALLATION_IMAGE_3_2}}",
+                "image": "{{INSTALLATION_PHOTO_3_2}}",
                 "width": 155,
                 "fit": [
                   155,
@@ -1474,7 +1474,7 @@
       {
         "stack": [
           {
-            "text": "{{installation_image_4_title}}",
+            "text": "{{installation_photo_4_title}}",
             "style": "tableHeader",
             "margin": [
               0,
@@ -1486,7 +1486,7 @@
           {
             "columns": [
               {
-                "image": "{{INSTALLATION_IMAGE_4_1}}",
+                "image": "{{INSTALLATION_PHOTO_4_1}}",
                 "width": 155,
                 "fit": [
                   155,
@@ -1497,13 +1497,12 @@
             "columnGap": 5
           }
         ],
-        "unbreakable": true,
-        "pageBreak": "before"
+        "unbreakable": true
       },
       {
         "stack": [
           {
-            "text": "{{installation_image_5_title}}",
+            "text": "{{installation_photo_5_title}}",
             "style": "tableHeader",
             "margin": [
               0,
@@ -1515,7 +1514,7 @@
           {
             "columns": [
               {
-                "image": "{{INSTALLATION_IMAGE_5_1}}",
+                "image": "{{INSTALLATION_PHOTO_5_1}}",
                 "width": 155,
                 "fit": [
                   155,
@@ -1523,7 +1522,7 @@
                 ]
               },
               {
-                "image": "{{INSTALLATION_IMAGE_5_2}}",
+                "image": "{{INSTALLATION_PHOTO_5_2}}",
                 "width": 155,
                 "fit": [
                   155,
@@ -1531,7 +1530,7 @@
                 ]
               },
               {
-                "image": "{{INSTALLATION_IMAGE_5_3}}",
+                "image": "{{INSTALLATION_PHOTO_5_3}}",
                 "width": 155,
                 "fit": [
                   155,
@@ -1547,7 +1546,7 @@
       {
         "stack": [
           {
-            "text": "{{installation_image_6_title}}",
+            "text": "{{installation_photo_18_title}}",
             "style": "tableHeader",
             "margin": [
               0,
@@ -1559,7 +1558,7 @@
           {
             "columns": [
               {
-                "image": "{{INSTALLATION_IMAGE_6_1}}",
+                "image": "{{INSTALLATION_PHOTO_18_1}}",
                 "width": 155,
                 "fit": [
                   155,
@@ -1575,7 +1574,7 @@
       {
         "stack": [
           {
-            "text": "{{installation_image_7_title}}",
+            "text": "{{installation_photo_9_title}}",
             "style": "tableHeader",
             "margin": [
               0,
@@ -1587,36 +1586,7 @@
           {
             "columns": [
               {
-                "image": "{{INSTALLATION_IMAGE_7_1}}",
-                "width": 155,
-                "fit": [
-                  155,
-                  180
-                ]
-              }
-            ],
-            "columnGap": 5
-          }
-        ],
-        "unbreakable": true,
-        "pageBreak": "before"
-      },
-      {
-        "stack": [
-          {
-            "text": "{{installation_image_8_title}}",
-            "style": "tableHeader",
-            "margin": [
-              0,
-              10,
-              0,
-              2
-            ]
-          },
-          {
-            "columns": [
-              {
-                "image": "{{INSTALLATION_IMAGE_8_1}}",
+                "image": "{{INSTALLATION_PHOTO_9_1}}",
                 "width": 155,
                 "fit": [
                   155,
@@ -1632,7 +1602,7 @@
       {
         "stack": [
           {
-            "text": "{{installation_image_9_title}}",
+            "text": "{{installation_photo_11_title}}",
             "style": "tableHeader",
             "margin": [
               0,
@@ -1644,7 +1614,7 @@
           {
             "columns": [
               {
-                "image": "{{INSTALLATION_IMAGE_9_1}}",
+                "image": "{{INSTALLATION_PHOTO_11_1}}",
                 "width": 155,
                 "fit": [
                   155,
@@ -1660,7 +1630,7 @@
       {
         "stack": [
           {
-            "text": "{{installation_image_10_title}}",
+            "text": "{{installation_photo_12_title}}",
             "style": "tableHeader",
             "margin": [
               0,
@@ -1672,36 +1642,7 @@
           {
             "columns": [
               {
-                "image": "{{INSTALLATION_IMAGE_10_1}}",
-                "width": 155,
-                "fit": [
-                  155,
-                  180
-                ]
-              }
-            ],
-            "columnGap": 5
-          }
-        ],
-        "unbreakable": true,
-        "pageBreak": "before"
-      },
-      {
-        "stack": [
-          {
-            "text": "{{installation_image_11_title}}",
-            "style": "tableHeader",
-            "margin": [
-              0,
-              10,
-              0,
-              2
-            ]
-          },
-          {
-            "columns": [
-              {
-                "image": "{{INSTALLATION_IMAGE_11_1}}",
+                "image": "{{INSTALLATION_PHOTO_12_1}}",
                 "width": 155,
                 "fit": [
                   155,
@@ -1709,7 +1650,7 @@
                 ]
               },
               {
-                "image": "{{INSTALLATION_IMAGE_11_2}}",
+                "image": "{{INSTALLATION_PHOTO_12_2}}",
                 "width": 155,
                 "fit": [
                   155,
@@ -1725,7 +1666,7 @@
       {
         "stack": [
           {
-            "text": "{{installation_image_12_title}}",
+            "text": "{{installation_photo_15_title}}",
             "style": "tableHeader",
             "margin": [
               0,
@@ -1737,7 +1678,7 @@
           {
             "columns": [
               {
-                "image": "{{INSTALLATION_IMAGE_12_1}}",
+                "image": "{{INSTALLATION_PHOTO_15_1}}",
                 "width": 155,
                 "fit": [
                   155,
@@ -1753,7 +1694,7 @@
       {
         "stack": [
           {
-            "text": "{{installation_image_13_title}}",
+            "text": "{{installation_photo_16_title}}",
             "style": "tableHeader",
             "margin": [
               0,
@@ -1765,7 +1706,7 @@
           {
             "columns": [
               {
-                "image": "{{INSTALLATION_IMAGE_13_1}}",
+                "image": "{{INSTALLATION_PHOTO_16_1}}",
                 "width": 155,
                 "fit": [
                   155,
@@ -1776,13 +1717,12 @@
             "columnGap": 5
           }
         ],
-        "unbreakable": true,
-        "pageBreak": "before"
+        "unbreakable": true
       },
       {
         "stack": [
           {
-            "text": "{{installation_image_14_title}}",
+            "text": "{{installation_photo_17_title}}",
             "style": "tableHeader",
             "margin": [
               0,
@@ -1794,7 +1734,7 @@
           {
             "columns": [
               {
-                "image": "{{INSTALLATION_IMAGE_14_1}}",
+                "image": "{{INSTALLATION_PHOTO_17_1}}",
                 "width": 155,
                 "fit": [
                   155,
